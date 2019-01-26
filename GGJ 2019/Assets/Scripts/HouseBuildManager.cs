@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class GameManager : MonoBehaviour
+public class HouseBuildManager : MonoBehaviour
 {
     [SerializeField]
     private HouseList houseList = null;
@@ -13,7 +13,10 @@ public class GameManager : MonoBehaviour
     private List<GameObject> throwOrigins = null;
 
     [SerializeField]
-    private float throwForce = 5.0f;
+    private float minThrowForce = 4.0f;
+
+    [SerializeField]
+    private float maxThrowForce = 8.0f;
 
     [SerializeField]
     private HouseBook houseBook = null;
@@ -33,7 +36,7 @@ public class GameManager : MonoBehaviour
             Vector3 relative = spawnTarget.transform.position - go.transform.position;
             foreach (Rigidbody rigidbody in go.GetComponentsInChildren<Rigidbody>())
             {
-                rigidbody.AddForce(relative * throwForce, ForceMode.VelocityChange);
+                rigidbody.AddForce(relative * Random.Range(minThrowForce, maxThrowForce), ForceMode.VelocityChange);
                 rigidbody.AddRelativeTorque(Random.rotationUniform *  Vector3.right * 10.0f, ForceMode.VelocityChange);
             }
         }
