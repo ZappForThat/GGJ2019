@@ -28,7 +28,11 @@ public class PlayerInput : MonoBehaviour
 
         if (hit)
         {
-            cabinet = hitInfo.collider.GetComponent<Cabinet>();
+            CabinetCollider collider = hitInfo.collider.GetComponent<CabinetCollider>();
+            if (collider != null)
+            {
+                cabinet = collider.cabinet;
+            }
         }
 
         if (cabinet && Input.GetMouseButtonDown(0))

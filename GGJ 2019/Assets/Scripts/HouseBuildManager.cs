@@ -24,9 +24,10 @@ public class HouseBuildManager : MonoBehaviour
     private House currentHouse = null;
     private List<GameObject> applyOnNextUpdate = new List<GameObject>();
 
+    public System.Action<House> OnHouseCompleted;
+
     private void Start()
     {
-        SpawnNewRandomHouse();
     }
 
     private void FixedUpdate()
@@ -51,8 +52,7 @@ public class HouseBuildManager : MonoBehaviour
             currentHouse.AdvanceHouse();
             if (currentHouse.IsComplete())
             {
-                Destroy(currentHouse.gameObject);
-                SpawnNewRandomHouse();
+                OnHouseCompleted(currentHouse);
             }
         }
         else
@@ -61,12 +61,12 @@ public class HouseBuildManager : MonoBehaviour
         }
     }
 
-    private void SpawnNewRandomHouse()
+    public void SpawnNewRandomHouse()
     {
         SpawnNewHouse(houseList.housePrefabs[(int)Random.Range(0, houseList.housePrefabs.Count)]);
     }
 
-    private void SpawnNewHouse(House housePrefab)
+    public void SpawnNewHouse(House housePrefab)
     {
         currentHouse = Instantiate<House>(housePrefab, spawnTarget.transform.position, spawnTarget.transform.rotation, this.transform);
         houseBook.Fill(currentHouse);
