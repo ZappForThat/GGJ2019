@@ -7,20 +7,25 @@ ModelImporter:
     100002: CabinetBase
     100004: Countertop
     100006: Drawer
+    100008: Windowframe
     400000: //RootNode
     400002: CabinetBase
     400004: Countertop
     400006: Drawer
+    400008: Windowframe
     2100000: unnamed
     2300000: CabinetBase
     2300002: Countertop
     2300004: Drawer
+    2300006: Windowframe
     3300000: CabinetBase
     3300002: Countertop
     3300004: Drawer
+    3300006: Windowframe
     4300000: Drawer
     4300002: CabinetBase
     4300004: Countertop
+    4300006: Windowframe
   externalObjects: {}
   materials:
     importMaterials: 1
