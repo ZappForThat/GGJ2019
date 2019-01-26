@@ -50,6 +50,6 @@ public class GameManager : MonoBehaviour
     {
         GameObject itemPrefab = ItemMapper.Instance.Map(item);
         GameObject newItem = Instantiate(itemPrefab, throwOrigin.transform.position, throwOrigin.transform.rotation, null);
-        foreach (Rigidbody
+        //foreach (Rigidbody
     }
 }
