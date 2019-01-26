@@ -11,7 +11,7 @@ public class PlayerInput : MonoBehaviour
     private LayerMask layerMask;
 
     [SerializeField]
-    private GameManager gameManager;
+    private HouseBuildManager houseBuildManager;
 
     private int currentVcam = 0;
 
@@ -33,7 +33,7 @@ public class PlayerInput : MonoBehaviour
 
         if (cabinet && Input.GetMouseButtonDown(0))
         {
-            gameManager.ApplyItem(cabinet.item);
+            houseBuildManager.ApplyItem(cabinet.item);
         }
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
