@@ -22,4 +22,8 @@ public class HouseStage : MonoBehaviour
             gameObject.SetActive(true);
         }
     }
+
+    //public GameObject GetNailLocations()
+    //{
+    //}
 }
