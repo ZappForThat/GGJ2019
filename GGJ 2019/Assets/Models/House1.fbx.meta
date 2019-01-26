@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: f1deef37ccbb41d4e90e04aac27cdf6d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base1
+    100002: Base2
+    100004: Block4
+    100006: Block5
+    100008: Door2
+    100010: //RootNode
+    100012: HouseDemo
+    100014: pCylinder12
+    100016: polySurface12
+    100018: polySurface71
+    100020: Window1
+    100022: Window2
+    100024: Window3
+    100026: WindowSquare1
+    100028: WindowSquare2
+    400000: Base1
+    400002: Base2
+    400004: Block4
+    400006: Block5
+    400008: Door2
+    400010: //RootNode
+    400012: HouseDemo
+    400014: pCylinder12
+    400016: polySurface12
+    400018: polySurface71
+    400020: Window1
+    400022: Window2
+    400024: Window3
+    400026: WindowSquare1
+    400028: WindowSquare2
+    2100000: lambert1
+    2300000: Base1
+    2300002: Base2
+    2300004: Block4
+    2300006: Block5
+    2300008: Door2
+    2300010: pCylinder12
+    2300012: polySurface71
+    2300014: Window1
+    2300016: Window2
+    2300018: Window3
+    2300020: WindowSquare1
+    2300022: WindowSquare2
+    3300000: Base1
+    3300002: Base2
+    3300004: Block4
+    3300006: Block5
+    3300008: Door2
+    3300010: pCylinder12
+    3300012: polySurface71
+    3300014: Window1
+    3300016: Window2
+    3300018: Window3
+    3300020: WindowSquare1
+    3300022: WindowSquare2
+    4300000: Base1
+    4300002: Block4
+    4300004: Block5
+    4300006: Door2
+    4300008: Window1
+    4300010: Window2
+    4300012: Window3
+    4300014: WindowSquare1
+    4300016: WindowSquare2
+    4300018: pCylinder12
+    4300020: Base2
+    4300022: polySurface71
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
