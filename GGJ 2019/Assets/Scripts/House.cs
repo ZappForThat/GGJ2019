@@ -11,6 +11,13 @@ public class House : MonoBehaviour
     }
 
     [SerializeField]
+    [TextArea(4, 10)]
+    public string instructions = "";
+
+    [SerializeField]
+    public Sprite image = null;
+
+    [SerializeField]
     public List<Action> actions = new List<Action>();
 
     private int currentAction = 0;
