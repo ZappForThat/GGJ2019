@@ -1,14 +1,85 @@
 fileFormatVersion: 2
-guid: 621a6fff30eff1942aed5be9228ac766
+guid: fb375b14bfa9cb7489415669659e0c68
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Balcony1
+    100002: Balcony2
+    100004: Base
+    100006: Block1
+    100008: Block2
+    100010: Block3
+    100012: Column1
+    100014: Column2
+    100016: Column3
+    100018: Door
+    100020: HouseDemo
+    100022: //RootNode
+    100024: polySurface12
+    100026: polySurface35
+    100028: Roof
+    100030: Window
+    100032: WindowSquare
+    400000: Balcony1
+    400002: Balcony2
+    400004: Base
+    400006: Block1
+    400008: Block2
+    400010: Block3
+    400012: Column1
+    400014: Column2
+    400016: Column3
+    400018: Door
+    400020: HouseDemo
+    400022: //RootNode
+    400024: polySurface12
+    400026: polySurface35
+    400028: Roof
+    400030: Window
+    400032: WindowSquare
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: HouseDemo
+    2300000: Balcony1
+    2300002: Balcony2
+    2300004: Base
+    2300006: Block1
+    2300008: Block2
+    2300010: Block3
+    2300012: Column1
+    2300014: Column2
+    2300016: Column3
+    2300018: Door
+    2300020: polySurface35
+    2300022: Roof
+    2300024: Window
+    2300026: WindowSquare
+    3300000: Balcony1
+    3300002: Balcony2
+    3300004: Base
+    3300006: Block1
+    3300008: Block2
+    3300010: Block3
+    3300012: Column1
+    3300014: Column2
+    3300016: Column3
+    3300018: Door
+    3300020: polySurface35
+    3300022: Roof
+    3300024: Window
+    3300026: WindowSquare
+    4300000: Block1
+    4300002: Door
+    4300004: polySurface35
+    4300006: Window
+    4300008: Base
+    4300010: Block2
+    4300012: Column1
+    4300014: Column2
+    4300016: Column3
+    4300018: Block3
+    4300020: WindowSquare
+    4300022: Roof
+    4300024: Balcony2
+    4300026: Balcony1
   externalObjects: {}
   materials:
     importMaterials: 1
