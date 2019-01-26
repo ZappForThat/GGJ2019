@@ -15,29 +15,27 @@ public class PlayerInput : MonoBehaviour
 
     private int currentVcam = 0;
 
-    void Start()
+    void OnEnable()
     {
+        SwitchVcam(0);
     }
 
     void Update()
     {
-        RaycastHit hitInfo;
-        Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-        bool hit = Physics.Raycast(cameraRay, out hitInfo, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore);
-        Cabinet cabinet = null;
-
-        if (hit)
+        if (Input.GetMouseButtonDown(0))
         {
-            CabinetCollider collider = hitInfo.collider.GetComponent<CabinetCollider>();
-            if (collider != null)
+            RaycastHit hitInfo;
+            Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            bool hit = Physics.Raycast(cameraRay, out hitInfo, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore);
+
+            if (hit)
             {
-                cabinet = collider.cabinet;
+                CabinetCollider collider = hitInfo.collider.GetComponent<CabinetCollider>();
+                if (collider != null)
+                {
+                    houseBuildManager.ApplyItem(collider.cabinet.item);
+                }
             }
-        }
-
-        if (cabinet && Input.GetMouseButtonDown(0))
-        {
-            houseBuildManager.ApplyItem(cabinet.item);
         }
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))

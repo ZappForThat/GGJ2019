@@ -68,7 +68,7 @@ public class HouseBuildManager : MonoBehaviour
 
     public void SpawnNewHouse(House housePrefab)
     {
-        currentHouse = Instantiate<House>(housePrefab, spawnTarget.transform.position, spawnTarget.transform.rotation, this.transform);
+        currentHouse = Instantiate<House>(housePrefab, spawnTarget.transform.position, Quaternion.identity, null);
         houseBook.Fill(currentHouse);
     }
 

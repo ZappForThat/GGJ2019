@@ -17,6 +17,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private PlayableDirector introPlayableDirector = null;
 
+    [SerializeField]
+    private CinemachineVirtualCamera vCamIntro;
+
+    [SerializeField]
+    private CinemachineVirtualCamera vCamAfter;
+
     private void Start()
     {
         itemFlyIn.DoFlyIn(OnItemFlyInComplete);
@@ -26,7 +32,9 @@ public class GameManager : MonoBehaviour
 
     void OnItemFlyInComplete()
     {
-        introPlayableDirector.paused += OnIntroPlayableComplete;
+        vCamIntro.enabled = false;
+        vCamAfter.enabled = true;
+        introPlayableDirector.stopped += OnIntroPlayableComplete;
         introPlayableDirector.Play();
     }
 
