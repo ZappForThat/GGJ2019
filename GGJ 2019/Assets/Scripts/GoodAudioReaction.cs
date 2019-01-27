@@ -6,6 +6,6 @@ public class GoodAudioReaction : MonoBehaviour
 {
     private void OnEnable()
     {
-        AudioManager.Instance?.VictoryMusicPlay();
+        AudioManager.Instance?.VictoryMusicGoodPlay();
     }
 }

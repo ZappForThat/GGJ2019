@@ -92,11 +92,18 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("BuildingMusicStop", gameObject);
     }
-    public void VictoryMusicPlay() // done
+    public void VictoryMusicGoodPlay() // done
     {
         MenuMusicStop();
         ShopMusicStop();
         BuildingMusicStop();
         AkSoundEngine.PostEvent("VictoryMusic", gameObject);
+    }
+    public void VictoryMusicBadPlay() // done
+    {
+        MenuMusicStop();
+        ShopMusicStop();
+        BuildingMusicStop();
+        AkSoundEngine.PostEvent("VictoryMusicBad", gameObject);
     }
 }
