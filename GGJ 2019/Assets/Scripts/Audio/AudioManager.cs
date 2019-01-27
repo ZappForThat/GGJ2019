@@ -4,65 +4,99 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    
-    void HammerPlay()
+    public static AudioManager Instance = null;
+
+    private void Awake()
+    {
+        Instance = this;
+        DontDestroyOnLoad(this);
+    }
+
+    private void Start()
+    {
+        AudioManager.Instance?.MenuMusicPlay();
+    }
+
+    public void HammerPlay()
     {
         AkSoundEngine.PostEvent("PlayHammer", gameObject);
     }
-    void BirdChirpPlay()
+    public void BirdChirpPlay()
     {
         AkSoundEngine.PostEvent("PlayChirp", gameObject);
     }
-    void EggPlay()
+    public void EggPlay()
     {
         AkSoundEngine.PostEvent("PlayEggs", gameObject);
     }
-    void FishPlay()
+    public void FishPlay()
     {
         AkSoundEngine.PostEvent("PlayFish", gameObject);
     }
-    void OpeningCabinetPlay()
+    public void OpeningCabinetPlay() //NA
     {
         AkSoundEngine.PostEvent("PlayOpenCab", gameObject);
     }
-    void OpeningDrawerPlay()
+    public void OpeningDrawerPlay() // done
     {
         AkSoundEngine.PostEvent("PlayOpenDrawer", gameObject);
     }
-    void SawPlay()
+    public void SawPlay()
     {
         AkSoundEngine.PostEvent("PlaySaw", gameObject);
     }
-    void StonePlay()
+    public void StonePlay()
     {
         AkSoundEngine.PostEvent("PlayStone", gameObject);
     }
-    void WoodPlay()
+    public void WoodPlay()
     {
         AkSoundEngine.PostEvent("PlayWood", gameObject);
     }
-    void MetalPlay()
+    public void MetalPlay()
     {
         AkSoundEngine.PostEvent("PlayMetal", gameObject);
     }
-    void WrongPlay()
+    public void WrongPlay()
     {
         AkSoundEngine.PostEvent("PlayWrong", gameObject);
     }
-    void MenuMusicPlay()
+
+    public void MenuMusicPlay() // done
     {
+        ShopMusicStop();
+        BuildingMusicStop();
         AkSoundEngine.PostEvent("MenuMusic", gameObject);
     }
-    void ShopMusicPlay()
+    public void MenuMusicStop()
     {
+        AkSoundEngine.PostEvent("MenuMusicStop", gameObject);
+    }
+    public void ShopMusicPlay()
+    {
+        MenuMusicStop();
+        BuildingMusicStop();
         AkSoundEngine.PostEvent("ShopMusic", gameObject);
     }
-    void BuildingMusicPlay()
+    public void ShopMusicStop()
     {
+        AkSoundEngine.PostEvent("ShopMusicStop", gameObject);
+    }
+    public void BuildingMusicPlay()
+    {
+        MenuMusicStop();
+        ShopMusicStop();
         AkSoundEngine.PostEvent("BuildingMusic", gameObject);
     }
-    void VictoryMusicPlay()
+    public void BuildingMusicStop()
     {
+        AkSoundEngine.PostEvent("BuildingMusicStop", gameObject);
+    }
+    public void VictoryMusicPlay()
+    {
+        MenuMusicStop();
+        ShopMusicStop();
+        BuildingMusicStop();
         AkSoundEngine.PostEvent("VictoryMusic", gameObject);
     }
 }

@@ -43,6 +43,8 @@ public class Cabinet : MonoBehaviour
         {
             animator.SetBool("DoOpen", true);
             Util.ExecuteAfter(0.5f, this, () => animator.SetBool("DoOpen", false));
+
+            AudioManager.Instance?.OpeningDrawerPlay();
         }
     }
 
