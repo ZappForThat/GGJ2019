@@ -8,7 +8,8 @@ public class HouseBook : MonoBehaviour
     public Image image;
     public TextMeshProUGUI text;
     public VerticalLayoutGroup layout { get; private set; }
-    public Image InstructionsPage;
+    public Image InstructionsPage1;
+    public Image InstructionsPage2;
 
     public InstructionLine ExampleLogImage;
     public InstructionLine ExampleSawImage;
@@ -26,47 +27,37 @@ public class HouseBook : MonoBehaviour
         image.sprite = house.image;
         List<Item> items = house.GetItemList();
 
-        items.Add(Item.Log);
-        items.Add(Item.Hammer);
-        items.Add(Item.Nail);
-        items.Add(Item.Plank);
-        items.Add(Item.Saw);
-        items.Add(Item.Log);
-        items.Add(Item.Hammer);
-        items.Add(Item.Nail);
-        items.Add(Item.Plank);
-        items.Add(Item.Saw);
-        items.Add(Item.Log);
-        items.Add(Item.Hammer);
-        items.Add(Item.Nail);
-        items.Add(Item.Plank);
-        items.Add(Item.Saw);
-        
+        bool useSecondPage = items.Count > 8;
+
+        int i = 0;
         foreach (Item item in items)
         {
-            InstructionLine line = CreateText(item);
+            int half = items.Count / 2;
+            Image page = useSecondPage && i > half ? InstructionsPage2 : InstructionsPage1;
+            InstructionLine line = CreateText(item, page);
+            i++;
         }
     }
 
-    private InstructionLine CreateText(Item item)
+    private InstructionLine CreateText(Item item, Image page)
     {
         InstructionLine img;
         switch (item)
         {
             case Item.Log:
-                img = Instantiate(ExampleLogImage, InstructionsPage.transform);
+                img = Instantiate(ExampleLogImage, page.transform);
                 break;
             case Item.Plank:
-                img = Instantiate(ExamplePlankImage, InstructionsPage.transform);
+                img = Instantiate(ExamplePlankImage, page.transform);
                 break;
             case Item.Nail:
-                img = Instantiate(ExampleNailImage, InstructionsPage.transform);
+                img = Instantiate(ExampleNailImage, page.transform);
                 break;
             case Item.Hammer:
-                img = Instantiate(ExampleHammerImage, InstructionsPage.transform);
+                img = Instantiate(ExampleHammerImage, page.transform);
                 break;
             case Item.Saw:
-                img = Instantiate(ExampleSawImage, InstructionsPage.transform);
+                img = Instantiate(ExampleSawImage, page.transform);
                 break;
             default:
                 img = Instantiate(ExampleLogImage);
