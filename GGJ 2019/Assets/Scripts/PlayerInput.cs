@@ -14,7 +14,7 @@ public class PlayerInput : MonoBehaviour
     private HouseBuildManager houseBuildManager;
     
     [SerializeField]
-    private float actionCooldown = 0.5f;
+    private float actionCooldown = 0.35f;
 
     private Cabinet hoveredCabinet;
     private int currentVcam = 0;
