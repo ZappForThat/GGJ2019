@@ -38,7 +38,6 @@ public class Cabinet : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("IsHovered", hover);
-            AkSoundEngine.PostEvent("PlayWood", gameObject);
         }
     }
 
@@ -48,7 +47,6 @@ public class Cabinet : MonoBehaviour
         {
             animator.SetBool("DoOpen", true);
             Util.ExecuteAfter(0.5f, this, () => animator.SetBool("DoOpen", false));
-            AkSoundEngine.PostEvent("PlayOpenCabinet", gameObject);
         }
     }
 }
