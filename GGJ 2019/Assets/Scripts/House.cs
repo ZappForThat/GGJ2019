@@ -106,4 +106,14 @@ public class House : MonoBehaviour
     {
         return currentStage >= stages.Count;
     }
+
+    public List<Item> GetItemList()
+    {
+        List<Item> items = new List<Item>();
+        foreach (HouseStage stage in stages)
+        {
+            items.Add(stage.requiredItem);
+        }
+        return items;
+    }
 }
