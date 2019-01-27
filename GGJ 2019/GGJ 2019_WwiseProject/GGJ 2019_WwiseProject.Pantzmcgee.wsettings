@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{006A4FCA-C783-41FB-850B-3442C2D2ED45}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Q:\WebsiteMusic\GGJ2019"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Q:\WebsiteMusic\GGJ2019\Sound Effects"/>
 				<Property Name="Event Action List\{0B7E636C-238E-4AA4-826D-D1A44D7AB14A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{146D8744-7D32-4C61-B76D-BF56F9F9B71C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1B9EB05F-4C13-49C0-84BF-2DC984258639}\x64_Expand States" Type="string" Value=""/>
@@ -12,6 +12,7 @@
 				<Property Name="Event Action List\{3CE47B5F-8AA3-4259-A469-2F9FA6948E5A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3F2DD9D0-5DAA-45C5-85DC-4C9348F56305}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{558C398D-9EC9-4240-820D-C5CF8C8212F4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5EA7D385-3088-4F22-8E07-EECC364152EA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7454E9DF-EB18-4D07-BC02-11F2993C37B1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7ABB412B-8E60-4CD7-9FF6-E94C17D0DB7D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8093417A-FEAA-4293-905B-FED9EA2124D5}\x64_Expand States" Type="string" Value=""/>
