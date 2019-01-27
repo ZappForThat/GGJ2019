@@ -13,9 +13,12 @@ public class House : MonoBehaviour
     private List<HouseStage> stages = new List<HouseStage>();
     private int currentStage = 0;
     private Nail nail;
+    public int messups { get; private set; }
 
     private void Start()
     {
+        messups = 0;
+
         foreach (HouseStage stage in FindObjectsOfType<HouseStage>())
         {
             int index = stage.transform.GetSiblingIndex();
@@ -59,6 +62,11 @@ public class House : MonoBehaviour
     {
         Debug.Assert(currentStage >= 0 && currentStage < stages.Count, currentStage + " " + stages.Count);
         return stages[currentStage].requiredItem == item;
+    }
+
+    public void WrongItem()
+    {
+        messups++;
     }
 
     public void StartNail(int index)
