@@ -35,6 +35,7 @@ public class ItemFlyIn : MonoBehaviour
         public float fadeInTime;
         public float flyInTime;
         public Vector3 target;
+        public GameObject targetObj;
 
         private Vector3 initialPosition;
         public bool isDone { get; private set; }
@@ -84,12 +85,22 @@ public class ItemFlyIn : MonoBehaviour
                 fadeInTime = fadeInTime,
                 flyInTime = flyInTime,
                 item = item,
-                target = UIUtil.WorldToCanvas(canvas, cabinets[i].transform.position)
+                target = UIUtil.WorldToCanvas(canvas, cabinets[i].transform.position),
+                targetObj = cabinets[i].gameObject
             };
 
             flyIn.Start();
             flyIns.Add(flyIn);
         }
+
+        flyIns.Sort((x, y) =>
+        {
+            if (x.targetObj.transform.position.y == y.targetObj.transform.position.y)
+            {
+                return x.targetObj.transform.position.x.CompareTo(y.targetObj.transform.position.x);
+            }
+            return x.targetObj.transform.position.y.CompareTo(y.targetObj.transform.position.y);
+        });
 
         float startTime = Time.time;
         bool allDone = false;

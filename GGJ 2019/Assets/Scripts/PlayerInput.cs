@@ -13,6 +13,7 @@ public class PlayerInput : MonoBehaviour
     [SerializeField]
     private HouseBuildManager houseBuildManager;
 
+    private Cabinet hoveredCabinet;
     private int currentVcam = 0;
 
     void OnEnable()
@@ -22,20 +23,35 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hitInfo;
-            Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-            bool hit = Physics.Raycast(cameraRay, out hitInfo, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore);
+        RaycastHit hitInfo;
+        Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        bool hit = Physics.Raycast(cameraRay, out hitInfo, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore);
 
-            if (hit)
+        CabinetCollider collider = null;
+        if (hit)
+        {
+            collider = hitInfo.collider.GetComponent<CabinetCollider>();
+        }
+
+        if (collider?.cabinet != hoveredCabinet)
+        {
+            if (collider?.cabinet != null)
             {
-                CabinetCollider collider = hitInfo.collider.GetComponent<CabinetCollider>();
-                if (collider != null)
-                {
-                    houseBuildManager.ApplyItem(collider.cabinet.item);
-                }
+                collider.cabinet.SetHover(true);
             }
+
+            if (hoveredCabinet != null)
+            {
+                hoveredCabinet.SetHover(false);
+            }
+
+            hoveredCabinet = collider?.cabinet;
+        }
+
+        if (Input.GetMouseButtonDown(0) && hoveredCabinet != null)
+        {
+            hoveredCabinet.DoOpen();
+            houseBuildManager.ApplyItem(hoveredCabinet.item);
         }
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
