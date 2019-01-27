@@ -60,7 +60,7 @@ public class PlayerInput : MonoBehaviour
             var savedCabinet = hoveredCabinet;
             Util.ExecuteAfter(actionCooldown, this, () =>
             {
-                houseBuildManager.ApplyItem(savedCabinet.item);
+                houseBuildManager.ApplyItem(savedCabinet.GetItem());
             });
         }
 

@@ -78,7 +78,7 @@ public class ItemFlyIn : MonoBehaviour
         {
             UIItem item = Instantiate<UIItem>(itemPrefab, canvas.transform, false);
             item.transform.position = UIUtil.ScreenToCanvas(canvas, new Vector3(Screen.width * 0.75f, Screen.height * 0.5f, 0f));
-            item.Fill(cabinet.item);
+            item.Fill(cabinet.GetItem());
             SingleFlyIn flyIn = new SingleFlyIn {
                 //delay = i * delayBetween,
                 fadeInTime = fadeInTime,

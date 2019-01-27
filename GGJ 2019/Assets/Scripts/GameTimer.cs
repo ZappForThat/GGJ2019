@@ -69,7 +69,7 @@ public class GameTimer : MonoBehaviour
         }
 
         float timeLeft = Mathf.Max(duration - (Time.time - startTime), 0f);
-        text.text = string.Format("{0:0.00}", timeLeft);
+        text.text = string.Format("{0:0.0}", timeLeft);
 
         if (timeLeft <= 0f && on)
         {

@@ -92,8 +92,8 @@ public class GameManager : MonoBehaviour
 
     void StartDay()
     {
-        days[dayIndex].dayIntro.Play();
         days[dayIndex].dayIntro.stopped += OnDayIntroComplete;
+        days[dayIndex].dayIntro.Play();
         RandomizeCabinets();
     }
     
@@ -118,13 +118,13 @@ public class GameManager : MonoBehaviour
         {
             if (i < days[dayIndex].necessaryItems.Count)
             {
-                cabinets[i].item = days[dayIndex].necessaryItems[i];
+                cabinets[i].SetItem(days[dayIndex].necessaryItems[i]);
             }
             else
             {
                 var values = System.Enum.GetValues(typeof(Item));
                 Item randomItem = (Item)values.GetValue((int)Random.Range(0, values.Length));
-                cabinets[i].item = randomItem;
+                cabinets[i].SetItem(randomItem);
             }
         }
     }

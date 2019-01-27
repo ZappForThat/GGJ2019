@@ -4,7 +4,7 @@ using System.Collections;
 public class Cabinet : MonoBehaviour
 {
     [SerializeField]
-    public Item item;
+    private Item item;
 
     [SerializeField]
     private Animator animator;
@@ -26,11 +26,7 @@ public class Cabinet : MonoBehaviour
 
     private void Awake()
     {
-        hammers?.SetActive(item == Item.Hammer);
-        saws?.SetActive(item == Item.Saw);
-        nails?.SetActive(item == Item.Nail);
-        planks?.SetActive(item == Item.Plank);
-        logs?.SetActive(item == Item.Log);
+        SetItem(this.item);
     }
 
     public void SetHover(bool hover)
@@ -48,5 +44,20 @@ public class Cabinet : MonoBehaviour
             animator.SetBool("DoOpen", true);
             Util.ExecuteAfter(0.5f, this, () => animator.SetBool("DoOpen", false));
         }
+    }
+
+    public Item GetItem()
+    {
+        return item;
+    }
+
+    public void SetItem(Item item)
+    {
+        this.item = item;
+        hammers?.SetActive(item == Item.Hammer);
+        saws?.SetActive(item == Item.Saw);
+        nails?.SetActive(item == Item.Nail);
+        planks?.SetActive(item == Item.Plank);
+        logs?.SetActive(item == Item.Log);
     }
 }

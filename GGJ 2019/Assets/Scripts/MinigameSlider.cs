@@ -6,10 +6,13 @@ public class MinigameSlider : MonoBehaviour
     public float speed = 1.0f;
     public RectTransform sweetSpot;
     public CanvasGroup canvasGroup;
+    public Animator animator;
     private Slider slider;
 
     private float sweetSpotCenter = 0f;
     private float sweetSpotRange = 0f;
+
+    private bool go;
 
     private void Awake()
     {
@@ -23,11 +26,17 @@ public class MinigameSlider : MonoBehaviour
 
     public void Restart()
     {
+        go = true;
         slider.value = 0f;
     }
 
     private void Update()
     {
+        if (!go)
+        {
+            return;
+        }
+
         slider.value += Time.deltaTime * speed;
         if (slider.value >= slider.maxValue)
         {
@@ -49,5 +58,17 @@ public class MinigameSlider : MonoBehaviour
     public bool IsInSweetSpot()
     {
         return slider.value >= sweetSpotCenter - sweetSpotRange && slider.value <= sweetSpotCenter + sweetSpotRange;
+    }
+
+    public void DoWinOrLose(bool win)
+    {
+        go = false;
+        animator.SetBool("Win", win);
+        animator.SetBool("Lose", !win);
+        Util.ExecuteAfter(0.5f, this, () =>
+        {
+            animator.SetBool("Win", false);
+            animator.SetBool("Lose", false);
+        });
     }
 }
