@@ -21,6 +21,11 @@ public class MinigameSlider : MonoBehaviour
         UIUtil.SetCanvasGroupShown(canvasGroup, shown);
     }
 
+    public void Restart()
+    {
+        slider.value = 0f;
+    }
+
     private void Update()
     {
         slider.value += Time.deltaTime * speed;
@@ -35,7 +40,8 @@ public class MinigameSlider : MonoBehaviour
         this.sweetSpotRange = range;
         this.sweetSpotCenter = center;
 
-        float size = (slider.transform as RectTransform).sizeDelta.x * range * 2f;
+        // 1.9 to give it a tiny bit of fudge, 2.0 would actually be accurate
+        float size = (slider.transform as RectTransform).sizeDelta.x * range * 1.9f;
         sweetSpot.anchoredPosition = new Vector2((slider.transform as RectTransform).sizeDelta.x * center, 0f);
         sweetSpot.sizeDelta = new Vector2(size, sweetSpot.sizeDelta.y);
     }

@@ -5,6 +5,8 @@ public class Nail : MonoBehaviour
 {
     private Animator animator;
     public GameObject hammer;
+    public GameObject goodNail;
+    public GameObject badNail;
 
     private void Awake()
     {
@@ -27,14 +29,11 @@ public class Nail : MonoBehaviour
         yield return new WaitForSeconds(GetAnimationLength("HammerInNail"));
 
         hammer.gameObject.SetActive(false);
-        if (good)
+        goodNail.gameObject.SetActive(false);
+        if (!good)
         {
-            // Play particle effect, etc
-            this.gameObject.SetActive(false);
-        }
-        else
-        {
-            // Bent nail?
+            badNail.SetActive(true);
+            badNail.transform.rotation = badNail.transform.rotation * Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.forward);
         }
     }
 

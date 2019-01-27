@@ -28,7 +28,7 @@ public class ItemFlyIn : MonoBehaviour
         StartCoroutine(FlyInCoroutine(FindObjectsOfType<Cabinet>(), onComplete));
     }
 
-    public struct SingleFlyIn
+    public class SingleFlyIn
     {
         public UIItem item;
         public float delay;
@@ -74,22 +74,19 @@ public class ItemFlyIn : MonoBehaviour
     {
         List<SingleFlyIn> flyIns = new List<SingleFlyIn>();
         Vector2 spawnPosition = (canvas.transform as RectTransform).rect.center;
-        for (int i = 0; i <cabinets.Count; i++)
+        foreach (Cabinet cabinet in cabinets)
         {
             UIItem item = Instantiate<UIItem>(itemPrefab, canvas.transform, false);
-            item.transform.position = UIUtil.ScreenToCanvas(canvas, new Vector3(Screen.width / 2f, Screen.height/2f, 0f));
-            item.Fill(cabinets[i].item);
-
+            item.transform.position = UIUtil.ScreenToCanvas(canvas, new Vector3(Screen.width * 0.75f, Screen.height * 0.5f, 0f));
+            item.Fill(cabinet.item);
             SingleFlyIn flyIn = new SingleFlyIn {
-                delay = i * delayBetween,
+                //delay = i * delayBetween,
                 fadeInTime = fadeInTime,
                 flyInTime = flyInTime,
                 item = item,
-                target = UIUtil.WorldToCanvas(canvas, cabinets[i].transform.position),
-                targetObj = cabinets[i].gameObject
+                target = UIUtil.WorldToCanvas(canvas, cabinet.transform.position),
+                targetObj = cabinet.gameObject
             };
-
-            flyIn.Start();
             flyIns.Add(flyIn);
         }
 
@@ -99,8 +96,14 @@ public class ItemFlyIn : MonoBehaviour
             {
                 return x.targetObj.transform.position.x.CompareTo(y.targetObj.transform.position.x);
             }
-            return x.targetObj.transform.position.y.CompareTo(y.targetObj.transform.position.y);
+            return y.targetObj.transform.position.y.CompareTo(x.targetObj.transform.position.y);
         });
+
+        for (int i = 0; i < flyIns.Count; i++)
+        {
+            flyIns[i].delay = i * delayBetween;
+            flyIns[i].Start();
+        }
 
         float startTime = Time.time;
         bool allDone = false;

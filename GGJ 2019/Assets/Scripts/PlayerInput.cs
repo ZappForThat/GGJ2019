@@ -12,9 +12,14 @@ public class PlayerInput : MonoBehaviour
 
     [SerializeField]
     private HouseBuildManager houseBuildManager;
+    
+    [SerializeField]
+    private float actionCooldown = 0.35f;
 
     private Cabinet hoveredCabinet;
     private int currentVcam = 0;
+    private float lastActionTime = 0f;
+    private CheatSequence cheatSequence = new CheatSequence(new List<KeyCode> { KeyCode.BackQuote, KeyCode.W });
 
     void OnEnable()
     {
@@ -28,7 +33,7 @@ public class PlayerInput : MonoBehaviour
         bool hit = Physics.Raycast(cameraRay, out hitInfo, Mathf.Infinity, layerMask, QueryTriggerInteraction.Ignore);
 
         CabinetCollider collider = null;
-        if (hit)
+        if (hit && (Time.time - lastActionTime) >= actionCooldown)
         {
             collider = hitInfo.collider.GetComponent<CabinetCollider>();
         }
@@ -48,10 +53,15 @@ public class PlayerInput : MonoBehaviour
             hoveredCabinet = collider?.cabinet;
         }
 
-        if (Input.GetMouseButtonDown(0) && hoveredCabinet != null)
+        if (Input.GetMouseButtonDown(0) && hoveredCabinet != null && (Time.time - lastActionTime) >= actionCooldown)
         {
             hoveredCabinet.DoOpen();
-            houseBuildManager.ApplyItem(hoveredCabinet.item);
+            lastActionTime = Time.time;
+            var savedCabinet = hoveredCabinet;
+            Util.ExecuteAfter(actionCooldown, this, () =>
+            {
+                houseBuildManager.ApplyItem(savedCabinet.item);
+            });
         }
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -61,6 +71,11 @@ public class PlayerInput : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             SwitchVcam(-1);
+        }
+
+        if (cheatSequence.CheckCheat())
+        {
+            houseBuildManager.CheatHouseComplete();
         }
     }
 

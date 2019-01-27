@@ -10,12 +10,18 @@ public class House : MonoBehaviour
     [SerializeField]
     public Sprite image = null;
 
+    [SerializeField]
+    public GameObject completionParticles;
+
     private List<HouseStage> stages = new List<HouseStage>();
     private int currentStage = 0;
     private Nail nail;
+    public int mistakes { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
+        mistakes = 0;
+
         foreach (HouseStage stage in FindObjectsOfType<HouseStage>())
         {
             int index = stage.transform.GetSiblingIndex();
@@ -27,18 +33,15 @@ public class House : MonoBehaviour
             HouseStage alreadyExisting = stages[index];
             if (alreadyExisting != null)
             {
-                int existingIndex = GetLevel(alreadyExisting.transform, 0);
-                int newIndex = GetLevel(stage.transform, 0);
-                Debug.Assert(existingIndex != newIndex);
-                if (existingIndex > newIndex)
-                {
-                    stages[index] = stage;
-                }
+                Debug.LogError("THIS IS NOT GOOD, PLEASE CHECK FOR GRANDCHILD HOUSESTAGES", alreadyExisting);
             }
 
             stages[index] = stage;
         }
+    }
 
+    private void Start()
+    {
         foreach (HouseStage stage in stages)
         {
             stage?.SetQuality(HouseStage.Quality.None);
@@ -65,6 +68,11 @@ public class House : MonoBehaviour
     {
         Debug.Assert(currentStage >= 0 && currentStage < stages.Count, currentStage + " " + stages.Count);
         return stages[currentStage].requiredItem == item;
+    }
+
+    public void WrongItem()
+    {
+        mistakes++;
     }
 
     public void StartNail(int index)
@@ -100,10 +108,21 @@ public class House : MonoBehaviour
         HouseStage stage = stages[currentStage];
         stage?.SetQuality(HouseStage.Quality.Good);
         currentStage++;
+        Instantiate(completionParticles, stage.transform.position, stage.transform.rotation, null);
     }
 
     public bool IsComplete()
     {
         return currentStage >= stages.Count;
+    }
+
+    public List<Item> GetItemList()
+    {
+        List<Item> items = new List<Item>();
+        foreach (HouseStage stage in stages)
+        {
+            items.Add(stage.requiredItem);
+        }
+        return items;
     }
 }
