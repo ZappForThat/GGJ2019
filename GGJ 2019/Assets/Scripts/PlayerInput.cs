@@ -56,9 +56,10 @@ public class PlayerInput : MonoBehaviour
         {
             hoveredCabinet.DoOpen();
             lastActionTime = Time.time;
+            var savedCabinet = hoveredCabinet;
             Util.ExecuteAfter(actionCooldown, this, () =>
             {
-                houseBuildManager.ApplyItem(hoveredCabinet.item);
+                houseBuildManager.ApplyItem(savedCabinet.item);
             });
         }
 

@@ -10,6 +10,9 @@ public class House : MonoBehaviour
     [SerializeField]
     public Sprite image = null;
 
+    [SerializeField]
+    public GameObject completionParticles;
+
     private List<HouseStage> stages = new List<HouseStage>();
     private int currentStage = 0;
     private Nail nail;
@@ -102,6 +105,7 @@ public class House : MonoBehaviour
         HouseStage stage = stages[currentStage];
         stage?.SetQuality(HouseStage.Quality.Good);
         currentStage++;
+        Instantiate(completionParticles, stage.transform.position, stage.transform.rotation, null);
     }
 
     public bool IsComplete()
