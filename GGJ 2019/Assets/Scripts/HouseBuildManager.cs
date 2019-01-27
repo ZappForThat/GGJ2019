@@ -7,6 +7,12 @@ public class HouseBuildManager : MonoBehaviour
     private HouseList houseList = null;
 
     [SerializeField]
+    private PlayerInput playerInput = null;
+
+    [SerializeField]
+    private MinigameManager minigameManager = null;
+
+    [SerializeField]
     private GameObject spawnTarget = null;
 
     [SerializeField]
@@ -20,6 +26,12 @@ public class HouseBuildManager : MonoBehaviour
 
     [SerializeField]
     private HouseBook houseBook = null;
+
+    [SerializeField]
+    private float hammerRange = 0.15f;
+
+    [SerializeField]
+    private float sawRange = 0.05f;
 
     private House currentHouse = null;
     private List<GameObject> applyOnNextUpdate = new List<GameObject>();
@@ -49,10 +61,17 @@ public class HouseBuildManager : MonoBehaviour
     {
         if (currentHouse.IsCorrectItem(item))
         {
-            currentHouse.AdvanceHouse();
-            if (currentHouse.IsComplete())
+            if (item == Item.Hammer)
             {
-                OnHouseCompleted(currentHouse);
+                StartHammer();
+            }
+            else if (item == Item.Saw)
+            {
+                StartSaw();
+            }
+            else
+            {
+                AdvanceHouse();
             }
         }
         else
@@ -68,7 +87,7 @@ public class HouseBuildManager : MonoBehaviour
 
     public void SpawnNewHouse(House housePrefab)
     {
-        currentHouse = Instantiate<House>(housePrefab, spawnTarget.transform.position, spawnTarget.transform.rotation, this.transform);
+        currentHouse = Instantiate<House>(housePrefab, spawnTarget.transform.position, Quaternion.identity, null);
         houseBook.Fill(currentHouse);
     }
 
@@ -78,5 +97,59 @@ public class HouseBuildManager : MonoBehaviour
         GameObject itemPrefab = ItemMapper.Instance.Map(item);
         GameObject newItem = Instantiate(itemPrefab, throwOrigin.transform.position, throwOrigin.transform.rotation, currentHouse.transform);
         applyOnNextUpdate.Add(newItem);
+    }
+
+    private void AdvanceHouse()
+    {
+        currentHouse.AdvanceHouse();
+        if (currentHouse.IsComplete())
+        {
+            OnHouseCompleted(currentHouse);
+        }
+    }
+
+    private void StartHammer()
+    {
+        playerInput.enabled = false;
+        minigameManager.minigameResultCallback = OnHammerResult;
+        minigameManager.minigameEndCallback = StopHammer;
+        minigameManager.StartMinigame(hammerRange, currentHouse.GetNailsNumber());
+
+        currentHouse.StartNail(0);
+    }
+
+    private void OnHammerResult(int iteration, bool result)
+    {
+        currentHouse.FinishNail(result);
+        if (iteration + 1 < currentHouse.GetNailsNumber())
+        {
+            currentHouse.StartNail(iteration + 1);
+        }
+    }
+
+    private void StopHammer()
+    {
+        playerInput.enabled = true;
+        AdvanceHouse();
+    }
+
+    private void StartSaw()
+    {
+        playerInput.enabled = false;
+        minigameManager.minigameResultCallback = OnSawResult;
+        minigameManager.minigameEndCallback = StopSaw;
+        minigameManager.StartMinigame(sawRange, 1);
+    }
+
+    private void OnSawResult(int iteration, bool result)
+    {
+        Debug.Assert(iteration == 0);
+        currentHouse.DoSaw(result);
+    }
+
+    private void StopSaw()
+    {
+        playerInput.enabled = true;
+        AdvanceHouse();
     }
 }

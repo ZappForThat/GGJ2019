@@ -53,7 +53,7 @@ public class ItemFlyIn : MonoBehaviour
             }
             else if ((time - delay) < fadeInTime)
             {
-                item.canvasGroup.alpha = (fadeInTime - (time - delay)) / fadeInTime;
+                item.canvasGroup.alpha = ((time - delay) - fadeInTime) / fadeInTime;
             }
             else if ((time - delay - fadeInTime) < flyInTime)
             {
@@ -75,7 +75,8 @@ public class ItemFlyIn : MonoBehaviour
         Vector2 spawnPosition = (canvas.transform as RectTransform).rect.center;
         for (int i = 0; i <cabinets.Count; i++)
         {
-            UIItem item = Instantiate<UIItem>(itemPrefab, spawnPosition, Quaternion.identity, canvas.transform);
+            UIItem item = Instantiate<UIItem>(itemPrefab, canvas.transform, false);
+            item.transform.position = UIUtil.ScreenToCanvas(canvas, new Vector3(Screen.width / 2f, Screen.height/2f, 0f));
             item.Fill(cabinets[i].item);
 
             SingleFlyIn flyIn = new SingleFlyIn {
@@ -107,6 +108,11 @@ public class ItemFlyIn : MonoBehaviour
         while (!Input.anyKeyDown)
         {
             yield return null;
+        }
+
+        foreach (SingleFlyIn flyIn in flyIns)
+        {
+            Destroy(flyIn.item.gameObject);
         }
 
         onComplete();
