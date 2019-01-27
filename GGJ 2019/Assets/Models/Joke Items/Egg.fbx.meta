@@ -1,49 +1,14 @@
 fileFormatVersion: 2
-guid: 6f5c491407af4e248aa8636182c36201
+guid: d655d8edb44c4314d9f2a63f11a2779d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
-    100004: Cylinder
-    100006: Cylinder_001
-    100008: BirdStand
-    100010: HouseSimple
-    100012: HouseSimple_Roof
-    100014: HouseSimple_Window
     400000: //RootNode
-    400002: Cube
-    400004: Cylinder
-    400006: Cylinder_001
-    400008: BirdStand
-    400010: HouseSimple
-    400012: HouseSimple_Roof
-    400014: HouseSimple_Window
-    2100000: unnamed
-    2300000: Cube
-    2300002: Cylinder
-    2300004: Cylinder_001
-    2300006: BirdStand
-    2300008: HouseSimple
-    2300010: HouseSimple_Roof
-    2300012: HouseSimple_Window
-    3300000: Cube
-    3300002: Cylinder
-    3300004: Cylinder_001
-    3300006: BirdStand
-    3300008: HouseSimple
-    3300010: HouseSimple_Roof
-    3300012: HouseSimple_Window
-    4300000: Cylinder_001
-    4300002: Cylinder
-    4300004: Cube
-    4300006: HouseSimple_Roof
-    4300008: BirdStand
-    4300010: HouseSimple_Window
-    4300012: HouseSimple
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    2100000: lambert1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Egg
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -97,7 +62,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -124,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
