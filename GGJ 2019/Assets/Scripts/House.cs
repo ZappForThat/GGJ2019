@@ -27,13 +27,7 @@ public class House : MonoBehaviour
             HouseStage alreadyExisting = stages[index];
             if (alreadyExisting != null)
             {
-                int existingIndex = GetLevel(alreadyExisting.transform, 0);
-                int newIndex = GetLevel(stage.transform, 0);
-                Debug.Assert(existingIndex != newIndex);
-                if (existingIndex > newIndex)
-                {
-                    stages[index] = stage;
-                }
+                Debug.LogError("THIS IS NOT GOOD, PLEASE CHECK FOR GRANDCHILD HOUSESTAGES", alreadyExisting);
             }
 
             stages[index] = stage;
