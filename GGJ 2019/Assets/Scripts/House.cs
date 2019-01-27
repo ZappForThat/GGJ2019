@@ -89,12 +89,16 @@ public class House : MonoBehaviour
         nail.Finish(good);
     }
 
+    public void StartSaw()
+    {
+        stages[currentStage].GetTheLog().GetComponent<Nail>().SetShown(true);
+    }
+
     public void DoSaw(bool good)
     {
-        if (good)
-        {
-            stages[currentStage].GetTheLog().gameObject.SetActive(false);
-        }
+        //stages[currentStage].GetTheLog().gameObject.SetActive(false);
+        // HELL YEAH IT'S JANK
+        stages[currentStage].GetTheLog().GetComponent<Nail>().Finish(good);
     }
 
     public int GetNailsNumber()

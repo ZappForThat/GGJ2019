@@ -34,9 +34,37 @@
 				<Event Id="542074746" Name="PlayWrong" ObjectPath="\Events\SoundEffects\PlayWrong"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="101678205" Language="SFX">
-					<ShortName>Wrong.wav</ShortName>
-					<Path>SFX\Wrong_56D34C19.wem</Path>
+				<File Id="7445706" Language="SFX">
+					<ShortName>WrongTwo.wav</ShortName>
+					<Path>SFX\WrongTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="100689413" Language="SFX">
+					<ShortName>StoneTwo.wav</ShortName>
+					<Path>SFX\StoneTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="214082883" Language="SFX">
+					<ShortName>DrawerOpen.wav</ShortName>
+					<Path>SFX\DrawerOpen_56D34C19.wem</Path>
+				</File>
+				<File Id="283704488" Language="SFX">
+					<ShortName>HammerWood.wav</ShortName>
+					<Path>SFX\HammerWood_56D34C19.wem</Path>
+				</File>
+				<File Id="309938901" Language="SFX">
+					<ShortName>MetalTwo.wav</ShortName>
+					<Path>SFX\MetalTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="322802238" Language="SFX">
+					<ShortName>HammerMetal.wav</ShortName>
+					<Path>SFX\HammerMetal_56D34C19.wem</Path>
+				</File>
+				<File Id="326982584" Language="SFX">
+					<ShortName>FishOne.wav</ShortName>
+					<Path>SFX\FishOne_56D34C19.wem</Path>
+				</File>
+				<File Id="358337829" Language="SFX">
+					<ShortName>WoodTwo.wav</ShortName>
+					<Path>SFX\WoodTwo_56D34C19.wem</Path>
 				</File>
 				<File Id="367192478" Language="SFX">
 					<ShortName>StoneOne.wav</ShortName>
@@ -46,37 +74,77 @@
 					<ShortName>MetalOne.wav</ShortName>
 					<Path>SFX\MetalOne_56D34C19.wem</Path>
 				</File>
-				<File Id="441420634" Language="SFX">
-					<ShortName>Eggs.wav</ShortName>
-					<Path>SFX\Eggs_56D34C19.wem</Path>
-				</File>
 				<File Id="447246893" Language="SFX">
 					<ShortName>Saw.wav</ShortName>
 					<Path>SFX\Saw_56D34C19.wem</Path>
 				</File>
-				<File Id="487360453" Language="SFX">
-					<ShortName>Fish.wav</ShortName>
-					<Path>SFX\Fish_56D34C19.wem</Path>
+				<File Id="513458267" Language="SFX">
+					<ShortName>BirdChirpSingle3.wav</ShortName>
+					<Path>SFX\BirdChirpSingle3_56D34C19.wem</Path>
 				</File>
-				<File Id="505311630" Language="SFX">
-					<ShortName>BirdChirpOne.wav</ShortName>
-					<Path>SFX\BirdChirpOne_56D34C19.wem</Path>
+				<File Id="516179750" Language="SFX">
+					<ShortName>FishTwo.wav</ShortName>
+					<Path>SFX\FishTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="517387849" Language="SFX">
+					<ShortName>BirdChirpSingle1.wav</ShortName>
+					<Path>SFX\BirdChirpSingle1_56D34C19.wem</Path>
+				</File>
+				<File Id="526603668" Language="SFX">
+					<ShortName>FishThree.wav</ShortName>
+					<Path>SFX\FishThree_56D34C19.wem</Path>
+				</File>
+				<File Id="545288139" Language="SFX">
+					<ShortName>FishFour.wav</ShortName>
+					<Path>SFX\FishFour_56D34C19.wem</Path>
+				</File>
+				<File Id="575498191" Language="SFX">
+					<ShortName>BirdChirpMulti2.wav</ShortName>
+					<Path>SFX\BirdChirpMulti2_56D34C19.wem</Path>
+				</File>
+				<File Id="725321451" Language="SFX">
+					<ShortName>BirdChirpMulti3.wav</ShortName>
+					<Path>SFX\BirdChirpMulti3_56D34C19.wem</Path>
+				</File>
+				<File Id="728270188" Language="SFX">
+					<ShortName>EggsTwo.wav</ShortName>
+					<Path>SFX\EggsTwo_56D34C19.wem</Path>
 				</File>
 				<File Id="733500198" Language="SFX">
 					<ShortName>WoodOne.wav</ShortName>
 					<Path>SFX\WoodOne_56D34C19.wem</Path>
 				</File>
-				<File Id="998778944" Language="SFX">
-					<ShortName>OpeningDrawer.wav</ShortName>
-					<Path>SFX\OpeningDrawer_56D34C19.wem</Path>
+				<File Id="750903824" Language="SFX">
+					<ShortName>CabinetOpen.wav</ShortName>
+					<Path>SFX\CabinetOpen_56D34C19.wem</Path>
 				</File>
-				<File Id="1063521431" Language="SFX">
-					<ShortName>OpeningCabinet.wav</ShortName>
-					<Path>SFX\OpeningCabinet_56D34C19.wem</Path>
+				<File Id="759098272" Language="SFX">
+					<ShortName>WrongThree.wav</ShortName>
+					<Path>SFX\WrongThree_56D34C19.wem</Path>
 				</File>
-				<File Id="1065206831" Language="SFX">
-					<ShortName>HammerOne.wav</ShortName>
-					<Path>SFX\HammerOne_56D34C19.wem</Path>
+				<File Id="779294866" Language="SFX">
+					<ShortName>EggsThree.wav</ShortName>
+					<Path>SFX\EggsThree_56D34C19.wem</Path>
+				</File>
+				<File Id="799578354" Language="SFX">
+					<ShortName>EggOne.wav</ShortName>
+					<Path>SFX\EggOne_56D34C19.wem</Path>
+				</File>
+				<File Id="865643787" Language="SFX">
+					<ShortName>BirdChirpMulti1.wav</ShortName>
+					<Path>SFX\BirdChirpMulti1_56D34C19.wem</Path>
+				</File>
+				<File Id="867422819" Language="SFX">
+					<ShortName>WrongOne.wav</ShortName>
+					<Path>SFX\WrongOne_56D34C19.wem</Path>
+				</File>
+				<File Id="912550186" Language="SFX">
+					<ShortName>BirdChirpSingle2.wav</ShortName>
+					<Path>SFX\BirdChirpSingle2_56D34C19.wem</Path>
+				</File>
+				<File Id="950632559" Language="SFX">
+					<ShortName>HammerStone.wav</ShortName>
+					<Path>SFX\HammerStone_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -86,8 +154,12 @@
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2475438578" Name="BuildingMusic" ObjectPath="\Events\Default Work Unit\BuildingMusic"/>
+				<Event Id="853287946" Name="BuildingMusicStop" ObjectPath="\Events\Default Work Unit\BuildingMusicStop" MaxAttenuation="0.000000"/>
 				<Event Id="679636833" Name="MenuMusic" ObjectPath="\Events\Default Work Unit\MenuMusic"/>
+				<Event Id="2136433081" Name="MenuMusicStop" ObjectPath="\Events\Default Work Unit\MenuMusicStop" MaxAttenuation="0.000000"/>
 				<Event Id="2398092218" Name="ShopMusic" ObjectPath="\Events\Default Work Unit\ShopMusic"/>
+				<Event Id="697617506" Name="ShopMusicStop" ObjectPath="\Events\Default Work Unit\ShopMusicStop" MaxAttenuation="0.000000"/>
+				<Event Id="2539955706" Name="VictoryMusic" ObjectPath="\Events\Default Work Unit\VictoryMusic"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="28902583" Language="SFX">
@@ -101,6 +173,10 @@
 				<File Id="411701450" Language="SFX">
 					<ShortName>BirdShop.wav</ShortName>
 					<Path>SFX\BirdShop_56D34C19.wem</Path>
+				</File>
+				<File Id="692245920" Language="SFX">
+					<ShortName>VictoryGood.wav</ShortName>
+					<Path>SFX\VictoryGood_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
