@@ -26,7 +26,8 @@ public class Nail : MonoBehaviour
 
     private IEnumerator DoThing(bool good)
     {
-        yield return new WaitForSeconds(GetAnimationLength("HammerInNail"));
+        float greh = GetAnimationLength("HammerInNail") + GetAnimationLength("SawLog");
+        yield return new WaitForSeconds(greh);
 
         hammer.gameObject.SetActive(false);
         goodNail.gameObject.SetActive(false);

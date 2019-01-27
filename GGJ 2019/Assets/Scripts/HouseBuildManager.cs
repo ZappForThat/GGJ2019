@@ -146,6 +146,8 @@ public class HouseBuildManager : MonoBehaviour
         minigameManager.minigameResultCallback = OnSawResult;
         minigameManager.minigameEndCallback = StopSaw;
         minigameManager.StartMinigame(sawRange, 1);
+
+        currentHouse.StartSaw();
     }
 
     private void OnSawResult(int iteration, bool result)

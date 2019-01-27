@@ -141,10 +141,6 @@ public class GameManager : MonoBehaviour
         order.birdSequence.stopped += OnBirdSequenceComplete;
         order.birdSequence.Play();
 
-        vCamIntro.enabled = false;
-        vCamAfter.enabled = true;
-        timer.SetShown(true);
-
         AudioManager.Instance?.BuildingMusicPlay();
     }
 
@@ -156,6 +152,10 @@ public class GameManager : MonoBehaviour
         houseBuildManager.SpawnNewHouse(order.house);
         playerInput.enabled = true;
 
+        vCamIntro.enabled = false;
+        vCamAfter.enabled = true;
+
+        timer.SetShown(true);
         timer.OnTimerCompleted = () => OnHouseCompleted(order.house, true);
         timer.StartTimer(timePerOrder);
     }

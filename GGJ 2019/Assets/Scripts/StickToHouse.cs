@@ -13,6 +13,6 @@ public class StickToHouse : MonoBehaviour
 
     private bool HasHouseInHierarchy(Transform transform)
     {
-        return transform.CompareTag("House") || HasHouseInHierarchy(transform.parent);
+        return transform != null && (transform.CompareTag("House") || HasHouseInHierarchy(transform.parent));
     }
 }
