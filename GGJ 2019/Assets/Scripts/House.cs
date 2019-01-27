@@ -16,11 +16,11 @@ public class House : MonoBehaviour
     private List<HouseStage> stages = new List<HouseStage>();
     private int currentStage = 0;
     private Nail nail;
-    public int messups { get; private set; }
+    public int mistakes { get; private set; }
 
     private void Start()
     {
-        messups = 0;
+        mistakes = 0;
 
         foreach (HouseStage stage in FindObjectsOfType<HouseStage>())
         {
@@ -69,7 +69,7 @@ public class House : MonoBehaviour
 
     public void WrongItem()
     {
-        messups++;
+        mistakes++;
     }
 
     public void StartNail(int index)

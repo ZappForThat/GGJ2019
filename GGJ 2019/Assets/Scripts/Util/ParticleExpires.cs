@@ -13,10 +13,17 @@ public class ParticleExpires : MonoBehaviour
         StartCoroutine(ExpireCoroutine());
     }
 
+    public void Play()
+    {
+        particleSystem.Play();
+        StartCoroutine(ExpireCoroutine());
+    }
+
     IEnumerator ExpireCoroutine()
     {
         yield return new WaitForSeconds(expiryTime);
         var emission = particleSystem.emission;
         emission.enabled = false;
+        particleSystem.Stop();
     }
 }
