@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DeskWood
+  m_Name: Wall_Beige
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -91,7 +91,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _BottomColor: {r: 0.17030075, g: 0.8396226, b: 0.17269385, a: 0}
-    - _Color: {r: 0.98261696, g: 0.990566, b: 0.4999555, a: 1}
+    - _BottomColor: {r: 0.13917647, g: 0.25984594, b: 0.50980395, a: 0}
+    - _Color: {r: 0.93333334, g: 0.54852265, b: 0.4196078, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TopColor: {r: 0.8949356, g: 0, b: 1, a: 0}
+    - _TopColor: {r: 0.20229511, g: 0.16154902, b: 0.41960785, a: 0}
