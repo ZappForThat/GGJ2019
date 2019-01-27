@@ -13,7 +13,7 @@ public class House : MonoBehaviour
     [SerializeField]
     public GameObject completionParticles;
 
-    private List<HouseStage> stages = new List<HouseStage>();
+    private List<HouseStage> stages = null;
     private int currentStage = 0;
     private Nail nail;
     public int mistakes { get; private set; }
@@ -22,6 +22,7 @@ public class House : MonoBehaviour
     {
         mistakes = 0;
 
+        stages = new List<HouseStage>();
         foreach (HouseStage stage in FindObjectsOfType<HouseStage>())
         {
             int index = stage.transform.GetSiblingIndex();
@@ -33,7 +34,7 @@ public class House : MonoBehaviour
             HouseStage alreadyExisting = stages[index];
             if (alreadyExisting != null)
             {
-                Debug.LogError("THIS IS NOT GOOD, PLEASE CHECK FOR GRANDCHILD HOUSESTAGES", alreadyExisting);
+                Debug.LogError("THIS IS NOT GOOD, PLEASE CHECK FOR GRANDCHILD HOUSESTAGES", this);
             }
 
             stages[index] = stage;

@@ -143,6 +143,7 @@ public class GameManager : MonoBehaviour
 
     void OnDayIntroComplete(PlayableDirector playableDirector)
     {
+        days[dayIndex].dayIntro.stopped -= OnDayIntroComplete;
         currentCinematic = null;
         itemFlyIn.DoFlyIn(StartOrder);
     }
@@ -162,6 +163,7 @@ public class GameManager : MonoBehaviour
     {
         Day day = days[dayIndex];
         Order order = day.orders[orderIndex];
+        order.birdSequence.stopped -= OnBirdSequenceComplete;
 
         currentCinematic = null;
         houseBuildManager.SpawnNewHouse(order.house);
@@ -258,6 +260,7 @@ public class GameManager : MonoBehaviour
 
     void OutroFinished(PlayableDirector playableDirector)
     {
+        days[dayIndex].dayOutro.stopped -= OutroFinished;
         currentCinematic = null;
 
         dayIndex++;
@@ -276,6 +279,7 @@ public class GameManager : MonoBehaviour
 
     void OnTotallyEnd(PlayableDirector playableDirector)
     {
+        endCinematic.stopped -= OnTotallyEnd;
         currentCinematic = null;
         SceneManager.LoadScene("Credits");
     }
