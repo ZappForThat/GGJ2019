@@ -27,26 +27,13 @@ public class HouseBook : MonoBehaviour
         image.sprite = house.image;
         List<Item> items = house.GetItemList();
 
-        items.Add(Item.Log);
-        items.Add(Item.Hammer);
-        items.Add(Item.Nail);
-        items.Add(Item.Plank);
-        items.Add(Item.Saw);
-        items.Add(Item.Log);
-        items.Add(Item.Hammer);
-        items.Add(Item.Nail);
-        items.Add(Item.Plank);
-        items.Add(Item.Saw);
-        items.Add(Item.Log);
-        items.Add(Item.Hammer);
-        items.Add(Item.Nail);
-        items.Add(Item.Plank);
-        items.Add(Item.Saw);
+        bool useSecondPage = items.Count > 8;
 
         int i = 0;
         foreach (Item item in items)
         {
-            Image page = i > 8 ? InstructionsPage2 : InstructionsPage1;
+            int half = items.Count / 2;
+            Image page = useSecondPage && i > half ? InstructionsPage2 : InstructionsPage1;
             InstructionLine line = CreateText(item, page);
             i++;
         }
