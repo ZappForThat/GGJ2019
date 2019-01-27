@@ -25,7 +25,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Eggs" ID="{97D99DBA-1411-41B8-A7F3-3E8E3F34C290}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Egg" ID="{CA560297-5D20-44C7-9F10-1BE22934AB21}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -53,7 +53,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="OpeningCabinet" ID="{540E1F6A-19F1-48B4-A79C-7554C896EA17}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Drawer" ID="{3FE9B5D3-69C1-4822-940F-0BB42083FD0D}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -67,7 +67,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Fish" ID="{2EB1A5DF-E5BA-4F9F-9837-E8CE626BF5DC}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Fish" ID="{53FCE718-9C70-42AE-AC38-3A4041371799}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -81,7 +81,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="OpeningDrawer" ID="{E236EACE-8773-47EE-964E-AEB649BB61C9}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Drawer" ID="{3FE9B5D3-69C1-4822-940F-0BB42083FD0D}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -95,7 +95,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Wrong" ID="{4471C9AE-0432-48B5-B8AF-ADB0A24188C0}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Wrong" ID="{E7144F86-EB71-4507-9EC2-EAFE33B25D3D}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
