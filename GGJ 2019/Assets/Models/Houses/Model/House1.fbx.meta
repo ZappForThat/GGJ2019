@@ -1,29 +1,56 @@
 fileFormatVersion: 2
-guid: 6f5c491407af4e248aa8636182c36201
+guid: 4d384eba18888b84292fcb77e7cb4eac
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
-    100004: Cylinder
-    100006: Cylinder_001
+    100002: House1_Balcony
+    100004: House1_Balcony2
+    100006: House1_Base
+    100008: House1_Block1
+    100010: House1_Block2
+    100012: House1_Door
+    100014: House1_Roof
+    100016: House1_Window_Round
+    100018: House1_Window_Square
     400000: //RootNode
-    400002: Cube
-    400004: Cylinder
-    400006: Cylinder_001
-    2100000: unnamed
-    2300000: Cube
-    2300002: Cylinder
-    2300004: Cylinder_001
-    3300000: Cube
-    3300002: Cylinder
-    3300004: Cylinder_001
-    4300000: Cylinder_001
-    4300002: Cylinder
-    4300004: Cube
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    400002: House1_Balcony
+    400004: House1_Balcony2
+    400006: House1_Base
+    400008: House1_Block1
+    400010: House1_Block2
+    400012: House1_Door
+    400014: House1_Roof
+    400016: House1_Window_Round
+    400018: House1_Window_Square
+    2100000: lambert1
+    2300000: House1_Balcony
+    2300002: House1_Balcony2
+    2300004: House1_Base
+    2300006: House1_Block1
+    2300008: House1_Block2
+    2300010: House1_Door
+    2300012: House1_Roof
+    2300014: House1_Window_Round
+    2300016: House1_Window_Square
+    3300000: House1_Balcony
+    3300002: House1_Balcony2
+    3300004: House1_Base
+    3300006: House1_Block1
+    3300008: House1_Block2
+    3300010: House1_Door
+    3300012: House1_Roof
+    3300014: House1_Window_Round
+    3300016: House1_Window_Square
+    4300000: House1_Balcony
+    4300002: House1_Balcony2
+    4300004: House1_Roof
+    4300006: House1_Base
+    4300008: House1_Door
+    4300010: House1_Block1
+    4300012: House1_Window_Round
+    4300014: House1_Window_Square
+    4300016: House1_Block2
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -77,7 +104,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -104,7 +131,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
