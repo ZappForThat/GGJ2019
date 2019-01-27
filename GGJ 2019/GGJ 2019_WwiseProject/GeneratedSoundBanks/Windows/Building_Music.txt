@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2475438578	BuildingMusic			\Default Work Unit\BuildingMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	380229314	BirdHouse	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdHouse_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdHouse		3732424
+

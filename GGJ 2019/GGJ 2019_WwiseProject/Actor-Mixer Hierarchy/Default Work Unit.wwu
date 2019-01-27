@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}" SchemaVersion="89">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="BirdHouse" ID="{65C1C924-7B3F-4B11-98B0-493CC8F94110}" ShortID="458220431">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BirdHouse" ID="{CB5644F3-9FF9-4AEB-A001-C10BD051136E}" ShortID="380229314">
+							<Language>SFX</Language>
+							<AudioFile>BirdHouse.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BirdHouse" ID="{CB5644F3-9FF9-4AEB-A001-C10BD051136E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
