@@ -10,11 +10,11 @@ public class HouseBook : MonoBehaviour
     public VerticalLayoutGroup layout { get; private set; }
     public Image InstructionsPage;
 
-    public Image ExampleLogImage;
-    public Image ExampleSawImage;
-    public Image ExampleNailImage;
-    public Image ExamplePlankImage;
-    public Image ExampleHammerImage;
+    public InstructionLine ExampleLogImage;
+    public InstructionLine ExampleSawImage;
+    public InstructionLine ExampleNailImage;
+    public InstructionLine ExamplePlankImage;
+    public InstructionLine ExampleHammerImage;
 
     private void Awake()
     {
@@ -31,16 +31,26 @@ public class HouseBook : MonoBehaviour
         items.Add(Item.Nail);
         items.Add(Item.Plank);
         items.Add(Item.Saw);
-
+        items.Add(Item.Log);
+        items.Add(Item.Hammer);
+        items.Add(Item.Nail);
+        items.Add(Item.Plank);
+        items.Add(Item.Saw);
+        items.Add(Item.Log);
+        items.Add(Item.Hammer);
+        items.Add(Item.Nail);
+        items.Add(Item.Plank);
+        items.Add(Item.Saw);
+        
         foreach (Item item in items)
         {
-            CreateText(item);
+            InstructionLine line = CreateText(item);
         }
     }
 
-    private void CreateText(Item item)
+    private InstructionLine CreateText(Item item)
     {
-        Image img;
+        InstructionLine img;
         switch (item)
         {
             case Item.Log:
@@ -63,5 +73,6 @@ public class HouseBook : MonoBehaviour
                 break;
         }
         img.gameObject.SetActive(true);
+        return img;
     }
 }
