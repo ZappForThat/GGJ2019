@@ -1,8 +1,14 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class HouseStage : MonoBehaviour
 {
+    [SerializeField]
+    private List<Nail> nails = new List<Nail>();
+
+    [SerializeField]
+    private GameObject sawLog = null;
+
     public enum Quality
     {
         None,
@@ -23,7 +29,13 @@ public class HouseStage : MonoBehaviour
         }
     }
 
-    //public GameObject GetNailLocations()
-    //{
-    //}
+    public List<Nail> GetNails()
+    {
+        return nails;
+    }
+
+    public GameObject GetTheLog()
+    {
+        return sawLog;
+    }
 }
