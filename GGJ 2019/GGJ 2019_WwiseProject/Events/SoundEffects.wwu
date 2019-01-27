@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="HammerOne" ID="{D183F23F-CB9E-4070-9DFD-5BABE874E641}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Hammer" ID="{E7A6AF53-FD96-443B-AEBF-DE89E6064875}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -109,7 +109,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="BirdChirpOne" ID="{368BC23F-7E55-4B28-B8B1-A7BB372D7158}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Chirp" ID="{0ACF21C2-5B49-44E4-9017-3499A624D169}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -123,7 +123,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="StoneOne" ID="{CBDCCC01-8892-405D-832D-A1DD28D07453}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Stone" ID="{706E99B3-6D50-4CA6-8BC4-33DC06D9A2DC}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -137,7 +137,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="WoodOne" ID="{F8AAF1C2-3263-44A2-AFFD-E088B48DBA68}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Wood" ID="{41B4C2E0-E893-4C90-84FA-30B88E0FF5F4}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -151,7 +151,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MetalOne" ID="{6406B977-49EA-4084-8A36-090BBADD7E1A}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Metal" ID="{389CB602-EA3A-421E-9267-3A20B59F5C64}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
