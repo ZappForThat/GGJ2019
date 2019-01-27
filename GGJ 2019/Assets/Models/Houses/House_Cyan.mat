@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: House_Yellow
+  m_Name: House_Cyan
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -100,8 +100,8 @@ Material:
     - __dirty: 0
     m_Colors:
     - _AOColor: {r: 0.235944, g: 0.1490196, b: 0.5568628, a: 0}
-    - _BottomColor: {r: 0.7830189, g: 0.57559747, b: 0.39520293, a: 0}
+    - _BottomColor: {r: 0.32156864, g: 0.7176471, b: 0.6978628, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _TestColor: {r: 0.6284959, g: 0.7735849, b: 0.2079922, a: 0}
-    - _TopColor: {r: 1, g: 0.99649054, b: 0.5613208, a: 0}
+    - _TopColor: {r: 0.8820755, g: 1, b: 0.9988678, a: 0}
