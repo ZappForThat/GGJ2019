@@ -65,7 +65,7 @@ public class MinigameSlider : MonoBehaviour
         go = false;
         animator.SetBool("Win", win);
         animator.SetBool("Lose", !win);
-        Util.ExecuteAfter(0.5f, this, () =>
+        Util.ExecuteAfter(0.1f, this, () =>
         {
             animator.SetBool("Win", false);
             animator.SetBool("Lose", false);
