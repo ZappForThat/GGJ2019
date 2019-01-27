@@ -12,15 +12,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	3992911277	PlayChirp			\SoundEffects\PlayChirp	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	100689413	StoneTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneTwo		378304
 	101678205	Wrong	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Wrong_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wrong		343744
-	367192478	StoneOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\StoneOne		378304
-	390449415	MetalOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\MetalOne		414784
+	126288350	BirdChirpTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpTwo		230464
+	218639415	HammerFour	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerFour_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\HammerFour		345664
+	237184884	HammerThree	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\HammerThree		345664
+	255385721	HammerFive	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerFive_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\HammerFive		345664
+	309938901	MetalTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalTwo		414784
+	358337829	WoodTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\WoodTwo		460864
+	367192478	StoneOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneOne		378304
+	390449415	MetalOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalOne		414784
 	441420634	Eggs	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Eggs_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Eggs		332224
 	447246893	Saw	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Saw_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Saw		460864
 	487360453	Fish	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Fish_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish		337984
-	505311630	BirdChirpOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdChirpOne		230464
-	733500198	WoodOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodOne		460864
+	664404193	HammerTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\HammerTwo		345664
+	733500198	WoodOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\WoodOne		460864
+	771249696	BirdChirpThree	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpThree		230464
 	998778944	OpeningDrawer	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\OpeningDrawer_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\OpeningDrawer		368704
 	1063521431	OpeningCabinet	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\OpeningCabinet_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\OpeningCabinet		376384
-	1065206831	HammerOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\HammerOne		345664
+	1065206831	HammerOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\HammerOne		345664
 
