@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
         AudioManager.Instance?.MenuMusicPlay();
     }
 
-    public void HammerPlay()
+    public void HammerPlay() // done
     {
         AkSoundEngine.PostEvent("PlayHammer", gameObject);
     }
@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("PlayFish", gameObject);
     }
-    public void OpeningCabinetPlay() //NA
+    public void OpeningCabinetPlay() // NA
     {
         AkSoundEngine.PostEvent("PlayOpenCab", gameObject);
     }
@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("PlayOpenDrawer", gameObject);
     }
-    public void SawPlay()
+    public void SawPlay() // done
     {
         AkSoundEngine.PostEvent("PlaySaw", gameObject);
     }
@@ -68,7 +68,7 @@ public class AudioManager : MonoBehaviour
         BuildingMusicStop();
         AkSoundEngine.PostEvent("MenuMusic", gameObject);
     }
-    public void MenuMusicStop()
+    public void MenuMusicStop() // done
     {
         AkSoundEngine.PostEvent("MenuMusicStop", gameObject);
     }
@@ -78,25 +78,32 @@ public class AudioManager : MonoBehaviour
         BuildingMusicStop();
         AkSoundEngine.PostEvent("ShopMusic", gameObject);
     }
-    public void ShopMusicStop()
+    public void ShopMusicStop() // done
     {
         AkSoundEngine.PostEvent("ShopMusicStop", gameObject);
     }
-    public void BuildingMusicPlay()
+    public void BuildingMusicPlay() // done
     {
         MenuMusicStop();
         ShopMusicStop();
         AkSoundEngine.PostEvent("BuildingMusic", gameObject);
     }
-    public void BuildingMusicStop()
+    public void BuildingMusicStop() // done
     {
         AkSoundEngine.PostEvent("BuildingMusicStop", gameObject);
     }
-    public void VictoryMusicPlay()
+    public void VictoryMusicGoodPlay() // done
     {
         MenuMusicStop();
         ShopMusicStop();
         BuildingMusicStop();
         AkSoundEngine.PostEvent("VictoryMusic", gameObject);
+    }
+    public void VictoryMusicBadPlay() // done
+    {
+        MenuMusicStop();
+        ShopMusicStop();
+        BuildingMusicStop();
+        AkSoundEngine.PostEvent("VictoryMusicBad", gameObject);
     }
 }
