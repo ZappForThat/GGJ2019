@@ -24,6 +24,18 @@ public class Cabinet : MonoBehaviour
     [SerializeField]
     private GameObject logs;
 
+    [SerializeField]
+    private GameObject bricks;
+
+    [SerializeField]
+    private GameObject eggs;
+
+    [SerializeField]
+    private GameObject fidgetSpinners;
+
+    [SerializeField]
+    private GameObject fish;
+
     private void Awake()
     {
         SetItem(this.item);
@@ -59,5 +71,10 @@ public class Cabinet : MonoBehaviour
         nails?.SetActive(item == Item.Nail);
         planks?.SetActive(item == Item.Plank);
         logs?.SetActive(item == Item.Log);
+
+        bricks?.SetActive(item == Item.Brick);
+        eggs?.SetActive(item == Item.Egg);
+        fidgetSpinners?.SetActive(item == Item.FidgetSpinner);
+        fish?.SetActive(item == Item.Fish);
     }
 }

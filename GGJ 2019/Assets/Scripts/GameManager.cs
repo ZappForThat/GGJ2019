@@ -110,6 +110,7 @@ public class GameManager : MonoBehaviour
         }  
     }
 
+    private static List<Item> jokeItems = new List<Item> { Item.Brick, Item.Egg, Item.Fish, Item.FidgetSpinner };
     void RandomizeCabinets()
     {
         Cabinet[] cabinets = FindObjectsOfType<Cabinet>();
@@ -122,9 +123,8 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                var values = System.Enum.GetValues(typeof(Item));
-                Item randomItem = (Item)values.GetValue((int)Random.Range(0, values.Length));
-                cabinets[i].SetItem(randomItem);
+                Item randomJunkItem = jokeItems[(int)Random.Range(0, jokeItems.Count)];
+                cabinets[i].SetItem(randomJunkItem);
             }
         }
     }
