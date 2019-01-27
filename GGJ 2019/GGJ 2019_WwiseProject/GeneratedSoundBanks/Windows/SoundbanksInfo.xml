@@ -34,9 +34,37 @@
 				<Event Id="542074746" Name="PlayWrong" ObjectPath="\Events\SoundEffects\PlayWrong"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="100689413" Language="SFX">
+					<ShortName>StoneTwo.wav</ShortName>
+					<Path>SFX\StoneTwo_56D34C19.wem</Path>
+				</File>
 				<File Id="101678205" Language="SFX">
 					<ShortName>Wrong.wav</ShortName>
 					<Path>SFX\Wrong_56D34C19.wem</Path>
+				</File>
+				<File Id="126288350" Language="SFX">
+					<ShortName>BirdChirpTwo.wav</ShortName>
+					<Path>SFX\BirdChirpTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="218639415" Language="SFX">
+					<ShortName>HammerFour.wav</ShortName>
+					<Path>SFX\HammerFour_56D34C19.wem</Path>
+				</File>
+				<File Id="237184884" Language="SFX">
+					<ShortName>HammerThree.wav</ShortName>
+					<Path>SFX\HammerThree_56D34C19.wem</Path>
+				</File>
+				<File Id="255385721" Language="SFX">
+					<ShortName>HammerFive.wav</ShortName>
+					<Path>SFX\HammerFive_56D34C19.wem</Path>
+				</File>
+				<File Id="309938901" Language="SFX">
+					<ShortName>MetalTwo.wav</ShortName>
+					<Path>SFX\MetalTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="358337829" Language="SFX">
+					<ShortName>WoodTwo.wav</ShortName>
+					<Path>SFX\WoodTwo_56D34C19.wem</Path>
 				</File>
 				<File Id="367192478" Language="SFX">
 					<ShortName>StoneOne.wav</ShortName>
@@ -58,13 +86,17 @@
 					<ShortName>Fish.wav</ShortName>
 					<Path>SFX\Fish_56D34C19.wem</Path>
 				</File>
-				<File Id="505311630" Language="SFX">
-					<ShortName>BirdChirpOne.wav</ShortName>
-					<Path>SFX\BirdChirpOne_56D34C19.wem</Path>
+				<File Id="664404193" Language="SFX">
+					<ShortName>HammerTwo.wav</ShortName>
+					<Path>SFX\HammerTwo_56D34C19.wem</Path>
 				</File>
 				<File Id="733500198" Language="SFX">
 					<ShortName>WoodOne.wav</ShortName>
 					<Path>SFX\WoodOne_56D34C19.wem</Path>
+				</File>
+				<File Id="771249696" Language="SFX">
+					<ShortName>BirdChirpThree.wav</ShortName>
+					<Path>SFX\BirdChirpThree_56D34C19.wem</Path>
 				</File>
 				<File Id="998778944" Language="SFX">
 					<ShortName>OpeningDrawer.wav</ShortName>
@@ -86,8 +118,12 @@
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2475438578" Name="BuildingMusic" ObjectPath="\Events\Default Work Unit\BuildingMusic"/>
+				<Event Id="853287946" Name="BuildingMusicStop" ObjectPath="\Events\Default Work Unit\BuildingMusicStop" MaxAttenuation="0.000000"/>
 				<Event Id="679636833" Name="MenuMusic" ObjectPath="\Events\Default Work Unit\MenuMusic"/>
+				<Event Id="2136433081" Name="MenuMusicStop" ObjectPath="\Events\Default Work Unit\MenuMusicStop" MaxAttenuation="0.000000"/>
 				<Event Id="2398092218" Name="ShopMusic" ObjectPath="\Events\Default Work Unit\ShopMusic"/>
+				<Event Id="697617506" Name="ShopMusicStop" ObjectPath="\Events\Default Work Unit\ShopMusicStop" MaxAttenuation="0.000000"/>
+				<Event Id="2539955706" Name="VictoryMusic" ObjectPath="\Events\Default Work Unit\VictoryMusic"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="28902583" Language="SFX">
@@ -101,6 +137,10 @@
 				<File Id="411701450" Language="SFX">
 					<ShortName>BirdShop.wav</ShortName>
 					<Path>SFX\BirdShop_56D34C19.wem</Path>
+				</File>
+				<File Id="692245920" Language="SFX">
+					<ShortName>VictoryGood.wav</ShortName>
+					<Path>SFX\VictoryGood_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
