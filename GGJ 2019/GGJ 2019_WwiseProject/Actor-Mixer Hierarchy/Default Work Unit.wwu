@@ -4,9 +4,21 @@
 		<WorkUnit Name="Default Work Unit" ID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="BirdHouse" ID="{65C1C924-7B3F-4B11-98B0-493CC8F94110}" ShortID="458220431">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+							<ObjectRef Name="BuildingMusicIncrease" ID="{4B9CFD44-0D4C-4C52-AA7E-AAA6B1EF7871}" WorkUnitID="{FC3E6CBC-54CB-4DC2-992E-3898095BE5DB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
@@ -20,6 +32,52 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="BirdHouse" ID="{CB5644F3-9FF9-4AEB-A001-C10BD051136E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Title Theme" ID="{A2BEB6F7-6C9D-4D91-A75F-9770F7F6483F}" ShortID="294707271">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Title Theme" ID="{303C7580-3818-4F56-90CB-B3823491B96E}" ShortID="28902583">
+							<Language>SFX</Language>
+							<AudioFile>Title Theme.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Title Theme" ID="{303C7580-3818-4F56-90CB-B3823491B96E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BirdShop" ID="{55DAED0E-A328-4DF9-B047-C9F711884697}" ShortID="532101267">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BirdShop" ID="{FD7CDB62-2584-4286-8C82-80F9255D797E}" ShortID="411701450">
+							<Language>SFX</Language>
+							<AudioFile>BirdShop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BirdShop" ID="{FD7CDB62-2584-4286-8C82-80F9255D797E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

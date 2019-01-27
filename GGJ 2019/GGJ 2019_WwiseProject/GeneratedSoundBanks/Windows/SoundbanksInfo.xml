@@ -11,24 +11,34 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="386293085" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Building_Music</ObjectPath>
-			<ShortName>Building_Music</ShortName>
-			<Path>Building_Music.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2475438578" Name="BuildingMusic" ObjectPath="\Events\Default Work Unit\BuildingMusic"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="380229314" Language="SFX">
-					<ShortName>BirdHouse.wav</ShortName>
-					<Path>SFX\BirdHouse_56D34C19.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2475438578" Name="BuildingMusic" ObjectPath="\Events\Default Work Unit\BuildingMusic"/>
+				<Event Id="679636833" Name="MenuMusic" ObjectPath="\Events\Default Work Unit\MenuMusic"/>
+				<Event Id="2398092218" Name="ShopMusic" ObjectPath="\Events\Default Work Unit\ShopMusic"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="28902583" Language="SFX">
+					<ShortName>Title Theme.wav</ShortName>
+					<Path>SFX\Title Theme_8956FC97.wem</Path>
+				</File>
+				<File Id="380229314" Language="SFX">
+					<ShortName>BirdHouse.wav</ShortName>
+					<Path>SFX\BirdHouse_8956FC97.wem</Path>
+				</File>
+				<File Id="411701450" Language="SFX">
+					<ShortName>BirdShop.wav</ShortName>
+					<Path>SFX\BirdShop_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

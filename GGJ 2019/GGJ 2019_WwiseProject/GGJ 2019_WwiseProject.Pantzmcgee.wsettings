@@ -3,8 +3,11 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{006A4FCA-C783-41FB-850B-3442C2D2ED45}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Q:\WebsiteMusic\GGJ2019\Building"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Q:\WebsiteMusic\GGJ2019\Birdshop"/>
 				<Property Name="Event Action List\{0B7E636C-238E-4AA4-826D-D1A44D7AB14A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2F093363-1838-41D8-A9E4-DFB1651CA2ED}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{558C398D-9EC9-4240-820D-C5CF8C8212F4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7454E9DF-EB18-4D07-BC02-11F2993C37B1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
