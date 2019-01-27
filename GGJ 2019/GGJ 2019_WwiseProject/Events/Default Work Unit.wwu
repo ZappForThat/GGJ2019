@@ -45,6 +45,49 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MenuMusicStop" ID="{D0F800EA-FD0D-4613-9421-51C9FF644B5C}">
+					<ChildrenList>
+						<Action Name="" ID="{0BB2A4EC-3694-444D-92AD-8DAEC67565D4}" ShortID="623762329">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title Theme" ID="{A2BEB6F7-6C9D-4D91-A75F-9770F7F6483F}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShopMusicStop" ID="{C9394E60-82B6-4825-BE66-AA5946067570}">
+					<ChildrenList>
+						<Action Name="" ID="{EC76ABB1-32E9-48BD-A793-9894ABC589BD}" ShortID="854045582">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdShop" ID="{55DAED0E-A328-4DF9-B047-C9F711884697}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BuildingMusicStop" ID="{DA5700C2-1E81-47A6-9914-7B46414B64FD}">
+					<ChildrenList>
+						<Action Name="" ID="{E4BE266C-AA8E-4A12-9941-45251BFB54B9}" ShortID="312502411">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdHouse" ID="{65C1C924-7B3F-4B11-98B0-493CC8F94110}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VictoryMusic" ID="{7ABB412B-8E60-4CD7-9FF6-E94C17D0DB7D}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
