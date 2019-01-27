@@ -8,8 +8,13 @@ public class HouseBook : MonoBehaviour
     public Image image;
     public TextMeshProUGUI text;
     public VerticalLayoutGroup layout { get; private set; }
-    public Text exampleText;
     public Image InstructionsPage;
+
+    public Image ExampleLogImage;
+    public Image ExampleSawImage;
+    public Image ExampleNailImage;
+    public Image ExamplePlankImage;
+    public Image ExampleHammerImage;
 
     private void Awake()
     {
@@ -35,27 +40,28 @@ public class HouseBook : MonoBehaviour
 
     private void CreateText(Item item)
     {
-        Text text = Instantiate(exampleText, InstructionsPage.transform);
+        Image img;
         switch (item)
         {
             case Item.Log:
-                text.text = "Log";
+                img = Instantiate(ExampleLogImage, InstructionsPage.transform);
                 break;
             case Item.Plank:
-                text.text = "Plank";
+                img = Instantiate(ExamplePlankImage, InstructionsPage.transform);
                 break;
             case Item.Nail:
-                text.text = "Nail";
+                img = Instantiate(ExampleNailImage, InstructionsPage.transform);
                 break;
             case Item.Hammer:
-                text.text = "Hammer";
+                img = Instantiate(ExampleHammerImage, InstructionsPage.transform);
                 break;
             case Item.Saw:
-                text.text = "Saw";
+                img = Instantiate(ExampleSawImage, InstructionsPage.transform);
                 break;
             default:
+                img = Instantiate(ExampleLogImage);
                 break;
         }
-        text.gameObject.SetActive(true);
+        img.gameObject.SetActive(true);
     }
 }
