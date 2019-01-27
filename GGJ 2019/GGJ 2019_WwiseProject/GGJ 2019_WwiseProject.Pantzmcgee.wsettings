@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{006A4FCA-C783-41FB-850B-3442C2D2ED45}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Q:\WebsiteMusic\GGJ2019\SoundEffectsTest"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Q:\WebsiteMusic\GGJ2019"/>
 				<Property Name="Event Action List\{0B7E636C-238E-4AA4-826D-D1A44D7AB14A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{146D8744-7D32-4C61-B76D-BF56F9F9B71C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1B9EB05F-4C13-49C0-84BF-2DC984258639}\x64_Expand States" Type="string" Value=""/>
@@ -13,10 +13,15 @@
 				<Property Name="Event Action List\{3F2DD9D0-5DAA-45C5-85DC-4C9348F56305}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{558C398D-9EC9-4240-820D-C5CF8C8212F4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7454E9DF-EB18-4D07-BC02-11F2993C37B1}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7ABB412B-8E60-4CD7-9FF6-E94C17D0DB7D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8093417A-FEAA-4293-905B-FED9EA2124D5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9C7B3E1B-3042-46C7-8538-1478A96676CE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A13592A5-0643-4660-B2FE-8C4C7967B501}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AA0CA59A-24A5-4EF8-8D01-6FDA41909DFC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C9394E60-82B6-4825-BE66-AA5946067570}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D0F800EA-FD0D-4613-9421-51C9FF644B5C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D9D787EA-4673-4F8E-A38D-D1F808DE788B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DA5700C2-1E81-47A6-9914-7B46414B64FD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E2DC0496-6E70-4D90-990A-1024A57B9EE4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EA343175-BE97-4B46-B374-04119C07641F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
@@ -38,7 +43,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="WEL/DDGs7kSTYayLhu+PVg=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="rsAVcDZJYEWGE3SlRFU/HJueNc+DAAZPiKGAw5MG5IU="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="zAIQSezTb0Oy4c3vKNZyhwH/////////NekyLgjZfUql+3llyh+93wH/////////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="NekyLgjZfUql+3llyh+93wH/////////zAIQSezTb0Oy4c3vKNZyhwH/////////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
