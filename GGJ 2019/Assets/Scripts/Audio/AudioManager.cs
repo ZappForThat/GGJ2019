@@ -6,10 +6,30 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance = null;
 
+    private bool bird;
+    private float birdTimer;
+
     private void Awake()
     {
         Instance = this;
         DontDestroyOnLoad(this);
+    }
+
+    private void Update()
+    {
+        if (bird)
+        {
+            birdTimer += Time.deltaTime;
+            if (birdTimer >= 5)
+            {
+                AkSoundEngine.PostEvent("PlayChirp", gameObject);
+                birdTimer -= 5;
+            }
+        }
+        else
+        {
+            birdTimer = 5;
+        }
     }
 
     private void Start()
@@ -23,7 +43,11 @@ public class AudioManager : MonoBehaviour
     }
     public void BirdChirpPlay()
     {
-        AkSoundEngine.PostEvent("PlayChirp", gameObject);
+        bird = true;
+    }
+    public void StopBirdChirpPlay()
+    {
+        bird = false;
     }
     public void EggPlay()
     {
@@ -86,6 +110,7 @@ public class AudioManager : MonoBehaviour
     {
         MenuMusicStop();
         ShopMusicStop();
+        StopBirdChirpPlay();
         AkSoundEngine.PostEvent("BuildingMusic", gameObject);
     }
     public void BuildingMusicStop() // done

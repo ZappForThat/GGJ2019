@@ -132,6 +132,8 @@ public class GameManager : MonoBehaviour
     void OnDayIntroComplete(PlayableDirector playableDirector)
     {
         itemFlyIn.DoFlyIn(StartOrder);
+
+        AudioManager.Instance?.BirdChirpPlay();
     }
 
     void StartOrder()
@@ -140,8 +142,6 @@ public class GameManager : MonoBehaviour
         Order order = day.orders[orderIndex];
         order.birdSequence.stopped += OnBirdSequenceComplete;
         order.birdSequence.Play();
-
-        AudioManager.Instance?.BuildingMusicPlay();
     }
 
     void OnBirdSequenceComplete(PlayableDirector director)
@@ -233,6 +233,8 @@ public class GameManager : MonoBehaviour
     {
         days[dayIndex].dayOutro.stopped += OutroFinished;
         days[dayIndex].dayOutro.Play();
+        
+        AudioManager.Instance?.ShopMusicPlay();
     }
 
     void OutroFinished(PlayableDirector playableDirector)
