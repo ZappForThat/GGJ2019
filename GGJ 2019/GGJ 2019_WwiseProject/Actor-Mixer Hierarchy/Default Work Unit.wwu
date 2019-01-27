@@ -578,6 +578,44 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="VictoryBad" ID="{064E26A8-ECD9-4D57-B26F-A26EE3C0D303}" ShortID="729071346">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="VictoryBad" ID="{2B5E5792-EA99-4FC7-88EC-4D06510EEE27}" ShortID="242769093">
+							<Language>SFX</Language>
+							<AudioFile>VictoryBad.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="VictoryBad" ID="{2B5E5792-EA99-4FC7-88EC-4D06510EEE27}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="VictoryGood" ID="{805265FA-D4D4-4708-914B-82B31B9B007F}" ShortID="78626593">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="VictoryGood" ID="{FB871F85-8784-48C7-89AC-37676D106317}" ShortID="692245920">
+							<Language>SFX</Language>
+							<AudioFile>VictoryGood.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="VictoryGood" ID="{FB871F85-8784-48C7-89AC-37676D106317}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

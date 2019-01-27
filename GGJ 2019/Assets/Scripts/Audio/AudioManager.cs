@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-
-
+    
     void HammerPlay()
     {
         AkSoundEngine.PostEvent("PlayHammer", gameObject);
