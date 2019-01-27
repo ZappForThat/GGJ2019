@@ -6,7 +6,6 @@
 				<Sound Name="BirdHouse" ID="{65C1C924-7B3F-4B11-98B0-493CC8F94110}" ShortID="458220431">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
 						<Property Name="OutputBusVolume" Type="Real64">
 							<ValueList>
 								<Value>-2</Value>
@@ -73,6 +72,7 @@
 				</Sound>
 				<Sound Name="BirdShop" ID="{55DAED0E-A328-4DF9-B047-C9F711884697}" ShortID="532101267">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-3</Value>
