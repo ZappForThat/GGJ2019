@@ -144,6 +144,8 @@ public class GameManager : MonoBehaviour
         vCamIntro.enabled = false;
         vCamAfter.enabled = true;
         timer.SetShown(true);
+
+        AudioManager.Instance?.BuildingMusicPlay();
     }
 
     void OnBirdSequenceComplete(PlayableDirector director)
