@@ -32,8 +32,11 @@ public class MinigameSlider : MonoBehaviour
 
     public void ConfigureSweetSpot(float center, float range)
     {
-        float size = (slider.transform as RectTransform).sizeDelta.y * range;
-        sweetSpot.anchoredPosition = new Vector2((slider.transform as RectTransform).sizeDelta.y * center, 0f);
+        this.sweetSpotRange = range;
+        this.sweetSpotCenter = center;
+
+        float size = (slider.transform as RectTransform).sizeDelta.x * range * 2f;
+        sweetSpot.anchoredPosition = new Vector2((slider.transform as RectTransform).sizeDelta.x * center, 0f);
         sweetSpot.sizeDelta = new Vector2(size, sweetSpot.sizeDelta.y);
     }
 

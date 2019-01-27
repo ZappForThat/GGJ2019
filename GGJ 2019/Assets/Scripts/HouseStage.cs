@@ -4,6 +4,9 @@ using System.Collections.Generic;
 public class HouseStage : MonoBehaviour
 {
     [SerializeField]
+    public Item requiredItem;
+
+    [SerializeField]
     private List<Nail> nails = new List<Nail>();
 
     [SerializeField]

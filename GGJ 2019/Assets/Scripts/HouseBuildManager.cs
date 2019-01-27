@@ -144,7 +144,7 @@ public class HouseBuildManager : MonoBehaviour
     private void OnSawResult(int iteration, bool result)
     {
         Debug.Assert(iteration == 0);
-        currentHouse.DoSaw();
+        currentHouse.DoSaw(result);
     }
 
     private void StopSaw()
