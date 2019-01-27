@@ -19,6 +19,7 @@ public class PlayerInput : MonoBehaviour
     private Cabinet hoveredCabinet;
     private int currentVcam = 0;
     private float lastActionTime = 0f;
+    private CheatSequence cheatSequence = new CheatSequence(new List<KeyCode> { KeyCode.BackQuote, KeyCode.W });
 
     void OnEnable()
     {
@@ -70,6 +71,11 @@ public class PlayerInput : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             SwitchVcam(-1);
+        }
+
+        if (cheatSequence.CheckCheat())
+        {
+            houseBuildManager.CheatHouseComplete();
         }
     }
 

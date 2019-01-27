@@ -8,26 +8,188 @@ ModelImporter:
     100004: Countertop
     100006: Drawer
     100008: Windowframe
+    100010: Countertop_001
+    100012: Countertop_003
+    100014: Countertop_004
+    100016: Countertop_005
+    100018: Cube
+    100020: Cube_001
+    100022: Cube_003
+    100024: Floor
+    100026: Ref_Desk
+    100028: Ref_Desk_001
+    100030: Wall_F
+    100032: Wall_L
+    100034: Wall_R
+    100036: Cube_002
+    100038: Countertop_Single
+    100040: Countertop_Single_001
+    100042: Countertop_Single_002
+    100044: Ref_Desk_002
+    100046: Windowframe_001
+    100048: LampBase
+    100050: LampBase_001
+    100052: Lampshade
+    100054: Lampshade_001
+    100056: Coffee_Cup
+    100058: Ceiling
+    100060: Wall_B
     400000: //RootNode
     400002: CabinetBase
     400004: Countertop
     400006: Drawer
     400008: Windowframe
+    400010: Countertop_001
+    400012: Countertop_003
+    400014: Countertop_004
+    400016: Countertop_005
+    400018: Cube
+    400020: Cube_001
+    400022: Cube_003
+    400024: Floor
+    400026: Ref_Desk
+    400028: Ref_Desk_001
+    400030: Wall_F
+    400032: Wall_L
+    400034: Wall_R
+    400036: Cube_002
+    400038: Countertop_Single
+    400040: Countertop_Single_001
+    400042: Countertop_Single_002
+    400044: Ref_Desk_002
+    400046: Windowframe_001
+    400048: LampBase
+    400050: LampBase_001
+    400052: Lampshade
+    400054: Lampshade_001
+    400056: Coffee_Cup
+    400058: Ceiling
+    400060: Wall_B
     2100000: unnamed
+    2100002: WoodTeal
+    2100004: WoodPurple
+    2100006: Wall
+    2100008: White
+    2100010: Wall_Beige
+    2100012: CoffeeCup
+    2100014: Coffee
     2300000: CabinetBase
     2300002: Countertop
     2300004: Drawer
     2300006: Windowframe
+    2300008: Countertop_001
+    2300010: Countertop_003
+    2300012: Countertop_004
+    2300014: Countertop_005
+    2300016: Cube
+    2300018: Cube_001
+    2300020: Cube_003
+    2300022: Floor
+    2300024: Ref_Desk
+    2300026: Ref_Desk_001
+    2300028: Wall_F
+    2300030: Wall_L
+    2300032: Wall_R
+    2300034: Cube_002
+    2300036: Countertop_Single
+    2300038: Countertop_Single_001
+    2300040: Countertop_Single_002
+    2300042: Ref_Desk_002
+    2300044: Windowframe_001
+    2300046: LampBase
+    2300048: LampBase_001
+    2300050: Lampshade
+    2300052: Lampshade_001
+    2300054: Coffee_Cup
+    2300056: Ceiling
+    2300058: Wall_B
     3300000: CabinetBase
     3300002: Countertop
     3300004: Drawer
     3300006: Windowframe
+    3300008: Countertop_001
+    3300010: Countertop_003
+    3300012: Countertop_004
+    3300014: Countertop_005
+    3300016: Cube
+    3300018: Cube_001
+    3300020: Cube_003
+    3300022: Floor
+    3300024: Ref_Desk
+    3300026: Ref_Desk_001
+    3300028: Wall_F
+    3300030: Wall_L
+    3300032: Wall_R
+    3300034: Cube_002
+    3300036: Countertop_Single
+    3300038: Countertop_Single_001
+    3300040: Countertop_Single_002
+    3300042: Ref_Desk_002
+    3300044: Windowframe_001
+    3300046: LampBase
+    3300048: LampBase_001
+    3300050: Lampshade
+    3300052: Lampshade_001
+    3300054: Coffee_Cup
+    3300056: Ceiling
+    3300058: Wall_B
     4300000: Drawer
     4300002: CabinetBase
     4300004: Countertop
     4300006: Windowframe
+    4300008: Countertop_005
+    4300010: Countertop_004
+    4300012: Countertop_003
+    4300014: Countertop_001
+    4300016: Ref_Desk_001
+    4300018: Cube_003
+    4300020: Cube_001
+    4300022: Cube
+    4300024: Floor
+    4300026: Ref_Desk
+    4300028: Wall_L
+    4300030: Wall_R
+    4300032: Wall_F
+    4300034: Cube_002
+    4300036: Ref_Desk_002
+    4300038: Countertop_Single_002
+    4300040: Countertop_Single_001
+    4300042: Countertop_Single
+    4300044: Windowframe_001
+    4300046: Lampshade_001
+    4300048: LampBase_001
+    4300050: LampBase
+    4300052: Lampshade
+    4300054: Coffee_Cup
+    4300056: Wall_B
+    4300058: Ceiling
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 46bee782f0e28244187ce36e7063905b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Beige
+    second: {fileID: 2100000, guid: 46bee782f0e28244187ce36e7063905b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 33a95ac2a8c52bc47b183323015226fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodPurple
+    second: {fileID: 2100000, guid: 932d77d1d8eff66479af7a7677e10bc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodTeal
+    second: {fileID: 2100000, guid: 0425af0e0a910174fb55dbe71bc1d7db, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -67,7 +229,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

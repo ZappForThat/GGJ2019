@@ -34,13 +34,22 @@ public class GameManager : MonoBehaviour
     private int mediumReactionMistakeThreshold = 10;
 
     [SerializeField]
-    private ParticleExpires goodReaction = null;
+    private GameObject goodReactionSpawnPoint = null;
 
     [SerializeField]
-    private ParticleExpires mediumReaction = null;
+    private GameObject mediumReactionSpawnPoint = null;
 
     [SerializeField]
-    private ParticleExpires badReaction = null;
+    private GameObject badReactionSpawnPoint = null;
+
+    [SerializeField]
+    private GameObject goodReactionPrefab = null;
+
+    [SerializeField]
+    private GameObject mediumReactionPrefab = null;
+
+    [SerializeField]
+    private GameObject badReactionPrefab = null;
 
     private List<House> completedHouses = new List<House>();
 
@@ -78,19 +87,42 @@ public class GameManager : MonoBehaviour
             rigidbody.isKinematic = true;
         }
 
+        GameObject location = null;
+        GameObject prefab = null;
         if (house.mistakes < goodReactionMistakeThreshold)
         {
-            goodReaction.Play();
+            location = goodReactionSpawnPoint;
+            prefab = goodReactionPrefab;
         }
         else if (house.mistakes < mediumReactionMistakeThreshold)
         {
-            mediumReaction.Play();
+            location = mediumReactionSpawnPoint;
+            prefab = mediumReactionPrefab;
         }
         else
         {
-            badReaction.Play();
+            location = badReactionSpawnPoint;
+            prefab = badReactionPrefab;
         }
 
-        yield return new WaitForSeconds(1.0f);
+        Instantiate(prefab, location.transform.position, location.transform.rotation, null);
+
+        yield return new WaitForSeconds(3f);
+
+        float startTime = Time.time;
+        float animTime = 1f;
+        Vector3 initial = house.transform.position;
+        Vector3 target = initial + (-Vector3.right * 10.0f);
+        while (Time.time - startTime < animTime)
+        {
+            house.transform.position = Util.EaseInOut(initial, target, Time.time - startTime, animTime);
+            yield return null;
+        }
+
+        playerInput.enabled = true;
+        house.gameObject.SetActive(false);
+        completedHouses.Add(house);
+
+        houseBuildManager.SpawnNewRandomHouse();
     }
 }
