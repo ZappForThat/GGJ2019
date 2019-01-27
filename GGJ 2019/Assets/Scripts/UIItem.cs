@@ -13,8 +13,19 @@ public class UIItem : MonoBehaviour
     [SerializeField]
     private Text text;
 
+    [SerializeField]
+    private Image image;
+
     public void Fill(Item item)
     {
-        text.text = item.ToString();
+        if (text != null)
+        {
+            text.text = item.ToString();
+        }
+
+        if (image != null)
+        {
+            image.sprite = ItemImageMapper.Instance.Map(item);
+        }
     }
 }

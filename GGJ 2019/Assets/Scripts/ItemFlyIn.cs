@@ -77,7 +77,7 @@ public class ItemFlyIn : MonoBehaviour
         foreach (Cabinet cabinet in cabinets)
         {
             UIItem item = Instantiate<UIItem>(itemPrefab, canvas.transform, false);
-            item.transform.position = UIUtil.ScreenToCanvas(canvas, new Vector3(Screen.width / 2f, Screen.height/2f, 0f));
+            item.transform.position = UIUtil.ScreenToCanvas(canvas, new Vector3(Screen.width * 0.75f, Screen.height * 0.5f, 0f));
             item.Fill(cabinet.item);
             SingleFlyIn flyIn = new SingleFlyIn {
                 //delay = i * delayBetween,
