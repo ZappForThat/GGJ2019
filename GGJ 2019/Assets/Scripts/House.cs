@@ -18,7 +18,7 @@ public class House : MonoBehaviour
     private Nail nail;
     public int mistakes { get; private set; }
 
-    private void Start()
+    private void Awake()
     {
         mistakes = 0;
 
@@ -38,7 +38,10 @@ public class House : MonoBehaviour
 
             stages[index] = stage;
         }
+    }
 
+    private void Start()
+    {
         foreach (HouseStage stage in stages)
         {
             stage?.SetQuality(HouseStage.Quality.None);
