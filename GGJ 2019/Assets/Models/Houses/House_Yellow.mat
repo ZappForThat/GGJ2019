@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: White
+  m_Name: House_Yellow
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -94,7 +94,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TexScale: 0.3
+    - _TexScale: 6
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 0
@@ -104,4 +104,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _TestColor: {r: 0.6284959, g: 0.7735849, b: 0.2079922, a: 0}
-    - _TopColor: {r: 1, g: 1, b: 1, a: 0}
+    - _TopColor: {r: 0.8862745, g: 0.88117987, b: 0.3960784, a: 0}
