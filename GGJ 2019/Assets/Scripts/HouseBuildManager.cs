@@ -96,7 +96,7 @@ public class HouseBuildManager : MonoBehaviour
     {
         GameObject throwOrigin = throwOrigins[(int)Random.Range(0, throwOrigins.Count)];
         GameObject itemPrefab = ItemMapper.Instance.Map(item);
-        GameObject newItem = Instantiate(itemPrefab, throwOrigin.transform.position, throwOrigin.transform.rotation, currentHouse.transform);
+        GameObject newItem = Instantiate(itemPrefab, throwOrigin.transform.position, Random.rotationUniform, currentHouse.transform);
         applyOnNextUpdate.Add(newItem);
     }
 

@@ -62,10 +62,8 @@ public class MinigameManager : MonoBehaviour
             return;
         }
 
-        Debug.Log(slider.IsInSweetSpot());
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log(slider.IsInSweetSpot() ? "GOOD" : "BAD");
             minigameResultCallback?.Invoke(currentIteration, slider.IsInSweetSpot());
             currentIteration++;
             if (currentIteration >= iterations)
