@@ -1,61 +1,14 @@
 fileFormatVersion: 2
-guid: f5c8ef2e7dc8f634598938f0398cefca
+guid: 640a909219fcae44eab3643fff05e1ee
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: House3_Base
-    100004: House3_Block1
-    100006: House3_Block2
-    100008: House3_Door
-    100010: House3_Roof
-    100012: House3_Window
-    100014: House3_Column1
-    100016: House3_Column2
-    100018: House3_Column3
-    100020: House3_Column4
     400000: //RootNode
-    400002: House3_Base
-    400004: House3_Block1
-    400006: House3_Block2
-    400008: House3_Door
-    400010: House3_Roof
-    400012: House3_Window
-    400014: House3_Column1
-    400016: House3_Column2
-    400018: House3_Column3
-    400020: House3_Column4
     2100000: lambert1
-    2300000: House3_Base
-    2300002: House3_Block1
-    2300004: House3_Block2
-    2300006: House3_Door
-    2300008: House3_Roof
-    2300010: House3_Window
-    2300012: House3_Column1
-    2300014: House3_Column2
-    2300016: House3_Column3
-    2300018: House3_Column4
-    3300000: House3_Base
-    3300002: House3_Block1
-    3300004: House3_Block2
-    3300006: House3_Door
-    3300008: House3_Roof
-    3300010: House3_Window
-    3300012: House3_Column1
-    3300014: House3_Column2
-    3300016: House3_Column3
-    3300018: House3_Column4
-    4300000: House3_Base
-    4300002: House3_Door
-    4300004: House3_Window
-    4300006: House3_Block1
-    4300008: House3_Roof
-    4300010: House3_Block2
-    4300012: House3_Column2
-    4300014: House3_Column3
-    4300016: House3_Column1
-    4300018: House3_Column4
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: BirdHouse
   externalObjects: {}
   materials:
     importMaterials: 1

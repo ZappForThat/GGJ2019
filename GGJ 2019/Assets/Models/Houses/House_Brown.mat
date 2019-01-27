@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: House_White
+  m_Name: House_Brown
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -100,8 +100,8 @@ Material:
     - __dirty: 0
     m_Colors:
     - _AOColor: {r: 0.235944, g: 0.1490196, b: 0.5568628, a: 0}
-    - _BottomColor: {r: 0.7176471, g: 0.32156864, b: 0.64587504, a: 0}
+    - _BottomColor: {r: 0.6509804, g: 0.37196013, b: 0.2862745, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _TestColor: {r: 0.6284959, g: 0.7735849, b: 0.2079922, a: 0}
-    - _TopColor: {r: 1, g: 1, b: 1, a: 0}
+    - _TopColor: {r: 0.7254902, g: 0.5938485, b: 0.39215687, a: 0}
