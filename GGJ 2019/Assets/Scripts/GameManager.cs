@@ -144,8 +144,6 @@ public class GameManager : MonoBehaviour
         vCamIntro.enabled = false;
         vCamAfter.enabled = true;
         timer.SetShown(true);
-        introPlayableDirector.stopped += OnIntroPlayableComplete;
-        introPlayableDirector.Play();
 
         AudioManager.Instance?.BuildingMusicPlay();
     }
