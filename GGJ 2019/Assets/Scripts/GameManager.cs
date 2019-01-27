@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     {
         public PlayableDirector birdSequence;
         public House house;
+        public HouseDisplay houseDisplay;
+        public Bird bird;
     }
 
     [System.Serializable]
@@ -77,7 +79,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private PlayableDirector endCinematic;
 
-    private List<House> completedHouses = new List<House>();
+    private PlayableDirector currentCinematic;
     private int dayIndex = 0;
     private int orderIndex = 0;
 
@@ -90,10 +92,20 @@ public class GameManager : MonoBehaviour
         StartDay();
     }
 
+    private void Update()
+    {
+        if (currentCinematic != null && currentCinematic.state == PlayState.Playing && Input.GetKeyDown(KeyCode.Escape))
+        {
+            currentCinematic.time = currentCinematic.duration;
+            currentCinematic.Evaluate();
+        }
+    }
+
     void StartDay()
     {
         days[dayIndex].dayIntro.stopped += OnDayIntroComplete;
         days[dayIndex].dayIntro.Play();
+        currentCinematic = days[dayIndex].dayIntro;
         RandomizeCabinets();
     }
     
@@ -131,6 +143,7 @@ public class GameManager : MonoBehaviour
 
     void OnDayIntroComplete(PlayableDirector playableDirector)
     {
+        currentCinematic = null;
         itemFlyIn.DoFlyIn(StartOrder);
     }
 
@@ -140,6 +153,7 @@ public class GameManager : MonoBehaviour
         Order order = day.orders[orderIndex];
         order.birdSequence.stopped += OnBirdSequenceComplete;
         order.birdSequence.Play();
+        currentCinematic = order.birdSequence;
 
         AudioManager.Instance?.BuildingMusicPlay();
     }
@@ -149,6 +163,7 @@ public class GameManager : MonoBehaviour
         Day day = days[dayIndex];
         Order order = day.orders[orderIndex];
 
+        currentCinematic = null;
         houseBuildManager.SpawnNewHouse(order.house);
         playerInput.enabled = true;
 
@@ -179,26 +194,31 @@ public class GameManager : MonoBehaviour
 
         GameObject location = null;
         GameObject prefab = null;
+        float result = 0;
         if (!house.IsComplete() || timeRanOut)
         {
             // Timer ran out
             location = badReactionSpawnPoint;
             prefab = badReactionPrefab;
+            result = -1f;
         }
         else if (house.mistakes < goodReactionMistakeThreshold)
         {
             location = goodReactionSpawnPoint;
             prefab = goodReactionPrefab;
+            result = 1f;
         }
         else if (house.mistakes < mediumReactionMistakeThreshold)
         {
             location = mediumReactionSpawnPoint;
             prefab = mediumReactionPrefab;
+            result = 0f;
         }
         else
         {
             location = badReactionSpawnPoint;
             prefab = badReactionPrefab;
+            result = -1f;
         }
 
         Instantiate(prefab, location.transform.position, location.transform.rotation, null);
@@ -215,8 +235,8 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        house.gameObject.SetActive(false);
-        completedHouses.Add(house);
+        days[dayIndex].orders[orderIndex].bird.SetReaction(result);
+        days[dayIndex].orders[orderIndex].houseDisplay.Fill(house, days[dayIndex].orders[orderIndex].bird);
 
         orderIndex++;
         if (orderIndex >= days[dayIndex].orders.Count)
@@ -233,16 +253,20 @@ public class GameManager : MonoBehaviour
     {
         days[dayIndex].dayOutro.stopped += OutroFinished;
         days[dayIndex].dayOutro.Play();
+        currentCinematic = days[dayIndex].dayIntro;
     }
 
     void OutroFinished(PlayableDirector playableDirector)
     {
+        currentCinematic = null;
+
         dayIndex++;
         orderIndex = 0;
         if (dayIndex >= days.Count)
         {
             endCinematic.stopped += OnTotallyEnd;
             endCinematic.Play();
+            currentCinematic = endCinematic;
         }
         else
         {
@@ -252,6 +276,7 @@ public class GameManager : MonoBehaviour
 
     void OnTotallyEnd(PlayableDirector playableDirector)
     {
+        currentCinematic = null;
         SceneManager.LoadScene("Credits");
     }
 }
