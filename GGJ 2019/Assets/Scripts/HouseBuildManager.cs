@@ -109,6 +109,11 @@ public class HouseBuildManager : MonoBehaviour
         }
     }
 
+    public void CheatHouseComplete()
+    {
+        OnHouseCompleted(currentHouse);
+    }
+
     private void StartHammer()
     {
         playerInput.enabled = false;
