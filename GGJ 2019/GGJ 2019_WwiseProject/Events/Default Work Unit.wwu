@@ -17,6 +17,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MenuMusic" ID="{7454E9DF-EB18-4D07-BC02-11F2993C37B1}">
+					<ChildrenList>
+						<Action Name="" ID="{3BFB1B23-4133-45CC-9BB8-0EE87F17AFFE}" ShortID="310037248">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title Theme" ID="{A2BEB6F7-6C9D-4D91-A75F-9770F7F6483F}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShopMusic" ID="{2F093363-1838-41D8-A9E4-DFB1651CA2ED}">
+					<ChildrenList>
+						<Action Name="" ID="{15E022DA-E4E3-4043-B061-9F42F93AC5B6}" ShortID="943639358">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdShop" ID="{55DAED0E-A328-4DF9-B047-C9F711884697}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

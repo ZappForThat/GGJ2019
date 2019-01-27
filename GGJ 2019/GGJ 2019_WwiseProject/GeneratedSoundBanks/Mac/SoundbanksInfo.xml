@@ -15,6 +15,15 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Building_Music</ObjectPath>
 			<ShortName>Building_Music</ShortName>
 			<Path>Building_Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2475438578" Name="BuildingMusic" ObjectPath="\Events\Default Work Unit\BuildingMusic"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="380229314" Language="SFX">
+					<ShortName>BirdHouse.wav</ShortName>
+					<Path>SFX\BirdHouse_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
