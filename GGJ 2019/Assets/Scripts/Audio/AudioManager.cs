@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Instance = null;
 
+    private void Awake()
+    {
+        Instance = this;
+        DontDestroyOnLoad(this);
+        AudioManager.Instance?.MenuMusicPlay();
+    }
 
     void HammerPlay()
     {
@@ -50,6 +57,7 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("PlayWrong", gameObject);
     }
+    
     void MenuMusicPlay()
     {
         AkSoundEngine.PostEvent("MenuMusic", gameObject);
