@@ -77,6 +77,7 @@ public class HouseBuildManager : MonoBehaviour
         else
         {
             ThrowItem(item);
+            currentHouse.WrongItem();
         }
     }
 

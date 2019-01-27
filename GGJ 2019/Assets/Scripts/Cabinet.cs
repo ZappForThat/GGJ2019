@@ -34,7 +34,7 @@ public class Cabinet : MonoBehaviour
         if (animator != null)
         {
             animator.SetBool("DoOpen", true);
-            Util.OnNextFrame(this, () => animator.SetBool("DoOpen", false));
+            Util.ExecuteAfter(0.5f, this, () => animator.SetBool("DoOpen", false));
         }
     }
 }

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Blue
+  m_Name: House_Blue
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -94,7 +94,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TexScale: 0.3
+    - _TexScale: 6
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 0
