@@ -15,10 +15,22 @@ public class Cabinet : MonoBehaviour
     [SerializeField]
     private GameObject saws;
 
+    [SerializeField]
+    private GameObject nails;
+
+    [SerializeField]
+    private GameObject planks;
+
+    [SerializeField]
+    private GameObject logs;
+
     private void Awake()
     {
         hammers?.SetActive(item == Item.Hammer);
         saws?.SetActive(item == Item.Saw);
+        nails?.SetActive(item == Item.Nail);
+        planks?.SetActive(item == Item.Plank);
+        logs?.SetActive(item == Item.Log);
     }
 
     public void SetHover(bool hover)
