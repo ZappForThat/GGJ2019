@@ -11,24 +11,98 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="386293085" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Building_Music</ObjectPath>
-			<ShortName>Building_Music</ShortName>
-			<Path>Building_Music.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2475438578" Name="BuildingMusic" ObjectPath="\Events\Default Work Unit\BuildingMusic"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="380229314" Language="SFX">
-					<ShortName>BirdHouse.wav</ShortName>
-					<Path>SFX\BirdHouse_56D34C19.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3898083304" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SoundEffects</ObjectPath>
+			<ShortName>SoundEffects</ShortName>
+			<Path>SoundEffects.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3992911277" Name="PlayChirp" ObjectPath="\Events\SoundEffects\PlayChirp"/>
+				<Event Id="3174754573" Name="PlayEggs" ObjectPath="\Events\SoundEffects\PlayEggs"/>
+				<Event Id="288067945" Name="PlayFish" ObjectPath="\Events\SoundEffects\PlayFish"/>
+				<Event Id="2524675461" Name="PlayHammer" ObjectPath="\Events\SoundEffects\PlayHammer"/>
+				<Event Id="996452028" Name="PlayMetal" ObjectPath="\Events\SoundEffects\PlayMetal"/>
+				<Event Id="973826615" Name="PlayOpenCab" ObjectPath="\Events\SoundEffects\PlayOpenCab"/>
+				<Event Id="814658076" Name="PlayOpenDrawer" ObjectPath="\Events\SoundEffects\PlayOpenDrawer"/>
+				<Event Id="2511269494" Name="PlaySaw" ObjectPath="\Events\SoundEffects\PlaySaw"/>
+				<Event Id="2807550886" Name="PlayStone" ObjectPath="\Events\SoundEffects\PlayStone"/>
+				<Event Id="2111847568" Name="PlayWood" ObjectPath="\Events\SoundEffects\PlayWood"/>
+				<Event Id="542074746" Name="PlayWrong" ObjectPath="\Events\SoundEffects\PlayWrong"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="101678205" Language="SFX">
+					<ShortName>Wrong.wav</ShortName>
+					<Path>SFX\Wrong_56D34C19.wem</Path>
+				</File>
+				<File Id="367192478" Language="SFX">
+					<ShortName>StoneOne.wav</ShortName>
+					<Path>SFX\StoneOne_56D34C19.wem</Path>
+				</File>
+				<File Id="390449415" Language="SFX">
+					<ShortName>MetalOne.wav</ShortName>
+					<Path>SFX\MetalOne_56D34C19.wem</Path>
+				</File>
+				<File Id="441420634" Language="SFX">
+					<ShortName>Eggs.wav</ShortName>
+					<Path>SFX\Eggs_56D34C19.wem</Path>
+				</File>
+				<File Id="447246893" Language="SFX">
+					<ShortName>Saw.wav</ShortName>
+					<Path>SFX\Saw_56D34C19.wem</Path>
+				</File>
+				<File Id="487360453" Language="SFX">
+					<ShortName>Fish.wav</ShortName>
+					<Path>SFX\Fish_56D34C19.wem</Path>
+				</File>
+				<File Id="505311630" Language="SFX">
+					<ShortName>BirdChirpOne.wav</ShortName>
+					<Path>SFX\BirdChirpOne_56D34C19.wem</Path>
+				</File>
+				<File Id="733500198" Language="SFX">
+					<ShortName>WoodOne.wav</ShortName>
+					<Path>SFX\WoodOne_56D34C19.wem</Path>
+				</File>
+				<File Id="998778944" Language="SFX">
+					<ShortName>OpeningDrawer.wav</ShortName>
+					<Path>SFX\OpeningDrawer_56D34C19.wem</Path>
+				</File>
+				<File Id="1063521431" Language="SFX">
+					<ShortName>OpeningCabinet.wav</ShortName>
+					<Path>SFX\OpeningCabinet_56D34C19.wem</Path>
+				</File>
+				<File Id="1065206831" Language="SFX">
+					<ShortName>HammerOne.wav</ShortName>
+					<Path>SFX\HammerOne_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2475438578" Name="BuildingMusic" ObjectPath="\Events\Default Work Unit\BuildingMusic"/>
+				<Event Id="679636833" Name="MenuMusic" ObjectPath="\Events\Default Work Unit\MenuMusic"/>
+				<Event Id="2398092218" Name="ShopMusic" ObjectPath="\Events\Default Work Unit\ShopMusic"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="28902583" Language="SFX">
+					<ShortName>Title Theme.wav</ShortName>
+					<Path>SFX\Title Theme_8956FC97.wem</Path>
+				</File>
+				<File Id="380229314" Language="SFX">
+					<ShortName>BirdHouse.wav</ShortName>
+					<Path>SFX\BirdHouse_8956FC97.wem</Path>
+				</File>
+				<File Id="411701450" Language="SFX">
+					<ShortName>BirdShop.wav</ShortName>
+					<Path>SFX\BirdShop_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

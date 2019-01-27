@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="SoundEffects" ID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayHammer" ID="{8093417A-FEAA-4293-905B-FED9EA2124D5}">
+					<ChildrenList>
+						<Action Name="" ID="{5D84DC3D-00DF-4946-8628-CE50E4B2DD2D}" ShortID="688731295">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HammerOne" ID="{D183F23F-CB9E-4070-9DFD-5BABE874E641}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayEggs" ID="{3F2DD9D0-5DAA-45C5-85DC-4C9348F56305}">
+					<ChildrenList>
+						<Action Name="" ID="{32A6DE00-1162-42BB-B2FD-4F43CDB3398E}" ShortID="122610796">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eggs" ID="{97D99DBA-1411-41B8-A7F3-3E8E3F34C290}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlaySaw" ID="{3CE47B5F-8AA3-4259-A469-2F9FA6948E5A}">
+					<ChildrenList>
+						<Action Name="" ID="{C2B766BE-BAE1-4478-8F6F-F76A963C672D}" ShortID="983434351">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saw" ID="{932DBC0C-0056-48E2-8856-428A751DC4D3}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayOpenCab" ID="{AA0CA59A-24A5-4EF8-8D01-6FDA41909DFC}">
+					<ChildrenList>
+						<Action Name="" ID="{D2A121E1-5BFD-4639-B38E-67F3B76D2118}" ShortID="573668719">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OpeningCabinet" ID="{540E1F6A-19F1-48B4-A79C-7554C896EA17}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayFish" ID="{146D8744-7D32-4C61-B76D-BF56F9F9B71C}">
+					<ChildrenList>
+						<Action Name="" ID="{3D133CD2-E875-441E-BB7B-938B0936ED7C}" ShortID="37636685">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fish" ID="{2EB1A5DF-E5BA-4F9F-9837-E8CE626BF5DC}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayOpenDrawer" ID="{1B9EB05F-4C13-49C0-84BF-2DC984258639}">
+					<ChildrenList>
+						<Action Name="" ID="{CB5887A3-6C0B-48F4-9000-8855EEEA3125}" ShortID="455028907">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OpeningDrawer" ID="{E236EACE-8773-47EE-964E-AEB649BB61C9}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayWrong" ID="{9C7B3E1B-3042-46C7-8538-1478A96676CE}">
+					<ChildrenList>
+						<Action Name="" ID="{639BCB1C-AE88-4A08-9B40-B7E2DC467FDE}" ShortID="358983558">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wrong" ID="{4471C9AE-0432-48B5-B8AF-ADB0A24188C0}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayChirp" ID="{EA343175-BE97-4B46-B374-04119C07641F}">
+					<ChildrenList>
+						<Action Name="" ID="{87310E45-EF59-4023-98A4-A995043DC448}" ShortID="769614840">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdChirpOne" ID="{368BC23F-7E55-4B28-B8B1-A7BB372D7158}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayStone" ID="{D9D787EA-4673-4F8E-A38D-D1F808DE788B}">
+					<ChildrenList>
+						<Action Name="" ID="{115CFC1E-9E5C-4F71-BA63-977F66984405}" ShortID="448690350">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StoneOne" ID="{CBDCCC01-8892-405D-832D-A1DD28D07453}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayWood" ID="{E2DC0496-6E70-4D90-990A-1024A57B9EE4}">
+					<ChildrenList>
+						<Action Name="" ID="{5460AD8D-B0FC-4C68-ABCE-3C471B168A6F}" ShortID="838179943">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WoodOne" ID="{F8AAF1C2-3263-44A2-AFFD-E088B48DBA68}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayMetal" ID="{221FAFDD-5E68-4F8C-B145-98B09D6EF524}">
+					<ChildrenList>
+						<Action Name="" ID="{CDAD0D14-735D-4918-8391-BA35250FA637}" ShortID="444678824">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MetalOne" ID="{6406B977-49EA-4084-8A36-090BBADD7E1A}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
