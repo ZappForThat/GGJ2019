@@ -6,11 +6,35 @@ public class Cabinet : MonoBehaviour
     [SerializeField]
     public Item item;
 
-    void Start()
+    [SerializeField]
+    private Animator animator;
+
+    [SerializeField]
+    private GameObject hammers;
+
+    [SerializeField]
+    private GameObject saws;
+
+    private void Awake()
     {
+        hammers?.SetActive(item == Item.Hammer);
+        saws?.SetActive(item == Item.Saw);
     }
 
-    void Update()
+    public void SetHover(bool hover)
     {
+        if (animator != null)
+        {
+            animator.SetBool("IsHovered", hover);
+        }
+    }
+
+    public void DoOpen()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("DoOpen", true);
+            Util.ExecuteAfter(0.5f, this, () => animator.SetBool("DoOpen", false));
+        }
     }
 }
