@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c8e921e749f1aad45a9cf5a492b21b52
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Muli ExtraLight
+  fontNames:
+  - Muli ExtraLight
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 579bdf2e46bfcde43847d6610050e905, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
