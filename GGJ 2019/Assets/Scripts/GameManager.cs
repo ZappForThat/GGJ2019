@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
+using System.Collections.Generic;
 using System.Collections;
 using Cinemachine;
 
@@ -22,6 +23,26 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private CinemachineVirtualCamera vCamAfter;
+
+    [SerializeField]
+    private GameObject reactionSpawnLocation;
+
+    [SerializeField]
+    private int goodReactionMistakeThreshold = 3;
+
+    [SerializeField]
+    private int mediumReactionMistakeThreshold = 10;
+
+    [SerializeField]
+    private ParticleExpires goodReaction = null;
+
+    [SerializeField]
+    private ParticleExpires mediumReaction = null;
+
+    [SerializeField]
+    private ParticleExpires badReaction = null;
+
+    private List<House> completedHouses = new List<House>();
 
     private void Start()
     {
@@ -46,7 +67,30 @@ public class GameManager : MonoBehaviour
 
     void OnHouseCompleted(House house)
     {
-        Destroy(house.gameObject);
-        houseBuildManager.SpawnNewRandomHouse();
+        StartCoroutine(HouseCompletionCoroutine(house));
+    }
+
+    IEnumerator HouseCompletionCoroutine(House house)
+    {
+        playerInput.enabled = false;
+        foreach (Rigidbody rigidbody in house.gameObject.GetComponentsInChildren<Rigidbody>())
+        {
+            rigidbody.isKinematic = true;
+        }
+
+        if (house.mistakes < goodReactionMistakeThreshold)
+        {
+            goodReaction.Play();
+        }
+        else if (house.mistakes < mediumReactionMistakeThreshold)
+        {
+            mediumReaction.Play();
+        }
+        else
+        {
+            badReaction.Play();
+        }
+
+        yield return new WaitForSeconds(1.0f);
     }
 }
