@@ -101,6 +101,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="VictoryMusicBad" ID="{5EA7D385-3088-4F22-8E07-EECC364152EA}">
+					<ChildrenList>
+						<Action Name="" ID="{C3CCE278-7B13-4BF8-B76F-2443C6251BB6}" ShortID="893656049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VictoryBad" ID="{064E26A8-ECD9-4D57-B26F-A26EE3C0D303}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

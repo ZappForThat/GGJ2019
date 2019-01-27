@@ -7,6 +7,10 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="ShopMusic" ID="{2F093363-1838-41D8-A9E4-DFB1651CA2ED}" WorkUnitID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BuildingMusic" ID="{558C398D-9EC9-4240-820D-C5CF8C8212F4}" WorkUnitID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MenuMusicStop" ID="{D0F800EA-FD0D-4613-9421-51C9FF644B5C}" WorkUnitID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BuildingMusicStop" ID="{DA5700C2-1E81-47A6-9914-7B46414B64FD}" WorkUnitID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ShopMusicStop" ID="{C9394E60-82B6-4825-BE66-AA5946067570}" WorkUnitID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="VictoryMusic" ID="{7ABB412B-8E60-4CD7-9FF6-E94C17D0DB7D}" WorkUnitID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuMusic" ID="{7454E9DF-EB18-4D07-BC02-11F2993C37B1}" WorkUnitID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
