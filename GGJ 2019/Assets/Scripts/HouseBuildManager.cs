@@ -131,6 +131,7 @@ public class HouseBuildManager : MonoBehaviour
         {
             currentHouse.StartNail(iteration + 1);
         }
+        AudioManager.Instance?.HammerPlay();
     }
 
     private void StopHammer()
@@ -145,12 +146,15 @@ public class HouseBuildManager : MonoBehaviour
         minigameManager.minigameResultCallback = OnSawResult;
         minigameManager.minigameEndCallback = StopSaw;
         minigameManager.StartMinigame(sawRange, 1);
+
+        currentHouse.StartSaw();
     }
 
     private void OnSawResult(int iteration, bool result)
     {
         Debug.Assert(iteration == 0);
         currentHouse.DoSaw(result);
+        AudioManager.Instance?.SawPlay();
     }
 
     private void StopSaw()

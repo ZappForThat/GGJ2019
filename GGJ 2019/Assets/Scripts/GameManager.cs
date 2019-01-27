@@ -92,8 +92,8 @@ public class GameManager : MonoBehaviour
 
     void StartDay()
     {
-        days[dayIndex].dayIntro.Play();
         days[dayIndex].dayIntro.stopped += OnDayIntroComplete;
+        days[dayIndex].dayIntro.Play();
         RandomizeCabinets();
     }
     
@@ -110,6 +110,7 @@ public class GameManager : MonoBehaviour
         }  
     }
 
+    private static List<Item> jokeItems = new List<Item> { Item.Brick, Item.Egg, Item.Fish, Item.FidgetSpinner };
     void RandomizeCabinets()
     {
         Cabinet[] cabinets = FindObjectsOfType<Cabinet>();
@@ -118,13 +119,12 @@ public class GameManager : MonoBehaviour
         {
             if (i < days[dayIndex].necessaryItems.Count)
             {
-                cabinets[i].item = days[dayIndex].necessaryItems[i];
+                cabinets[i].SetItem(days[dayIndex].necessaryItems[i]);
             }
             else
             {
-                var values = System.Enum.GetValues(typeof(Item));
-                Item randomItem = (Item)values.GetValue((int)Random.Range(0, values.Length));
-                cabinets[i].item = randomItem;
+                Item randomJunkItem = jokeItems[(int)Random.Range(0, jokeItems.Count)];
+                cabinets[i].SetItem(randomJunkItem);
             }
         }
     }
@@ -140,7 +140,8 @@ public class GameManager : MonoBehaviour
         Order order = day.orders[orderIndex];
         order.birdSequence.stopped += OnBirdSequenceComplete;
         order.birdSequence.Play();
-        timer.SetShown(true);
+
+        AudioManager.Instance?.BuildingMusicPlay();
     }
 
     void OnBirdSequenceComplete(PlayableDirector director)
@@ -148,11 +149,13 @@ public class GameManager : MonoBehaviour
         Day day = days[dayIndex];
         Order order = day.orders[orderIndex];
 
-        vCamIntro.enabled = false;
-        vCamAfter.enabled = true;
         houseBuildManager.SpawnNewHouse(order.house);
         playerInput.enabled = true;
 
+        vCamIntro.enabled = false;
+        vCamAfter.enabled = true;
+
+        timer.SetShown(true);
         timer.OnTimerCompleted = () => OnHouseCompleted(order.house, true);
         timer.StartTimer(timePerOrder);
     }
@@ -164,6 +167,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator HouseCompletionCoroutine(House house, bool timeRanOut)
     {
+        timer.SetShown(false);
         timer.StopTimer();
         timer.OnTimerCompleted = null;
 

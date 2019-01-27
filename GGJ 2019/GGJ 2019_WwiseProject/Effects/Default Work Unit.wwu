@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FC3E6CBC-54CB-4DC2-992E-3898095BE5DB}" SchemaVersion="89">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{FC3E6CBC-54CB-4DC2-992E-3898095BE5DB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FC3E6CBC-54CB-4DC2-992E-3898095BE5DB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Wwise_Time_Stretch" ID="{D08AD71D-97DC-4290-B7B6-7FD7CCAA6D48}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="TimeStretch" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{D550E7E4-8C6D-4A72-9AB0-788A751807E4}" ShortID="390803945">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="BuildingMusicIncrease" ID="{9E299BFB-658A-42F7-A654-D9B867C2855E}" WorkUnitID="{47DF7FAE-BDF9-417E-A929-C2DA8B01FC80}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{3A8DF2A5-6389-4909-9E1C-295836B50F19}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1600</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>25</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
+				<Effect Name="BuildingMusicIncrease" ID="{4B9CFD44-0D4C-4C52-AA7E-AAA6B1EF7871}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="TimeStretch" Type="Real32">
+							<RTPCList>
+								<RTPC Name="" ID="{16B0B571-F234-4400-9E71-ED1FAE8ADE03}" ShortID="318506222">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="BuildingMusicIncrease" ID="{9E299BFB-658A-42F7-A654-D9B867C2855E}" WorkUnitID="{47DF7FAE-BDF9-417E-A929-C2DA8B01FC80}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{EF77E657-8B02-41C2-9238-31A893912178}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>90.03165</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>109.96835</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

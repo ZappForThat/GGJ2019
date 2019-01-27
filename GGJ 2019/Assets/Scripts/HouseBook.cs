@@ -60,6 +60,7 @@ public class HouseBook : MonoBehaviour
                 img = Instantiate(ExampleSawImage, page.transform);
                 break;
             default:
+                Debug.Assert(false);
                 img = Instantiate(ExampleLogImage);
                 break;
         }

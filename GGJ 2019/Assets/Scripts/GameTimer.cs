@@ -10,9 +10,6 @@ public class GameTimer : MonoBehaviour
     [SerializeField]
     private CanvasGroup canvasGroup;
 
-    [SerializeField]
-    private Animator animator;
-
     private float startTime = 0f;
     private float duration = 0f;
     private bool on = false;
@@ -26,27 +23,7 @@ public class GameTimer : MonoBehaviour
 
     public void SetShown(bool shown)
     {
-        if (animator != null)
-        {
-            if (shown)
-            {
-                animator?.SetBool("ComeIn", true);
-            }
-            else
-            {
-                animator?.SetBool("GoAway", true);
-            }
-
-            Util.ExecuteAfter(0.1f, this, () =>
-            {
-                animator?.SetBool("ComeIn", false);
-                animator?.SetBool("GoAway", false);
-            });
-        }
-        else
-        {
-            UIUtil.SetCanvasGroupShown(canvasGroup, shown);
-        }
+        UIUtil.SetCanvasGroupShown(canvasGroup, shown);
     }
 
     public void StartTimer(float time)
@@ -69,7 +46,7 @@ public class GameTimer : MonoBehaviour
         }
 
         float timeLeft = Mathf.Max(duration - (Time.time - startTime), 0f);
-        text.text = string.Format("{0:0.00}", timeLeft);
+        text.text = string.Format("{0:0.0}", timeLeft);
 
         if (timeLeft <= 0f && on)
         {

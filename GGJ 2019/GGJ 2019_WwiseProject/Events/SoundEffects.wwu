@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="SoundEffects" ID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayHammer" ID="{8093417A-FEAA-4293-905B-FED9EA2124D5}">
+					<ChildrenList>
+						<Action Name="" ID="{5D84DC3D-00DF-4946-8628-CE50E4B2DD2D}" ShortID="688731295">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hammer" ID="{E7A6AF53-FD96-443B-AEBF-DE89E6064875}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayEggs" ID="{3F2DD9D0-5DAA-45C5-85DC-4C9348F56305}">
+					<ChildrenList>
+						<Action Name="" ID="{32A6DE00-1162-42BB-B2FD-4F43CDB3398E}" ShortID="122610796">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Egg" ID="{CA560297-5D20-44C7-9F10-1BE22934AB21}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlaySaw" ID="{3CE47B5F-8AA3-4259-A469-2F9FA6948E5A}">
+					<ChildrenList>
+						<Action Name="" ID="{C2B766BE-BAE1-4478-8F6F-F76A963C672D}" ShortID="983434351">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saw" ID="{932DBC0C-0056-48E2-8856-428A751DC4D3}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayOpenCab" ID="{AA0CA59A-24A5-4EF8-8D01-6FDA41909DFC}">
+					<ChildrenList>
+						<Action Name="" ID="{D2A121E1-5BFD-4639-B38E-67F3B76D2118}" ShortID="573668719">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drawer" ID="{3FE9B5D3-69C1-4822-940F-0BB42083FD0D}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayFish" ID="{146D8744-7D32-4C61-B76D-BF56F9F9B71C}">
+					<ChildrenList>
+						<Action Name="" ID="{3D133CD2-E875-441E-BB7B-938B0936ED7C}" ShortID="37636685">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fish" ID="{53FCE718-9C70-42AE-AC38-3A4041371799}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayOpenDrawer" ID="{1B9EB05F-4C13-49C0-84BF-2DC984258639}">
+					<ChildrenList>
+						<Action Name="" ID="{CB5887A3-6C0B-48F4-9000-8855EEEA3125}" ShortID="455028907">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drawer" ID="{3FE9B5D3-69C1-4822-940F-0BB42083FD0D}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayWrong" ID="{9C7B3E1B-3042-46C7-8538-1478A96676CE}">
+					<ChildrenList>
+						<Action Name="" ID="{639BCB1C-AE88-4A08-9B40-B7E2DC467FDE}" ShortID="358983558">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wrong" ID="{E7144F86-EB71-4507-9EC2-EAFE33B25D3D}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayChirp" ID="{EA343175-BE97-4B46-B374-04119C07641F}">
+					<ChildrenList>
+						<Action Name="" ID="{87310E45-EF59-4023-98A4-A995043DC448}" ShortID="769614840">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chirp" ID="{0ACF21C2-5B49-44E4-9017-3499A624D169}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayStone" ID="{D9D787EA-4673-4F8E-A38D-D1F808DE788B}">
+					<ChildrenList>
+						<Action Name="" ID="{115CFC1E-9E5C-4F71-BA63-977F66984405}" ShortID="448690350">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stone" ID="{706E99B3-6D50-4CA6-8BC4-33DC06D9A2DC}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayWood" ID="{E2DC0496-6E70-4D90-990A-1024A57B9EE4}">
+					<ChildrenList>
+						<Action Name="" ID="{5460AD8D-B0FC-4C68-ABCE-3C471B168A6F}" ShortID="838179943">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wood" ID="{41B4C2E0-E893-4C90-84FA-30B88E0FF5F4}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayMetal" ID="{221FAFDD-5E68-4F8C-B145-98B09D6EF524}">
+					<ChildrenList>
+						<Action Name="" ID="{CDAD0D14-735D-4918-8391-BA35250FA637}" ShortID="444678824">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Metal" ID="{389CB602-EA3A-421E-9267-3A20B59F5C64}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
