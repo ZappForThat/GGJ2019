@@ -10,14 +10,35 @@ public class House : MonoBehaviour
     [SerializeField]
     public Sprite image = null;
 
-    [SerializeField]
-    public List<HouseStage> stages = new List<HouseStage>();
-
+    private List<HouseStage> stages = new List<HouseStage>();
     private int currentStage = 0;
     private Nail nail;
 
     private void Start()
     {
+        foreach (HouseStage stage in FindObjectsOfType<HouseStage>())
+        {
+            int index = stage.transform.GetSiblingIndex();
+            while (index >= stages.Count)
+            {
+                stages.Add(null);
+            }
+
+            HouseStage alreadyExisting = stages[index];
+            if (alreadyExisting != null)
+            {
+                int existingIndex = GetLevel(alreadyExisting.transform, 0);
+                int newIndex = GetLevel(stage.transform, 0);
+                Debug.Assert(existingIndex != newIndex);
+                if (existingIndex > newIndex)
+                {
+                    stages[index] = stage;
+                }
+            }
+
+            stages[index] = stage;
+        }
+
         foreach (HouseStage stage in stages)
         {
             stage?.SetQuality(HouseStage.Quality.None);
@@ -26,6 +47,18 @@ public class House : MonoBehaviour
                 nail.SetShown(false);
             }
         }
+    }
+
+    private int GetLevel(Transform transform, int index)
+    {
+        Debug.Assert(transform != null);
+        if (transform.parent == this.transform)
+        {
+            return index;
+        }
+
+        index++;
+        return GetLevel(transform.parent, index);
     }
 
     public bool IsCorrectItem(Item item)
