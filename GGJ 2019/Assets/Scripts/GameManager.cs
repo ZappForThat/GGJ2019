@@ -66,6 +66,8 @@ public class GameManager : MonoBehaviour
         vCamAfter.enabled = true;
         introPlayableDirector.stopped += OnIntroPlayableComplete;
         introPlayableDirector.Play();
+
+        AudioManager.Instance?.BuildingMusicPlay();
     }
 
     void OnIntroPlayableComplete(PlayableDirector director)
