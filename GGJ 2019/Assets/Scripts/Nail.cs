@@ -33,7 +33,7 @@ public class Nail : MonoBehaviour
         if (!good)
         {
             badNail.SetActive(true);
-            badNail.transform.rotation = badNail.transform.rotation * Quaternion.AngleAxis(Random.Range(0, 360), Vector3.forward);
+            badNail.transform.rotation = badNail.transform.rotation * Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.forward);
         }
     }
 

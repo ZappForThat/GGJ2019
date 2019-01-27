@@ -52,6 +52,7 @@ public class MinigameManager : MonoBehaviour
 
     private void NewGame()
     {
+        slider.Restart();
         slider.ConfigureSweetSpot(Random.Range(0.4f, 1.0f - rangeSize), rangeSize);
     }
 

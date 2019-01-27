@@ -21,6 +21,11 @@ public class MinigameSlider : MonoBehaviour
         UIUtil.SetCanvasGroupShown(canvasGroup, shown);
     }
 
+    public void Restart()
+    {
+        slider.value = 0f;
+    }
+
     private void Update()
     {
         slider.value += Time.deltaTime * speed;
