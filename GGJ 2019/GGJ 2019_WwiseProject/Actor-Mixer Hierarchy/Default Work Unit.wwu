@@ -80,6 +80,386 @@
 						<ActiveSource Name="BirdShop" ID="{FD7CDB62-2584-4286-8C82-80F9255D797E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="BirdChirpOne" ID="{368BC23F-7E55-4B28-B8B1-A7BB372D7158}" ShortID="148803100">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BirdChirpOne" ID="{116C7294-3795-42A7-9D55-BF38B260D925}" ShortID="505311630">
+							<Language>SFX</Language>
+							<AudioFile>BirdChirpOne.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BirdChirpOne" ID="{116C7294-3795-42A7-9D55-BF38B260D925}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BirdChirpThree" ID="{A81CC0CA-B4BE-4417-BC35-A73E5DFAE78F}" ShortID="782590975">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BirdChirpThree" ID="{53C41C1D-1155-4AE0-8278-440FD78F8A21}" ShortID="771249696">
+							<Language>SFX</Language>
+							<AudioFile>BirdChirpThree.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BirdChirpThree" ID="{53C41C1D-1155-4AE0-8278-440FD78F8A21}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BirdChirpTwo" ID="{9D335ADB-CEFC-493F-B0BA-908AAEFB2FBB}" ShortID="961981748">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BirdChirpTwo" ID="{C21D536A-25C7-488A-B4CC-1F60D49CD7DF}" ShortID="126288350">
+							<Language>SFX</Language>
+							<AudioFile>BirdChirpTwo.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BirdChirpTwo" ID="{C21D536A-25C7-488A-B4CC-1F60D49CD7DF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Eggs" ID="{97D99DBA-1411-41B8-A7F3-3E8E3F34C290}" ShortID="638830286">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Eggs" ID="{23576132-5D00-444D-B369-464BC73B06AE}" ShortID="441420634">
+							<Language>SFX</Language>
+							<AudioFile>Eggs.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Eggs" ID="{23576132-5D00-444D-B369-464BC73B06AE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Fish" ID="{2EB1A5DF-E5BA-4F9F-9837-E8CE626BF5DC}" ShortID="233936504">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Fish" ID="{EAA23C83-72B5-4B48-852C-72619E41D310}" ShortID="487360453">
+							<Language>SFX</Language>
+							<AudioFile>Fish.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Fish" ID="{EAA23C83-72B5-4B48-852C-72619E41D310}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="HammerFive" ID="{22A5408B-66AF-40AD-A7B1-7D919FD354CA}" ShortID="298694379">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HammerFive" ID="{18E4A247-C080-4D43-A6CA-542A78AD27C3}" ShortID="255385721">
+							<Language>SFX</Language>
+							<AudioFile>HammerFive.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="HammerFive" ID="{18E4A247-C080-4D43-A6CA-542A78AD27C3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="HammerFour" ID="{6889DFCC-7276-481D-9612-BCF1C464ED86}" ShortID="1030793443">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HammerFour" ID="{C6974D47-4804-4C4A-AFC4-28395C239CD7}" ShortID="218639415">
+							<Language>SFX</Language>
+							<AudioFile>HammerFour.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="HammerFour" ID="{C6974D47-4804-4C4A-AFC4-28395C239CD7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="HammerOne" ID="{D183F23F-CB9E-4070-9DFD-5BABE874E641}" ShortID="803063413">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HammerOne" ID="{E6C2AD21-7834-43CC-97D1-B77CF8CE4D03}" ShortID="1065206831">
+							<Language>SFX</Language>
+							<AudioFile>HammerOne.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="HammerOne" ID="{E6C2AD21-7834-43CC-97D1-B77CF8CE4D03}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="HammerThree" ID="{8D281D9A-93D2-475F-9E07-D072033694FB}" ShortID="332740259">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HammerThree" ID="{B72CF422-F36D-42FB-9649-B43A35C7511B}" ShortID="237184884">
+							<Language>SFX</Language>
+							<AudioFile>HammerThree.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="HammerThree" ID="{B72CF422-F36D-42FB-9649-B43A35C7511B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="HammerTwo" ID="{9578B7BD-571E-427B-A553-7B07E8913E2E}" ShortID="627118514">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HammerTwo" ID="{492A9CAA-FC6A-47FC-837A-E7DFB00EA848}" ShortID="664404193">
+							<Language>SFX</Language>
+							<AudioFile>HammerTwo.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="HammerTwo" ID="{492A9CAA-FC6A-47FC-837A-E7DFB00EA848}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MetalOne" ID="{6406B977-49EA-4084-8A36-090BBADD7E1A}" ShortID="306376529">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MetalOne" ID="{582E8470-5D39-4DF3-A144-694A0B139986}" ShortID="390449415">
+							<Language>SFX</Language>
+							<AudioFile>MetalOne.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MetalOne" ID="{582E8470-5D39-4DF3-A144-694A0B139986}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="MetalTwo" ID="{A0E93603-F51F-4895-B8A6-FB261CCC5971}" ShortID="7872854">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MetalTwo" ID="{6B1D3225-B04C-443D-877C-8E8DDC12B502}" ShortID="309938901">
+							<Language>SFX</Language>
+							<AudioFile>MetalTwo.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MetalTwo" ID="{6B1D3225-B04C-443D-877C-8E8DDC12B502}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="OpeningCabinet" ID="{540E1F6A-19F1-48B4-A79C-7554C896EA17}" ShortID="1044346341">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="OpeningCabinet" ID="{DA8EEA46-8CB2-4DD1-91DA-D02CF6A49988}" ShortID="1063521431">
+							<Language>SFX</Language>
+							<AudioFile>OpeningCabinet.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="OpeningCabinet" ID="{DA8EEA46-8CB2-4DD1-91DA-D02CF6A49988}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="OpeningDrawer" ID="{E236EACE-8773-47EE-964E-AEB649BB61C9}" ShortID="209248075">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="OpeningDrawer" ID="{3CE2CF3F-D4C9-42AC-824E-5F3285E8ABD5}" ShortID="998778944">
+							<Language>SFX</Language>
+							<AudioFile>OpeningDrawer.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="OpeningDrawer" ID="{3CE2CF3F-D4C9-42AC-824E-5F3285E8ABD5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Saw" ID="{932DBC0C-0056-48E2-8856-428A751DC4D3}" ShortID="333601459">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Saw" ID="{B9A0AACF-79A6-4417-8146-129B5406F8C5}" ShortID="447246893">
+							<Language>SFX</Language>
+							<AudioFile>Saw.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Saw" ID="{B9A0AACF-79A6-4417-8146-129B5406F8C5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="StoneOne" ID="{CBDCCC01-8892-405D-832D-A1DD28D07453}" ShortID="760087744">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="StoneOne" ID="{49816BD8-CFF9-4342-9FF1-0F352680F07F}" ShortID="367192478">
+							<Language>SFX</Language>
+							<AudioFile>StoneOne.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="StoneOne" ID="{49816BD8-CFF9-4342-9FF1-0F352680F07F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="StoneTwo" ID="{FE276D3D-017D-4F55-B94A-139D98937B4B}" ShortID="716817528">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="StoneTwo" ID="{FA5C00B6-89B6-41CD-BE07-A9846B9735C6}" ShortID="100689413">
+							<Language>SFX</Language>
+							<AudioFile>StoneTwo.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="StoneTwo" ID="{FA5C00B6-89B6-41CD-BE07-A9846B9735C6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="WoodOne" ID="{F8AAF1C2-3263-44A2-AFFD-E088B48DBA68}" ShortID="781132211">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="WoodOne" ID="{5EB76B13-8D9D-43ED-AC4E-49ED5E1D0101}" ShortID="733500198">
+							<Language>SFX</Language>
+							<AudioFile>WoodOne.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="WoodOne" ID="{5EB76B13-8D9D-43ED-AC4E-49ED5E1D0101}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="WoodTwo" ID="{291E6A7A-4EE1-4E6D-83E0-D47EFF8EA9EB}" ShortID="593158113">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="WoodTwo" ID="{6738089D-50B6-43A4-A67D-66AE1102DA76}" ShortID="358337829">
+							<Language>SFX</Language>
+							<AudioFile>WoodTwo.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="WoodTwo" ID="{6738089D-50B6-43A4-A67D-66AE1102DA76}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Wrong" ID="{4471C9AE-0432-48B5-B8AF-ADB0A24188C0}" ShortID="1058806878">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Wrong" ID="{2D7197CF-F3E6-4357-8FD1-1AD459016FBC}" ShortID="101678205">
+							<Language>SFX</Language>
+							<AudioFile>Wrong.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Wrong" ID="{2D7197CF-F3E6-4357-8FD1-1AD459016FBC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

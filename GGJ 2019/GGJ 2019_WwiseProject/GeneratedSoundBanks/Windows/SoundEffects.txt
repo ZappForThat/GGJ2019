@@ -1,0 +1,26 @@
+Event	ID	Name			Wwise Object Path	Notes
+	288067945	PlayFish			\SoundEffects\PlayFish	
+	542074746	PlayWrong			\SoundEffects\PlayWrong	
+	814658076	PlayOpenDrawer			\SoundEffects\PlayOpenDrawer	
+	973826615	PlayOpenCab			\SoundEffects\PlayOpenCab	
+	996452028	PlayMetal			\SoundEffects\PlayMetal	
+	2111847568	PlayWood			\SoundEffects\PlayWood	
+	2511269494	PlaySaw			\SoundEffects\PlaySaw	
+	2524675461	PlayHammer			\SoundEffects\PlayHammer	
+	2807550886	PlayStone			\SoundEffects\PlayStone	
+	3174754573	PlayEggs			\SoundEffects\PlayEggs	
+	3992911277	PlayChirp			\SoundEffects\PlayChirp	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	101678205	Wrong	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Wrong_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wrong		343744
+	367192478	StoneOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\StoneOne		378304
+	390449415	MetalOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\MetalOne		414784
+	441420634	Eggs	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Eggs_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Eggs		332224
+	447246893	Saw	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Saw_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Saw		460864
+	487360453	Fish	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Fish_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish		337984
+	505311630	BirdChirpOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdChirpOne		230464
+	733500198	WoodOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\WoodOne		460864
+	998778944	OpeningDrawer	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\OpeningDrawer_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\OpeningDrawer		368704
+	1063521431	OpeningCabinet	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\OpeningCabinet_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\OpeningCabinet		376384
+	1065206831	HammerOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\HammerOne		345664
+

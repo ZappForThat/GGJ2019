@@ -12,6 +12,23 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="SoundEffects" ID="{CF359E9B-0083-4F06-88A1-80C39306E485}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PlaySaw" ID="{3CE47B5F-8AA3-4259-A469-2F9FA6948E5A}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayHammer" ID="{8093417A-FEAA-4293-905B-FED9EA2124D5}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayEggs" ID="{3F2DD9D0-5DAA-45C5-85DC-4C9348F56305}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayWrong" ID="{9C7B3E1B-3042-46C7-8538-1478A96676CE}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayOpenDrawer" ID="{1B9EB05F-4C13-49C0-84BF-2DC984258639}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayChirp" ID="{EA343175-BE97-4B46-B374-04119C07641F}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayFish" ID="{146D8744-7D32-4C61-B76D-BF56F9F9B71C}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayWood" ID="{E2DC0496-6E70-4D90-990A-1024A57B9EE4}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayOpenCab" ID="{AA0CA59A-24A5-4EF8-8D01-6FDA41909DFC}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayMetal" ID="{221FAFDD-5E68-4F8C-B145-98B09D6EF524}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayStone" ID="{D9D787EA-4673-4F8E-A38D-D1F808DE788B}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
