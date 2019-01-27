@@ -140,6 +140,9 @@ public class GameManager : MonoBehaviour
         Order order = day.orders[orderIndex];
         order.birdSequence.stopped += OnBirdSequenceComplete;
         order.birdSequence.Play();
+
+        vCamIntro.enabled = false;
+        vCamAfter.enabled = true;
         timer.SetShown(true);
     }
 
@@ -148,8 +151,6 @@ public class GameManager : MonoBehaviour
         Day day = days[dayIndex];
         Order order = day.orders[orderIndex];
 
-        vCamIntro.enabled = false;
-        vCamAfter.enabled = true;
         houseBuildManager.SpawnNewHouse(order.house);
         playerInput.enabled = true;
 
@@ -164,6 +165,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator HouseCompletionCoroutine(House house, bool timeRanOut)
     {
+        timer.SetShown(false);
         timer.StopTimer();
         timer.OnTimerCompleted = null;
 
