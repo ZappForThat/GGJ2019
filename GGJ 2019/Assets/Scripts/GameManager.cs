@@ -1,11 +1,28 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Collections;
 using Cinemachine;
 
 public class GameManager : MonoBehaviour
 {
+    [System.Serializable]
+    public struct Order
+    {
+        public PlayableDirector birdSequence;
+        public House house;
+    }
+
+    [System.Serializable]
+    public struct Day
+    {
+        public PlayableDirector dayIntro;
+        public PlayableDirector dayOutro;
+        public List<Order> orders;
+        public List<Item> necessaryItems;
+    }
+
     [SerializeField]
     private PlayerInput playerInput = null;
 
@@ -23,9 +40,6 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private CinemachineVirtualCamera vCamAfter;
-
-    [SerializeField]
-    private GameObject reactionSpawnLocation;
 
     [SerializeField]
     private int goodReactionMistakeThreshold = 3;
@@ -51,36 +65,112 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject badReactionPrefab = null;
 
+    [SerializeField]
+    private List<Day> days;
+
+    [SerializeField]
+    private float timePerOrder;
+
+    [SerializeField]
+    private GameTimer timer;
+
+    [SerializeField]
+    private PlayableDirector endCinematic;
+
     private List<House> completedHouses = new List<House>();
+    private int dayIndex = 0;
+    private int orderIndex = 0;
 
     private void Start()
     {
-        itemFlyIn.DoFlyIn(OnItemFlyInComplete);
-        houseBuildManager.OnHouseCompleted = OnHouseCompleted;
+        houseBuildManager.OnHouseCompleted = (x) => OnHouseCompleted(x, false);
         playerInput.enabled = false;
+
+        Debug.Assert(days.Count > 0);
+        StartDay();
     }
 
-    void OnItemFlyInComplete()
+    void StartDay()
     {
+        days[dayIndex].dayIntro.stopped += OnDayIntroComplete;
+        days[dayIndex].dayIntro.Play();
+        RandomizeCabinets();
+    }
+    
+    private static System.Random rng = new System.Random();
+    public static void Shuffle<T>(IList<T> list)  
+    {  
+        int n = list.Count;  
+        while (n > 1) {  
+            n--;  
+            int k = rng.Next(n + 1);  
+            T value = list[k];  
+            list[k] = list[n];  
+            list[n] = value;  
+        }  
+    }
+
+    private static List<Item> jokeItems = new List<Item> { Item.Brick, Item.Egg, Item.Fish, Item.FidgetSpinner };
+    void RandomizeCabinets()
+    {
+        Cabinet[] cabinets = FindObjectsOfType<Cabinet>();
+        Shuffle(cabinets);
+        for (int i = 0; i < cabinets.Length; i++)
+        {
+            if (i < days[dayIndex].necessaryItems.Count)
+            {
+                cabinets[i].SetItem(days[dayIndex].necessaryItems[i]);
+            }
+            else
+            {
+                Item randomJunkItem = jokeItems[(int)Random.Range(0, jokeItems.Count)];
+                cabinets[i].SetItem(randomJunkItem);
+            }
+        }
+    }
+
+    void OnDayIntroComplete(PlayableDirector playableDirector)
+    {
+        itemFlyIn.DoFlyIn(StartOrder);
+    }
+
+    void StartOrder()
+    {
+        Day day = days[dayIndex];
+        Order order = day.orders[orderIndex];
+        order.birdSequence.stopped += OnBirdSequenceComplete;
+        order.birdSequence.Play();
+
+        AudioManager.Instance?.BuildingMusicPlay();
+    }
+
+    void OnBirdSequenceComplete(PlayableDirector director)
+    {
+        Day day = days[dayIndex];
+        Order order = day.orders[orderIndex];
+
+        houseBuildManager.SpawnNewHouse(order.house);
+        playerInput.enabled = true;
+
         vCamIntro.enabled = false;
         vCamAfter.enabled = true;
-        introPlayableDirector.stopped += OnIntroPlayableComplete;
-        introPlayableDirector.Play();
+
+        timer.SetShown(true);
+        timer.OnTimerCompleted = () => OnHouseCompleted(order.house, true);
+        timer.StartTimer(timePerOrder);
     }
 
-    void OnIntroPlayableComplete(PlayableDirector director)
+    void OnHouseCompleted(House house, bool timeRanOut)
     {
-        houseBuildManager.SpawnNewRandomHouse();
-        playerInput.enabled = true;
+        StartCoroutine(HouseCompletionCoroutine(house, false));
     }
 
-    void OnHouseCompleted(House house)
+    IEnumerator HouseCompletionCoroutine(House house, bool timeRanOut)
     {
-        StartCoroutine(HouseCompletionCoroutine(house));
-    }
+        timer.SetShown(false);
+        timer.StopTimer();
+        timer.OnTimerCompleted = null;
 
-    IEnumerator HouseCompletionCoroutine(House house)
-    {
         playerInput.enabled = false;
         foreach (Rigidbody rigidbody in house.gameObject.GetComponentsInChildren<Rigidbody>())
         {
@@ -89,7 +179,13 @@ public class GameManager : MonoBehaviour
 
         GameObject location = null;
         GameObject prefab = null;
-        if (house.mistakes < goodReactionMistakeThreshold)
+        if (!house.IsComplete() || timeRanOut)
+        {
+            // Timer ran out
+            location = badReactionSpawnPoint;
+            prefab = badReactionPrefab;
+        }
+        else if (house.mistakes < goodReactionMistakeThreshold)
         {
             location = goodReactionSpawnPoint;
             prefab = goodReactionPrefab;
@@ -119,10 +215,43 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        playerInput.enabled = true;
         house.gameObject.SetActive(false);
         completedHouses.Add(house);
 
-        houseBuildManager.SpawnNewRandomHouse();
+        orderIndex++;
+        if (orderIndex >= days[dayIndex].orders.Count)
+        {
+            NextDay();
+        }
+        else
+        {
+            StartOrder();
+        }
+    }
+
+    void NextDay()
+    {
+        days[dayIndex].dayOutro.stopped += OutroFinished;
+        days[dayIndex].dayOutro.Play();
+    }
+
+    void OutroFinished(PlayableDirector playableDirector)
+    {
+        dayIndex++;
+        orderIndex = 0;
+        if (dayIndex >= days.Count)
+        {
+            endCinematic.stopped += OnTotallyEnd;
+            endCinematic.Play();
+        }
+        else
+        {
+            StartDay();
+        }
+    }
+
+    void OnTotallyEnd(PlayableDirector playableDirector)
+    {
+        SceneManager.LoadScene("Credits");
     }
 }

@@ -65,16 +65,21 @@ public class MinigameManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            minigameResultCallback?.Invoke(currentIteration, slider.IsInSweetSpot());
-            currentIteration++;
-            if (currentIteration >= iterations)
+            slider.DoWinOrLose(slider.IsInSweetSpot());
+
+            Util.ExecuteAfter(0.5f, this, () =>
             {
-                EndMinigame();
-            }
-            else
-            {
-                NewGame();
-            }
+                minigameResultCallback?.Invoke(currentIteration, slider.IsInSweetSpot());
+                currentIteration++;
+                if (currentIteration >= iterations)
+                {
+                    EndMinigame();
+                }
+                else
+                {
+                    NewGame();
+                }
+            });
         }
     }
 }

@@ -17,6 +17,104 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MenuMusic" ID="{7454E9DF-EB18-4D07-BC02-11F2993C37B1}">
+					<ChildrenList>
+						<Action Name="" ID="{3BFB1B23-4133-45CC-9BB8-0EE87F17AFFE}" ShortID="310037248">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title Theme" ID="{A2BEB6F7-6C9D-4D91-A75F-9770F7F6483F}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShopMusic" ID="{2F093363-1838-41D8-A9E4-DFB1651CA2ED}">
+					<ChildrenList>
+						<Action Name="" ID="{15E022DA-E4E3-4043-B061-9F42F93AC5B6}" ShortID="943639358">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdShop" ID="{55DAED0E-A328-4DF9-B047-C9F711884697}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusicStop" ID="{D0F800EA-FD0D-4613-9421-51C9FF644B5C}">
+					<ChildrenList>
+						<Action Name="" ID="{0BB2A4EC-3694-444D-92AD-8DAEC67565D4}" ShortID="623762329">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title Theme" ID="{A2BEB6F7-6C9D-4D91-A75F-9770F7F6483F}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShopMusicStop" ID="{C9394E60-82B6-4825-BE66-AA5946067570}">
+					<ChildrenList>
+						<Action Name="" ID="{EC76ABB1-32E9-48BD-A793-9894ABC589BD}" ShortID="854045582">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdShop" ID="{55DAED0E-A328-4DF9-B047-C9F711884697}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BuildingMusicStop" ID="{DA5700C2-1E81-47A6-9914-7B46414B64FD}">
+					<ChildrenList>
+						<Action Name="" ID="{E4BE266C-AA8E-4A12-9941-45251BFB54B9}" ShortID="312502411">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdHouse" ID="{65C1C924-7B3F-4B11-98B0-493CC8F94110}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VictoryMusic" ID="{7ABB412B-8E60-4CD7-9FF6-E94C17D0DB7D}">
+					<ChildrenList>
+						<Action Name="" ID="{78EDCB52-E5B2-4AF5-B4F2-A29A00FE491E}" ShortID="254739529">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VictoryGood" ID="{805265FA-D4D4-4708-914B-82B31B9B007F}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VictoryMusicBad" ID="{5EA7D385-3088-4F22-8E07-EECC364152EA}">
+					<ChildrenList>
+						<Action Name="" ID="{C3CCE278-7B13-4BF8-B76F-2443C6251BB6}" ShortID="893656049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VictoryBad" ID="{064E26A8-ECD9-4D57-B26F-A26EE3C0D303}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
