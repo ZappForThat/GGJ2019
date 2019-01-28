@@ -180,13 +180,13 @@ public class GameManager : MonoBehaviour
         vCamAfter.enabled = true;
 
         timer.SetShown(true);
-        timer.OnTimerCompleted = () => OnHouseCompleted(order.house, true);
+        timer.OnTimerCompleted = () => OnHouseCompleted(houseBuildManager.currentHouse, true);
         timer.StartTimer(order.time);
     }
 
     void OnHouseCompleted(House house, bool timeRanOut)
     {
-        StartCoroutine(HouseCompletionCoroutine(house, false));
+        StartCoroutine(HouseCompletionCoroutine(house, timeRanOut));
     }
 
     IEnumerator HouseCompletionCoroutine(House house, bool timeRanOut)
