@@ -5,13 +5,13 @@
 			<Language ID="393239870">
 				<File Name="Building_Music" Hash="585998303" Timestamp="1548554866"/>
 				<File Name="Init" Hash="3524904922" Timestamp="1548622946"/>
-				<File Name="Music" Hash="2618671859" Timestamp="1548631281"/>
-				<File Name="SoundEffects" Hash="965715" Timestamp="1548631281"/>
+				<File Name="Music" Hash="2618671859" Timestamp="1548636231"/>
+				<File Name="SoundEffects" Hash="2278806385" Timestamp="1548636231"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1697349375" Timestamp="1548631281"/>
+				<File Name="" Hash="669735231" Timestamp="1548636231"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
