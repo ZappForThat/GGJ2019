@@ -103,6 +103,9 @@ public class GameManager : MonoBehaviour
 
     void StartDay()
     {
+        vCamIntro.enabled = true;
+        vCamAfter.enabled = false;
+
         days[dayIndex].dayIntro.stopped += OnDayIntroComplete;
         days[dayIndex].dayIntro.Play();
         currentCinematic = days[dayIndex].dayIntro;

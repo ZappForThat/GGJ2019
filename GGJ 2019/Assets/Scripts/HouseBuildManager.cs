@@ -109,8 +109,13 @@ public class HouseBuildManager : MonoBehaviour
         }
     }
 
-    public void CheatHouseComplete()
+    public void CheatHouseComplete(bool win)
     {
+        if (win)
+        {
+            currentHouse.CheatHouseComplete();
+        }
+
         OnHouseCompleted(currentHouse);
     }
 
