@@ -20,6 +20,7 @@ public class PlayerInput : MonoBehaviour
     private int currentVcam = 0;
     private float lastActionTime = 0f;
     private CheatSequence cheatSequence = new CheatSequence(new List<KeyCode> { KeyCode.BackQuote, KeyCode.W });
+    private CheatSequence timeoutSequence = new CheatSequence(new List<KeyCode> { KeyCode.BackQuote, KeyCode.T });
 
     void OnEnable()
     {
@@ -75,7 +76,11 @@ public class PlayerInput : MonoBehaviour
 
         if (cheatSequence.CheckCheat())
         {
-            houseBuildManager.CheatHouseComplete();
+            houseBuildManager.CheatHouseComplete(true);
+        }
+        else if (timeoutSequence.CheckCheat())
+        {
+            houseBuildManager.CheatHouseComplete(false);
         }
     }
 

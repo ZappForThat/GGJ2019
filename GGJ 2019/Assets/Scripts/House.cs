@@ -4,10 +4,6 @@ using System.Collections.Generic;
 public class House : MonoBehaviour
 {
     [SerializeField]
-    [TextArea(4, 10)]
-    public string instructions = "";
-
-    [SerializeField]
     public Sprite image = null;
 
     [SerializeField]
@@ -119,6 +115,11 @@ public class House : MonoBehaviour
     public bool IsComplete()
     {
         return currentStage >= stages.Count;
+    }
+
+    public void CheatHouseComplete()
+    {
+        currentStage = stages.Count;
     }
 
     public List<Item> GetItemList()
