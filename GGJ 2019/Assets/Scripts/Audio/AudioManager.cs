@@ -5,9 +5,26 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance = null;
+    public float timeDelay = 1;
 
     private bool bird;
     private float birdTimer;
+
+    private float WoodTimer = 0;
+    private float MetalTimer = 0;
+    private float HammerTimer = 0;
+    private float SawTimer = 0;
+    private float StoneTimer = 0;
+    private float EggTimer = 0;
+    private float FishTimer = 0;
+
+    private bool WoodReady = false;
+    private bool MetalReady = false;
+    private bool HammerReady = false;
+    private bool SawReady = false;
+    private bool StoneReady = false;
+    private bool EggReady = false;
+    private bool FishReady = false;
 
     private void Awake()
     {
@@ -17,6 +34,50 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
+        WoodTimer -= Time.deltaTime;
+        MetalTimer -= Time.deltaTime;
+        HammerTimer -= Time.deltaTime;
+        SawTimer -= Time.deltaTime;
+        StoneTimer -= Time.deltaTime;
+        EggTimer -= Time.deltaTime;
+        FishTimer -= Time.deltaTime;
+
+        if (WoodTimer < 0 && WoodReady)
+        {
+            WoodReady = false;
+            WoodPlay();
+        }
+        if (MetalTimer < 0 && MetalReady)
+        {
+            MetalReady = false;
+            MetalPlay();
+        }
+        if (HammerTimer < 0 && HammerReady)
+        {
+            HammerReady = false;
+            HammerPlay();
+        }
+        if (SawTimer < 0 && SawReady)
+        {
+            SawReady = false;
+            SawPlay();
+        }
+        if (StoneTimer < 0 && StoneReady)
+        {
+            StoneReady = false;
+            StonePlay();
+        }
+        if (EggTimer < 0 && EggReady)
+        {
+            EggReady = false;
+            EggPlay();
+        }
+        if (FishTimer < 0 && FishReady)
+        {
+            FishReady = false;
+            FishPlay();
+        }
+
         if (bird)
         {
             birdTimer += Time.deltaTime;
@@ -37,9 +98,17 @@ public class AudioManager : MonoBehaviour
         AudioManager.Instance?.MenuMusicPlay();
     }
 
-    public void HammerPlay() // done
+    public void HammerPlay(bool delay = false) // done
     {
-        AkSoundEngine.PostEvent("PlayHammer", gameObject);
+        if (delay)
+        {
+            HammerReady = true;
+            HammerTimer = timeDelay;
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("PlayHammer", gameObject);
+        }
     }
     public void BirdChirpPlay() // done
     {
@@ -49,13 +118,29 @@ public class AudioManager : MonoBehaviour
     {
         bird = false;
     }
-    public void EggPlay()
+    public void EggPlay(bool delay = false)
     {
-        AkSoundEngine.PostEvent("PlayEggs", gameObject);
+        if (delay)
+        {
+            EggReady = true;
+            EggTimer = timeDelay;
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("PlayEggs", gameObject);
+        }
     }
-    public void FishPlay()
+    public void FishPlay(bool delay = false)
     {
-        AkSoundEngine.PostEvent("PlayFish", gameObject);
+        if (delay)
+        {
+            FishReady = true;
+            FishTimer = timeDelay;
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("PlayFish", gameObject);
+        }
     }
     public void OpeningCabinetPlay() // NA
     {
@@ -65,21 +150,53 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("PlayOpenDrawer", gameObject);
     }
-    public void SawPlay() // done
+    public void SawPlay(bool delay = false) // done
     {
-        AkSoundEngine.PostEvent("PlaySaw", gameObject);
+        if (delay)
+        {
+            SawReady = true;
+            SawTimer = timeDelay;
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("PlaySaw", gameObject);
+        }
     }
-    public void StonePlay()
+    public void StonePlay(bool delay = false)
     {
-        AkSoundEngine.PostEvent("PlayStone", gameObject);
+        if (delay)
+        {
+            StoneReady = true;
+            StoneTimer = timeDelay;
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("PlayStone", gameObject);
+        }
     }
-    public void WoodPlay()
+    public void WoodPlay(bool delay = false)
     {
-        AkSoundEngine.PostEvent("PlayWood", gameObject);
+        if (delay)
+        {
+            WoodReady = true;
+            WoodTimer = timeDelay;
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("PlayWood", gameObject);
+        }
     }
-    public void MetalPlay()
+    public void MetalPlay(bool delay = false)
     {
-        AkSoundEngine.PostEvent("PlayMetal", gameObject);
+        if (delay)
+        {
+            MetalReady = true;
+            MetalTimer = timeDelay;
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("PlayMetal", gameObject);
+        }
     }
     public void WrongPlay()
     {
