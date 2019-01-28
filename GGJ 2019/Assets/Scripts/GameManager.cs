@@ -149,6 +149,8 @@ public class GameManager : MonoBehaviour
         days[dayIndex].dayIntro.stopped -= OnDayIntroComplete;
         currentCinematic = null;
         itemFlyIn.DoFlyIn(StartOrder);
+
+        AudioManager.Instance?.BirdChirpPlay();
     }
 
     void StartOrder()
@@ -259,6 +261,8 @@ public class GameManager : MonoBehaviour
         days[dayIndex].dayOutro.stopped += OutroFinished;
         days[dayIndex].dayOutro.Play();
         currentCinematic = days[dayIndex].dayIntro;
+        
+        AudioManager.Instance?.ShopMusicPlay();
     }
 
     void OutroFinished(PlayableDirector playableDirector)
