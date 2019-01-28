@@ -73,7 +73,7 @@ public class Cabinet : MonoBehaviour
                     AudioManager.Instance?.HammerPlay(true);
                     break;
                 case Item.Saw:
-                    AudioManager.Instance?.SawPlay(true);
+                    AudioManager.Instance?.MetalPlay(true);
                     break;
                 case Item.Brick:
                     AudioManager.Instance?.StonePlay(true);
