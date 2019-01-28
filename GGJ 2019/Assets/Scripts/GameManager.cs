@@ -8,21 +8,23 @@ using Cinemachine;
 public class GameManager : MonoBehaviour
 {
     [System.Serializable]
-    public struct Order
+    public class Order
     {
         public PlayableDirector birdSequence;
         public House house;
         public HouseDisplay houseDisplay;
         public Bird bird;
+        public float time = 60.0f;
     }
 
     [System.Serializable]
-    public struct Day
+    public class Day
     {
         public PlayableDirector dayIntro;
         public PlayableDirector dayOutro;
         public List<Order> orders;
         public List<Item> necessaryItems;
+        public bool extraCabinets;
     }
 
     [SerializeField]
@@ -71,13 +73,13 @@ public class GameManager : MonoBehaviour
     private List<Day> days;
 
     [SerializeField]
-    private float timePerOrder;
-
-    [SerializeField]
     private GameTimer timer;
 
     [SerializeField]
     private PlayableDirector endCinematic;
+
+    [SerializeField]
+    private GameObject extraCabinets;
 
     private PlayableDirector currentCinematic;
     private int dayIndex = 0;
@@ -105,6 +107,8 @@ public class GameManager : MonoBehaviour
     {
         vCamIntro.enabled = true;
         vCamAfter.enabled = false;
+
+        extraCabinets.gameObject.SetActive(days[dayIndex].extraCabinets);
 
         days[dayIndex].dayIntro.stopped += OnDayIntroComplete;
         days[dayIndex].dayIntro.Play();
@@ -179,7 +183,7 @@ public class GameManager : MonoBehaviour
 
         timer.SetShown(true);
         timer.OnTimerCompleted = () => OnHouseCompleted(order.house, true);
-        timer.StartTimer(timePerOrder);
+        timer.StartTimer(order.time);
     }
 
     void OnHouseCompleted(House house, bool timeRanOut)
