@@ -13,15 +13,16 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	7445706	WrongTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WrongTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wrong\WrongTwo		645184
-	100689413	StoneTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneTwo		378304
+	100689413	StoneTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneTwo		220556
 	214082883	DrawerOpen	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\DrawerOpen_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawer\DrawerOpen		126944
+	224330914	MetalThree	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalThree		172632
 	283704488	HammerWood	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerWood_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\HammerWood		43408
-	309938901	MetalTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalTwo		414784
+	309938901	MetalTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalTwo		121024
 	322802238	HammerMetal	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerMetal_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\HammerMetal		62320
 	326982584	FishOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\FishOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish\FishOne		533824
-	358337829	WoodTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\WoodTwo		460864
-	367192478	StoneOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneOne		378304
-	390449415	MetalOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalOne		414784
+	358337829	WoodTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\WoodTwo		293824
+	367192478	StoneOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneOne		303040
+	390449415	MetalOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalOne		121024
 	447246893	Saw	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Saw_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Saw		289288
 	513458267	BirdChirpSingle3	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpSingle3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpSingle3		118276
 	516179750	FishTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\FishTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish\FishTwo		533824
@@ -31,7 +32,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	575498191	BirdChirpMulti2	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpMulti2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpMulti2		468968
 	725321451	BirdChirpMulti3	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpMulti3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpMulti3		468968
 	728270188	EggsTwo	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\EggsTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Egg\EggsTwo		462784
-	733500198	WoodOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\WoodOne		460864
+	733500198	WoodOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\WoodOne		257188
 	750903824	CabinetOpen	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\CabinetOpen_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawer\CabinetOpen		89116
 	759098272	WrongThree	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WrongThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wrong\WrongThree		639424
 	779294866	EggsThree	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\EggsThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Egg\EggsThree		478144
@@ -40,4 +41,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	867422819	WrongOne	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WrongOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wrong\WrongOne		614464
 	912550186	BirdChirpSingle2	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpSingle2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpSingle2		122216
 	950632559	HammerStone	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerStone_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\HammerStone		37104
+	1046249915	WoodThree	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\WoodThree		314788
 

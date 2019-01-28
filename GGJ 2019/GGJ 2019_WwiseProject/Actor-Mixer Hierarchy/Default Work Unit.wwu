@@ -359,6 +359,25 @@
 								<ActiveSource Name="MetalOne" ID="{582E8470-5D39-4DF3-A144-694A0B139986}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="MetalThree" ID="{BFD727AB-5D13-4F07-95EE-74F7A3CD95D0}" ShortID="928781455">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MetalThree" ID="{878088DD-A7BB-4D91-8954-4738A1FBC921}" ShortID="224330914">
+									<Language>SFX</Language>
+									<AudioFile>MetalThree.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MetalThree" ID="{878088DD-A7BB-4D91-8954-4738A1FBC921}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Wood" ID="{41B4C2E0-E893-4C90-84FA-30B88E0FF5F4}" ShortID="737752262">
@@ -419,6 +438,25 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="WoodOne" ID="{5EB76B13-8D9D-43ED-AC4E-49ED5E1D0101}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="WoodThree" ID="{C896366A-361E-4687-9190-6EF365E09DC3}" ShortID="315630079">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="WoodThree" ID="{F37DDE0B-3A54-4033-BEEC-3287B7AF7ECD}" ShortID="1046249915">
+									<Language>SFX</Language>
+									<AudioFile>WoodThree.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="WoodThree" ID="{F37DDE0B-3A54-4033-BEEC-3287B7AF7ECD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

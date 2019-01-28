@@ -25,12 +25,12 @@
 				<Event Id="3174754573" Name="PlayEggs" ObjectPath="\Events\SoundEffects\PlayEggs" DurationType="OneShot" DurationMin="1.781154" DurationMax="2.597937"/>
 				<Event Id="288067945" Name="PlayFish" ObjectPath="\Events\SoundEffects\PlayFish" DurationType="OneShot" DurationMin="2.780000" DurationMax="2.790000"/>
 				<Event Id="2524675461" Name="PlayHammer" ObjectPath="\Events\SoundEffects\PlayHammer" DurationType="OneShot" DurationMin="0.209977" DurationMax="0.352925"/>
-				<Event Id="996452028" Name="PlayMetal" ObjectPath="\Events\SoundEffects\PlayMetal" DurationType="OneShot" DurationMin="2.160000" DurationMax="2.160000"/>
+				<Event Id="996452028" Name="PlayMetal" ObjectPath="\Events\SoundEffects\PlayMetal" DurationType="OneShot" DurationMin="0.630000" DurationMax="0.898792"/>
 				<Event Id="973826615" Name="PlayOpenCab" ObjectPath="\Events\SoundEffects\PlayOpenCab" DurationType="OneShot" DurationMin="0.504830" DurationMax="0.719274"/>
 				<Event Id="814658076" Name="PlayOpenDrawer" ObjectPath="\Events\SoundEffects\PlayOpenDrawer" DurationType="OneShot" DurationMin="0.504830" DurationMax="0.719274"/>
 				<Event Id="2511269494" Name="PlaySaw" ObjectPath="\Events\SoundEffects\PlaySaw" DurationType="OneShot" DurationMin="1.639592" DurationMax="1.639592"/>
-				<Event Id="2807550886" Name="PlayStone" ObjectPath="\Events\SoundEffects\PlayStone" DurationType="OneShot" DurationMin="1.970000" DurationMax="1.970000"/>
-				<Event Id="2111847568" Name="PlayWood" ObjectPath="\Events\SoundEffects\PlayWood" DurationType="OneShot" DurationMin="2.400000" DurationMax="2.400000"/>
+				<Event Id="2807550886" Name="PlayStone" ObjectPath="\Events\SoundEffects\PlayStone" DurationType="OneShot" DurationMin="1.148396" DurationMax="1.578000"/>
+				<Event Id="2111847568" Name="PlayWood" ObjectPath="\Events\SoundEffects\PlayWood" DurationType="OneShot" DurationMin="1.339188" DurationMax="1.639187"/>
 				<Event Id="542074746" Name="PlayWrong" ObjectPath="\Events\SoundEffects\PlayWrong" DurationType="OneShot" DurationMin="3.200000" DurationMax="3.360000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -45,6 +45,10 @@
 				<File Id="214082883" Language="SFX">
 					<ShortName>DrawerOpen.wav</ShortName>
 					<Path>SFX\DrawerOpen_56D34C19.wem</Path>
+				</File>
+				<File Id="224330914" Language="SFX">
+					<ShortName>MetalThree.wav</ShortName>
+					<Path>SFX\MetalThree_56D34C19.wem</Path>
 				</File>
 				<File Id="283704488" Language="SFX">
 					<ShortName>HammerWood.wav</ShortName>
@@ -145,6 +149,10 @@
 				<File Id="950632559" Language="SFX">
 					<ShortName>HammerStone.wav</ShortName>
 					<Path>SFX\HammerStone_56D34C19.wem</Path>
+				</File>
+				<File Id="1046249915" Language="SFX">
+					<ShortName>WoodThree.wav</ShortName>
+					<Path>SFX\WoodThree_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
