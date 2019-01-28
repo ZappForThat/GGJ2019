@@ -8,21 +8,23 @@ using Cinemachine;
 public class GameManager : MonoBehaviour
 {
     [System.Serializable]
-    public struct Order
+    public class Order
     {
         public PlayableDirector birdSequence;
         public House house;
         public HouseDisplay houseDisplay;
         public Bird bird;
+        public float time = 60.0f;
     }
 
     [System.Serializable]
-    public struct Day
+    public class Day
     {
         public PlayableDirector dayIntro;
         public PlayableDirector dayOutro;
         public List<Order> orders;
         public List<Item> necessaryItems;
+        public bool extraCabinets;
     }
 
     [SerializeField]
@@ -71,13 +73,13 @@ public class GameManager : MonoBehaviour
     private List<Day> days;
 
     [SerializeField]
-    private float timePerOrder;
-
-    [SerializeField]
     private GameTimer timer;
 
     [SerializeField]
     private PlayableDirector endCinematic;
+
+    [SerializeField]
+    private GameObject extraCabinets;
 
     private PlayableDirector currentCinematic;
     private int dayIndex = 0;
@@ -103,6 +105,11 @@ public class GameManager : MonoBehaviour
 
     void StartDay()
     {
+        vCamIntro.enabled = true;
+        vCamAfter.enabled = false;
+
+        extraCabinets.gameObject.SetActive(days[dayIndex].extraCabinets);
+
         days[dayIndex].dayIntro.stopped += OnDayIntroComplete;
         days[dayIndex].dayIntro.Play();
         currentCinematic = days[dayIndex].dayIntro;
@@ -143,8 +150,11 @@ public class GameManager : MonoBehaviour
 
     void OnDayIntroComplete(PlayableDirector playableDirector)
     {
+        days[dayIndex].dayIntro.stopped -= OnDayIntroComplete;
         currentCinematic = null;
         itemFlyIn.DoFlyIn(StartOrder);
+
+        AudioManager.Instance?.BirdChirpPlay();
     }
 
     void StartOrder()
@@ -154,14 +164,13 @@ public class GameManager : MonoBehaviour
         order.birdSequence.stopped += OnBirdSequenceComplete;
         order.birdSequence.Play();
         currentCinematic = order.birdSequence;
-
-        AudioManager.Instance?.BuildingMusicPlay();
     }
 
     void OnBirdSequenceComplete(PlayableDirector director)
     {
         Day day = days[dayIndex];
         Order order = day.orders[orderIndex];
+        order.birdSequence.stopped -= OnBirdSequenceComplete;
 
         currentCinematic = null;
         houseBuildManager.SpawnNewHouse(order.house);
@@ -172,7 +181,7 @@ public class GameManager : MonoBehaviour
 
         timer.SetShown(true);
         timer.OnTimerCompleted = () => OnHouseCompleted(order.house, true);
-        timer.StartTimer(timePerOrder);
+        timer.StartTimer(order.time);
     }
 
     void OnHouseCompleted(House house, bool timeRanOut)
@@ -254,10 +263,13 @@ public class GameManager : MonoBehaviour
         days[dayIndex].dayOutro.stopped += OutroFinished;
         days[dayIndex].dayOutro.Play();
         currentCinematic = days[dayIndex].dayIntro;
+        
+        AudioManager.Instance?.ShopMusicPlay();
     }
 
     void OutroFinished(PlayableDirector playableDirector)
     {
+        days[dayIndex].dayOutro.stopped -= OutroFinished;
         currentCinematic = null;
 
         dayIndex++;
@@ -276,6 +288,7 @@ public class GameManager : MonoBehaviour
 
     void OnTotallyEnd(PlayableDirector playableDirector)
     {
+        endCinematic.stopped -= OnTotallyEnd;
         currentCinematic = null;
         SceneManager.LoadScene("Credits");
     }

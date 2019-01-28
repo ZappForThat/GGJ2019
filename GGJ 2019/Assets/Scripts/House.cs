@@ -4,10 +4,6 @@ using System.Collections.Generic;
 public class House : MonoBehaviour
 {
     [SerializeField]
-    [TextArea(4, 10)]
-    public string instructions = "";
-
-    [SerializeField]
     public Sprite image = null;
 
     [SerializeField]
@@ -22,7 +18,9 @@ public class House : MonoBehaviour
     {
         mistakes = 0;
 
-        foreach (HouseStage stage in FindObjectsOfType<HouseStage>())
+        List<HouseStage> allStages = new List<HouseStage>();
+        GetAllStages(this.transform, allStages);
+        foreach (HouseStage stage in allStages)
         {
             int index = stage.transform.GetSiblingIndex();
             while (index >= stages.Count)
@@ -33,10 +31,23 @@ public class House : MonoBehaviour
             HouseStage alreadyExisting = stages[index];
             if (alreadyExisting != null)
             {
-                Debug.LogError("THIS IS NOT GOOD, PLEASE CHECK FOR GRANDCHILD HOUSESTAGES", alreadyExisting);
+                Debug.LogError("THIS IS NOT GOOD, PLEASE CHECK FOR GRANDCHILD HOUSESTAGES", this);
             }
 
             stages[index] = stage;
+        }
+    }
+
+    private void GetAllStages(Transform transform, List<HouseStage> stages)
+    {
+        foreach (Transform child in transform)
+        {
+            HouseStage houseStage = child.GetComponent<HouseStage>();
+            if (houseStage != null)
+            {
+                stages.Add(houseStage);
+            }
+            GetAllStages(child, stages);
         }
     }
 
@@ -118,6 +129,11 @@ public class House : MonoBehaviour
     public bool IsComplete()
     {
         return currentStage >= stages.Count;
+    }
+
+    public void CheatHouseComplete()
+    {
+        currentStage = stages.Count;
     }
 
     public List<Item> GetItemList()
