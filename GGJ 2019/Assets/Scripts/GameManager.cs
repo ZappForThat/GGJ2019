@@ -157,8 +157,6 @@ public class GameManager : MonoBehaviour
         order.birdSequence.stopped += OnBirdSequenceComplete;
         order.birdSequence.Play();
         currentCinematic = order.birdSequence;
-
-        AudioManager.Instance?.BuildingMusicPlay();
     }
 
     void OnBirdSequenceComplete(PlayableDirector director)

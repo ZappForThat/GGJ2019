@@ -41,11 +41,11 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("PlayHammer", gameObject);
     }
-    public void BirdChirpPlay()
+    public void BirdChirpPlay() // done
     {
         bird = true;
     }
-    public void StopBirdChirpPlay()
+    public void StopBirdChirpPlay() // done
     {
         bird = false;
     }
@@ -96,7 +96,7 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("MenuMusicStop", gameObject);
     }
-    public void ShopMusicPlay()
+    public void ShopMusicPlay() // done
     {
         MenuMusicStop();
         BuildingMusicStop();
