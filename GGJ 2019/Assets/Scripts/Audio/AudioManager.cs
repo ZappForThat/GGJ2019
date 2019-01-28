@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance = null;
-    public float timeDelay = 1;
+    public float timeDelay = 0;
 
     private bool bird;
     private float birdTimer;

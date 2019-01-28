@@ -90,6 +90,7 @@ public class Cabinet : MonoBehaviour
                 default:
                     break;
             }
+            Debug.Log("sound!");
         }
     }
 
