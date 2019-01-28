@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance = null;
     public float timeDelay = 0;
+    public bool StartMenu = false;
 
     private bool bird;
     private float birdTimer;
@@ -28,9 +29,13 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (!Instance)
+        {
+            Instance = this;
+        }
         DontDestroyOnLoad(this);
     }
+    
 
     private void Update()
     {
@@ -95,7 +100,10 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.Instance?.MenuMusicPlay();
+        if (StartMenu)
+        {
+            AudioManager.Instance?.MenuMusicPlay();
+        }
     }
 
     public void HammerPlay(bool delay = false) // done
