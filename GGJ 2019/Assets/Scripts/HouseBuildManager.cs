@@ -33,10 +33,15 @@ public class HouseBuildManager : MonoBehaviour
     [SerializeField]
     private float sawRange = 0.05f;
 
-    private House currentHouse = null;
+    public House currentHouse { get; private set; }
     private List<GameObject> applyOnNextUpdate = new List<GameObject>();
 
     public System.Action<House> OnHouseCompleted;
+
+    private void Awake()
+    {
+        currentHouse = null;
+    }
 
     private void Start()
     {
