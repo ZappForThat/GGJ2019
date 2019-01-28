@@ -22,8 +22,23 @@ public class HouseBook : MonoBehaviour
         layout = GetComponent<VerticalLayoutGroup>();
     }
 
+    private void Clear()
+    {
+        foreach (InstructionLine line in InstructionsPage1.GetComponentsInChildren<InstructionLine>())
+        {
+            Destroy(line.gameObject);
+        }
+        foreach (InstructionLine line in InstructionsPage2.GetComponentsInChildren<InstructionLine>())
+        {
+            Destroy(line.gameObject);
+        }
+
+        AudioManager.Instance?.BuildingMusicPlay();
+    }
+
     public void Fill(House house)
     {
+        Clear();
         image.sprite = house.image;
         List<Item> items = house.GetItemList();
 
