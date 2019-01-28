@@ -9,7 +9,7 @@ public class House : MonoBehaviour
     [SerializeField]
     public GameObject completionParticles;
 
-    private List<HouseStage> stages = null;
+    private List<HouseStage> stages = new List<HouseStage>();
     private int currentStage = 0;
     private Nail nail;
     public int mistakes { get; private set; }
@@ -18,8 +18,9 @@ public class House : MonoBehaviour
     {
         mistakes = 0;
 
-        stages = new List<HouseStage>();
-        foreach (HouseStage stage in FindObjectsOfType<HouseStage>())
+        List<HouseStage> allStages = new List<HouseStage>();
+        GetAllStages(this.transform, allStages);
+        foreach (HouseStage stage in allStages)
         {
             int index = stage.transform.GetSiblingIndex();
             while (index >= stages.Count)
@@ -34,6 +35,19 @@ public class House : MonoBehaviour
             }
 
             stages[index] = stage;
+        }
+    }
+
+    private void GetAllStages(Transform transform, List<HouseStage> stages)
+    {
+        foreach (Transform child in transform)
+        {
+            HouseStage houseStage = child.GetComponent<HouseStage>();
+            if (houseStage != null)
+            {
+                stages.Add(houseStage);
+            }
+            GetAllStages(child, stages);
         }
     }
 
