@@ -22,7 +22,7 @@ public class HouseBook : MonoBehaviour
         layout = GetComponent<VerticalLayoutGroup>();
     }
 
-    private void Clear()
+    public void Clear()
     {
         foreach (InstructionLine line in InstructionsPage1.GetComponentsInChildren<InstructionLine>())
         {
@@ -33,7 +33,7 @@ public class HouseBook : MonoBehaviour
             Destroy(line.gameObject);
         }
 
-        AudioManager.Instance?.BuildingMusicPlay();
+        image.sprite = null;
     }
 
     public void Fill(House house)

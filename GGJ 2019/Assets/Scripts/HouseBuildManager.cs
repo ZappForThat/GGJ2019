@@ -25,9 +25,6 @@ public class HouseBuildManager : MonoBehaviour
     private float maxThrowForce = 8.0f;
 
     [SerializeField]
-    private HouseBook houseBook = null;
-
-    [SerializeField]
     private float hammerRange = 0.15f;
 
     [SerializeField]
@@ -94,7 +91,6 @@ public class HouseBuildManager : MonoBehaviour
     public void SpawnNewHouse(House housePrefab)
     {
         currentHouse = Instantiate<House>(housePrefab, spawnTarget.transform.position, Quaternion.identity, null);
-        houseBook.Fill(currentHouse);
     }
 
     private void ThrowItem(Item item)

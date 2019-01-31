@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField]
+    private PlayableDirector goPlayable;
+
+    [SerializeField]
     private PlayerInput playerInput = null;
 
     [SerializeField]
@@ -37,13 +40,7 @@ public class GameManager : MonoBehaviour
     private ItemFlyIn itemFlyIn = null;
 
     [SerializeField]
-    private PlayableDirector introPlayableDirector = null;
-
-    [SerializeField]
     private CinemachineVirtualCamera vCamIntro;
-
-    [SerializeField]
-    private CinemachineVirtualCamera vCamAfter;
 
     [SerializeField]
     private int goodReactionMistakeThreshold = 3;
@@ -68,6 +65,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject badReactionPrefab = null;
+
+    [SerializeField]
+    private HouseBook houseBook = null;
 
     [SerializeField]
     private List<Day> days;
@@ -107,9 +107,10 @@ public class GameManager : MonoBehaviour
     void StartDay()
     {
         vCamIntro.enabled = true;
-        vCamAfter.enabled = false;
+        playerInput.DisableMainVcams();
 
         extraCabinets.gameObject.SetActive(days[dayIndex].extraCabinets);
+        houseBook.Clear();
 
         days[dayIndex].dayIntro.stopped += OnDayIntroComplete;
         days[dayIndex].dayIntro.Play();
@@ -165,6 +166,8 @@ public class GameManager : MonoBehaviour
         order.birdSequence.stopped += OnBirdSequenceComplete;
         order.birdSequence.Play();
         currentCinematic = order.birdSequence;
+
+        vCamIntro.enabled = false;
     }
 
     void OnBirdSequenceComplete(PlayableDirector director)
@@ -175,10 +178,22 @@ public class GameManager : MonoBehaviour
 
         currentCinematic = null;
         houseBuildManager.SpawnNewHouse(order.house);
+        houseBook.Fill(houseBuildManager.currentHouse);
         playerInput.enabled = true;
+        playerInput.EnableMainVcams();
 
-        vCamIntro.enabled = false;
-        vCamAfter.enabled = true;
+        goPlayable.stopped += OnGoComplete;
+        goPlayable.Play();
+        currentCinematic = goPlayable;
+
+        AudioManager.Instance?.BuildingMusicPlay();
+    }
+
+    void OnGoComplete(PlayableDirector director)
+    {
+        Day day = days[dayIndex];
+        Order order = day.orders[orderIndex];
+        currentCinematic = null;
 
         timer.SetShown(true);
         timer.OnTimerCompleted = () => OnHouseCompleted(houseBuildManager.currentHouse, true);
@@ -197,6 +212,7 @@ public class GameManager : MonoBehaviour
         timer.OnTimerCompleted = null;
 
         playerInput.enabled = false;
+
         foreach (Rigidbody rigidbody in house.gameObject.GetComponentsInChildren<Rigidbody>())
         {
             rigidbody.isKinematic = true;

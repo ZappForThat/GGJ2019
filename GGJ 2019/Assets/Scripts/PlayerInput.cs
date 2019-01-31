@@ -22,9 +22,14 @@ public class PlayerInput : MonoBehaviour
     private CheatSequence cheatSequence = new CheatSequence(new List<KeyCode> { KeyCode.BackQuote, KeyCode.W });
     private CheatSequence timeoutSequence = new CheatSequence(new List<KeyCode> { KeyCode.BackQuote, KeyCode.T });
 
-    void OnEnable()
+    public void DisableMainVcams()
     {
-        SwitchVcam(0);
+        SwitchToVcam(-1);
+    }
+
+    public void EnableMainVcams()
+    {
+        SwitchToVcam(0);
     }
 
     void Update()
@@ -67,11 +72,11 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            SwitchVcam(1);
+            AdvanceVcam(1);
         }
         else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            SwitchVcam(-1);
+            AdvanceVcam(-1);
         }
 
         if (cheatSequence.CheckCheat())
@@ -84,12 +89,17 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
-    void SwitchVcam(int direction)
+    void AdvanceVcam(int direction)
     {
         currentVcam = (currentVcam + direction + vcams.Count) % vcams.Count;
+        SwitchToVcam(currentVcam);
+    }
+
+    void SwitchToVcam(int vcam)
+    {
         for (int i = 0; i < vcams.Count; i++)
         {
-            vcams[i].enabled = (currentVcam == i);
+            vcams[i].enabled = (vcam == i);
         }
     }
 }
