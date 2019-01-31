@@ -100,6 +100,7 @@ public class GameManager : MonoBehaviour
         {
             currentCinematic.time = currentCinematic.duration;
             currentCinematic.Evaluate();
+            currentCinematic.Stop();
         }
     }
 
