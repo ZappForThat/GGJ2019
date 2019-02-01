@@ -6,32 +6,19 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance = null;
     public float timeDelay = 0;
-    public bool StartMenu = false;
 
     private bool bird;
     private float birdTimer;
 
-    private float WoodTimer = 0;
-    private float MetalTimer = 0;
-    private float HammerTimer = 0;
-    private float SawTimer = 0;
-    private float StoneTimer = 0;
-    private float EggTimer = 0;
-    private float FishTimer = 0;
-
-    private bool WoodReady = false;
-    private bool MetalReady = false;
-    private bool HammerReady = false;
-    private bool SawReady = false;
-    private bool StoneReady = false;
-    private bool EggReady = false;
-    private bool FishReady = false;
-
     private void Awake()
     {
-        if (!Instance)
+        if (Instance == null)
         {
             Instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
         }
         DontDestroyOnLoad(this);
     }
@@ -39,50 +26,6 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        WoodTimer -= Time.deltaTime;
-        MetalTimer -= Time.deltaTime;
-        HammerTimer -= Time.deltaTime;
-        SawTimer -= Time.deltaTime;
-        StoneTimer -= Time.deltaTime;
-        EggTimer -= Time.deltaTime;
-        FishTimer -= Time.deltaTime;
-
-        if (WoodTimer < 0 && WoodReady)
-        {
-            WoodReady = false;
-            WoodPlay();
-        }
-        if (MetalTimer < 0 && MetalReady)
-        {
-            MetalReady = false;
-            MetalPlay();
-        }
-        if (HammerTimer < 0 && HammerReady)
-        {
-            HammerReady = false;
-            HammerPlay();
-        }
-        if (SawTimer < 0 && SawReady)
-        {
-            SawReady = false;
-            SawPlay();
-        }
-        if (StoneTimer < 0 && StoneReady)
-        {
-            StoneReady = false;
-            StonePlay();
-        }
-        if (EggTimer < 0 && EggReady)
-        {
-            EggReady = false;
-            EggPlay();
-        }
-        if (FishTimer < 0 && FishReady)
-        {
-            FishReady = false;
-            FishPlay();
-        }
-
         if (bird)
         {
             birdTimer += Time.deltaTime;
@@ -100,23 +43,16 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        if (StartMenu)
-        {
-            AudioManager.Instance?.MenuMusicPlay();
-        }
+        AudioManager.Instance?.MenuMusicPlay();
     }
 
-    public void HammerPlay(bool delay = false) // done
+    public void HammerPlay() // done
     {
-        if (delay)
-        {
-            HammerReady = true;
-            HammerTimer = timeDelay;
-        }
-        else
-        {
-            AkSoundEngine.PostEvent("PlayHammer", gameObject);
-        }
+        AkSoundEngine.PostEvent("PlayHammer", gameObject);
+    }
+    public void HammerImpactPlay() // done
+    {
+        AkSoundEngine.PostEvent("PlayHammerImpact", gameObject);
     }
     public void BirdChirpPlay() // done
     {
@@ -126,29 +62,13 @@ public class AudioManager : MonoBehaviour
     {
         bird = false;
     }
-    public void EggPlay(bool delay = false)
+    public void EggPlay()
     {
-        if (delay)
-        {
-            EggReady = true;
-            EggTimer = timeDelay;
-        }
-        else
-        {
-            AkSoundEngine.PostEvent("PlayEggs", gameObject);
-        }
+        AkSoundEngine.PostEvent("PlayEggs", gameObject);
     }
-    public void FishPlay(bool delay = false)
+    public void FishPlay()
     {
-        if (delay)
-        {
-            FishReady = true;
-            FishTimer = timeDelay;
-        }
-        else
-        {
-            AkSoundEngine.PostEvent("PlayFish", gameObject);
-        }
+        AkSoundEngine.PostEvent("PlayFish", gameObject);
     }
     public void OpeningCabinetPlay() // NA
     {
@@ -158,53 +78,29 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("PlayOpenDrawer", gameObject);
     }
-    public void SawPlay(bool delay = false) // done
+    public void SawCutPlay() // done
     {
-        if (delay)
-        {
-            SawReady = true;
-            SawTimer = timeDelay;
-        }
-        else
-        {
-            AkSoundEngine.PostEvent("PlaySaw", gameObject);
-        }
+        AkSoundEngine.PostEvent("PlaySawCut", gameObject);
     }
-    public void StonePlay(bool delay = false)
+    public void SawPlay() // done
     {
-        if (delay)
-        {
-            StoneReady = true;
-            StoneTimer = timeDelay;
-        }
-        else
-        {
-            AkSoundEngine.PostEvent("PlayStone", gameObject);
-        }
+        AkSoundEngine.PostEvent("PlaySaw", gameObject);
     }
-    public void WoodPlay(bool delay = false)
+    public void StonePlay()
     {
-        if (delay)
-        {
-            WoodReady = true;
-            WoodTimer = timeDelay;
-        }
-        else
-        {
-            AkSoundEngine.PostEvent("PlayWood", gameObject);
-        }
+        AkSoundEngine.PostEvent("PlayStone", gameObject);
     }
-    public void MetalPlay(bool delay = false)
+    public void WoodPlay()
     {
-        if (delay)
-        {
-            MetalReady = true;
-            MetalTimer = timeDelay;
-        }
-        else
-        {
-            AkSoundEngine.PostEvent("PlayMetal", gameObject);
-        }
+        AkSoundEngine.PostEvent("PlayWood", gameObject);
+    }
+    public void LogPlay()
+    {
+        AkSoundEngine.PostEvent("PlayLog", gameObject);
+    }
+    public void MetalPlay()
+    {
+        AkSoundEngine.PostEvent("PlayMetal", gameObject);
     }
     public void WrongPlay()
     {
@@ -255,5 +151,44 @@ public class AudioManager : MonoBehaviour
         ShopMusicStop();
         BuildingMusicStop();
         AkSoundEngine.PostEvent("VictoryMusicBad", gameObject);
+    }
+    public void TimeUpPlay()
+    {
+        AkSoundEngine.PostEvent("PlayTimeUp", gameObject);
+    }
+    public void ItemSoundPlay(Item item)
+    {
+        switch (item)
+        {
+            case Item.Log:
+                LogPlay();
+                break;
+            case Item.Plank:
+                WoodPlay();
+                break;
+            case Item.Nail:
+                MetalPlay();
+                break;
+            case Item.Hammer:
+                HammerPlay();
+                break;
+            case Item.Saw:
+                SawPlay();
+                break;
+            case Item.Brick:
+                StonePlay();
+                break;
+            case Item.Egg:
+                StonePlay();
+                break;
+            case Item.FidgetSpinner:
+                StonePlay();
+                break;
+            case Item.Fish:
+                StonePlay();
+                break;
+            default:
+                break;
+        }
     }
 }

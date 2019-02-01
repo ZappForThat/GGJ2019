@@ -14,8 +14,8 @@ Effect plug-ins	ID	Name	Type				Notes
 	362996106	BuildingMusicIncrease	Wwise Time Stretch			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	28902583	Title Theme	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Title Theme_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Title Theme		9701116
-	380229314	BirdHouse	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdHouse_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdHouse		3732424
-	411701450	BirdShop	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdShop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdShop		7660500
-	692245920	VictoryGood	Q:\GitHub\GGJ2019\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\VictoryGood_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\VictoryGood		1255744
+	28902583	Title Theme	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Title Theme_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Title Theme		9701116
+	380229314	BirdHouse	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdHouse_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdHouse		3732424
+	411701450	BirdShop	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdShop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdShop		7660500
+	692245920	VictoryGood	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\VictoryGood_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\VictoryGood		1255744
 

@@ -218,6 +218,12 @@ public class GameManager : MonoBehaviour
             rigidbody.isKinematic = true;
         }
 
+        if (timeRanOut)
+        {
+            AudioManager.Instance?.TimeUpPlay();
+            yield return new WaitForSeconds(1.0f);
+        }
+
         GameObject location = null;
         GameObject prefab = null;
         float result = 0;

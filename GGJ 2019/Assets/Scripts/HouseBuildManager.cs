@@ -61,6 +61,7 @@ public class HouseBuildManager : MonoBehaviour
 
     public void ApplyItem(Item item)
     {
+        AudioManager.Instance?.ItemSoundPlay(item);
         if (currentHouse.IsCorrectItem(item))
         {
             if (item == Item.Hammer)
@@ -137,7 +138,7 @@ public class HouseBuildManager : MonoBehaviour
         {
             currentHouse.StartNail(iteration + 1);
         }
-        AudioManager.Instance?.HammerPlay();
+        AudioManager.Instance?.HammerImpactPlay();
     }
 
     private void StopHammer()
@@ -160,7 +161,7 @@ public class HouseBuildManager : MonoBehaviour
     {
         Debug.Assert(iteration == 0);
         currentHouse.DoSaw(result);
-        AudioManager.Instance?.SawPlay();
+        AudioManager.Instance?.SawCutPlay();
     }
 
     private void StopSaw()

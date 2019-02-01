@@ -31,7 +31,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="PlaySaw" ID="{3CE47B5F-8AA3-4259-A469-2F9FA6948E5A}">
+				<Event Name="PlaySawCut" ID="{3CE47B5F-8AA3-4259-A469-2F9FA6948E5A}">
 					<ChildrenList>
 						<Action Name="" ID="{C2B766BE-BAE1-4478-8F6F-F76A963C672D}" ShortID="983434351">
 							<PropertyList>
@@ -39,7 +39,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Saw" ID="{932DBC0C-0056-48E2-8856-428A751DC4D3}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="SawCut" ID="{932DBC0C-0056-48E2-8856-428A751DC4D3}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -137,7 +137,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Wood" ID="{41B4C2E0-E893-4C90-84FA-30B88E0FF5F4}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+									<ObjectRef Name="Plank" ID="{41B4C2E0-E893-4C90-84FA-30B88E0FF5F4}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

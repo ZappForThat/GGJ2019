@@ -57,40 +57,6 @@ public class Cabinet : MonoBehaviour
             Util.ExecuteAfter(0.5f, this, () => animator.SetBool("DoOpen", false));
 
             AudioManager.Instance?.OpeningDrawerPlay();
-
-            switch (item)
-            {
-                case Item.Log:
-                    AudioManager.Instance?.WoodPlay(true);
-                    break;
-                case Item.Plank:
-                    AudioManager.Instance?.WoodPlay(true);
-                    break;
-                case Item.Nail:
-                    AudioManager.Instance?.MetalPlay(true);
-                    break;
-                case Item.Hammer:
-                    AudioManager.Instance?.HammerPlay(true);
-                    break;
-                case Item.Saw:
-                    AudioManager.Instance?.MetalPlay(true);
-                    break;
-                case Item.Brick:
-                    AudioManager.Instance?.StonePlay(true);
-                    break;
-                case Item.Egg:
-                    AudioManager.Instance?.EggPlay(true);
-                    break;
-                case Item.FidgetSpinner:
-                    AudioManager.Instance?.MetalPlay(true);
-                    break;
-                case Item.Fish:
-                    AudioManager.Instance?.FishPlay(true);
-                    break;
-                default:
-                    break;
-            }
-            Debug.Log("sound!");
         }
     }
 

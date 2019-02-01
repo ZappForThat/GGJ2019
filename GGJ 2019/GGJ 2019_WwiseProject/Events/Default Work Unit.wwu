@@ -115,6 +115,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayTimeUp" ID="{CCBD5B04-5109-4E98-AFB7-96A726F856DD}">
+					<ChildrenList>
+						<Action Name="" ID="{8BD89AAB-28CC-45A2-8917-74CCD96EE3C3}" ShortID="1029987490">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TimeUp" ID="{FB5BE8C1-BBE0-4E69-B55F-08C9DC1C8221}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayLog" ID="{0C08C1A2-47A9-4AA5-AD15-93C5C39F3E70}">
+					<ChildrenList>
+						<Action Name="" ID="{5D221E81-5D01-483A-AF7A-34B2E0C7971A}" ShortID="541934564">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Log" ID="{EEE9A781-3DFB-48B8-8A40-01BD5E053867}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlaySaw" ID="{7EC49074-B646-4660-BFE9-D6DF6E342B95}">
+					<ChildrenList>
+						<Action Name="" ID="{64356E57-40F6-4BE7-9B68-799C5D2AF201}" ShortID="1001960976">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saw" ID="{5CD641FA-F4AF-4AA9-84DA-84D0F72E4FFA}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayHammerImpact" ID="{F2AA9DC6-8E00-4854-BD74-775953114309}">
+					<ChildrenList>
+						<Action Name="" ID="{9166BF56-6390-4A25-9ABC-CD0CF1E2F435}" ShortID="132286119">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayHammerImpact" ID="{3075F1FA-8C4B-4674-8564-71138057A349}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

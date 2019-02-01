@@ -97,7 +97,7 @@
 						<ActiveSource Name="BirdShop" ID="{FD7CDB62-2584-4286-8C82-80F9255D797E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Saw" ID="{932DBC0C-0056-48E2-8856-428A751DC4D3}" ShortID="333601459">
+				<Sound Name="SawCut" ID="{932DBC0C-0056-48E2-8856-428A751DC4D3}" ShortID="333601459">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -117,6 +117,21 @@
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Hammer" ID="{E7A6AF53-FD96-443B-AEBF-DE89E6064875}" ShortID="866898625">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{08ADBCAB-27B7-4025-88FC-7F5F6EDA5661}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -126,7 +141,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="HammerStone" ID="{0AD1A027-3225-4656-AF24-893B6620C307}" ShortID="664859551">
+						<Sound Name="Impacts Soft - Short, Crack" ID="{4B640D0C-170C-4267-812F-80C2F8854202}" ShortID="300759691">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -136,51 +151,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="HammerStone" ID="{1673C69C-EC08-4504-9C8B-10C030A8389A}" ShortID="950632559">
+								<AudioFileSource Name="Impacts Soft - Short, Crack" ID="{F1D65A39-6033-4570-999D-8049DBA3BBD8}" ShortID="698812041">
 									<Language>SFX</Language>
-									<AudioFile>HammerStone.wav</AudioFile>
+									<AudioFile>Impacts Soft - Short, Crack.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="HammerStone" ID="{1673C69C-EC08-4504-9C8B-10C030A8389A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="HammerMetal" ID="{3075F1FA-8C4B-4674-8564-71138057A349}" ShortID="871634082">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HammerMetal" ID="{5EEB4B99-FA5C-4D7F-9F04-6579D7CF91BC}" ShortID="322802238">
-									<Language>SFX</Language>
-									<AudioFile>HammerMetal.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HammerMetal" ID="{5EEB4B99-FA5C-4D7F-9F04-6579D7CF91BC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="HammerWood" ID="{B48F0335-1CEA-463B-82E6-B637832DF4C5}" ShortID="893897599">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="HammerWood" ID="{55AECA6E-2185-4A86-9AA0-3906B6367BE8}" ShortID="283704488">
-									<Language>SFX</Language>
-									<AudioFile>HammerWood.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="HammerWood" ID="{55AECA6E-2185-4A86-9AA0-3906B6367BE8}" Platform="Linked"/>
+								<ActiveSource Name="Impacts Soft - Short, Crack" ID="{F1D65A39-6033-4570-999D-8049DBA3BBD8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -340,25 +317,6 @@
 								<ActiveSource Name="MetalTwo" ID="{6B1D3225-B04C-443D-877C-8E8DDC12B502}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="MetalOne" ID="{6406B977-49EA-4084-8A36-090BBADD7E1A}" ShortID="306376529">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MetalOne" ID="{582E8470-5D39-4DF3-A144-694A0B139986}" ShortID="390449415">
-									<Language>SFX</Language>
-									<AudioFile>MetalOne.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="MetalOne" ID="{582E8470-5D39-4DF3-A144-694A0B139986}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="MetalThree" ID="{BFD727AB-5D13-4F07-95EE-74F7A3CD95D0}" ShortID="928781455">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -380,7 +338,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Wood" ID="{41B4C2E0-E893-4C90-84FA-30B88E0FF5F4}" ShortID="737752262">
+				<RandomSequenceContainer Name="Plank" ID="{41B4C2E0-E893-4C90-84FA-30B88E0FF5F4}" ShortID="737752262">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -412,11 +370,6 @@
 						<Sound Name="WoodOne" ID="{F8AAF1C2-3263-44A2-AFFD-E088B48DBA68}" ShortID="781132211">
 							<PropertyList>
 								<Property Name="OutputBusVolume" Type="Real64">
-									<ValueList>
-										<Value>12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>12</Value>
 									</ValueList>
@@ -462,6 +415,21 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Stone" ID="{706E99B3-6D50-4CA6-8BC4-33DC06D9A2DC}" ShortID="724272325">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E47008D7-AACB-432B-8038-7E0136B091EA}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1000"/>
+											<Property Name="Min" Type="Real64" Value="-1000"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -569,6 +537,21 @@
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Drawer" ID="{3FE9B5D3-69C1-4822-940F-0BB42083FD0D}" ShortID="817062437">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9854A142-2E34-4ECF-B732-FB665D9F7924}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -598,6 +581,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="CabinetOpen" ID="{99DD5959-5819-41DD-9847-AA109915EDCA}" ShortID="614061489">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -873,6 +863,136 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="TimeUp" ID="{FB5BE8C1-BBE0-4E69-B55F-08C9DC1C8221}" ShortID="1029618943">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="198841__bone666138__analog-alarm-clock" ID="{C610C331-52E9-4E4F-8B34-3818E4A87DC6}" ShortID="717034161">
+							<Language>SFX</Language>
+							<AudioFile>198841__bone666138__analog-alarm-clock.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="198841__bone666138__analog-alarm-clock" ID="{C610C331-52E9-4E4F-8B34-3818E4A87DC6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Log" ID="{EEE9A781-3DFB-48B8-8A40-01BD5E053867}" ShortID="763799781">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2003E324-BEFC-43A4-8CE4-279C79D3B703}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="HammerWood" ID="{B48F0335-1CEA-463B-82E6-B637832DF4C5}" ShortID="893897599">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="HammerWood" ID="{55AECA6E-2185-4A86-9AA0-3906B6367BE8}" ShortID="283704488">
+									<Language>SFX</Language>
+									<AudioFile>HammerWood.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="HammerWood" ID="{55AECA6E-2185-4A86-9AA0-3906B6367BE8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Saw" ID="{5CD641FA-F4AF-4AA9-84DA-84D0F72E4FFA}" ShortID="1035963005">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D802DC36-4C72-43E3-B5C5-C6F2FCB9AD9D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SawPickup" ID="{6DBBB25C-419B-452C-A9D4-6F72CE908A4B}" ShortID="233878901">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SawPickup" ID="{D84A9E48-83CA-4EA8-A7D8-A62B41488A4D}" ShortID="579184859">
+									<Language>SFX</Language>
+									<AudioFile>SawPickup.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SawPickup" ID="{D84A9E48-83CA-4EA8-A7D8-A62B41488A4D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="PlayHammerImpact" ID="{3075F1FA-8C4B-4674-8564-71138057A349}" ShortID="871634082">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="HammerMetal" ID="{5EEB4B99-FA5C-4D7F-9F04-6579D7CF91BC}" ShortID="322802238">
+							<Language>SFX</Language>
+							<AudioFile>HammerMetal.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="HammerMetal" ID="{5EEB4B99-FA5C-4D7F-9F04-6579D7CF91BC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
