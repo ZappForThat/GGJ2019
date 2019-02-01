@@ -41,11 +41,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        AudioManager.Instance?.MenuMusicPlay();
-    }
-
     public void HammerPlay() // done
     {
         AkSoundEngine.PostEvent("PlayHammer", gameObject);

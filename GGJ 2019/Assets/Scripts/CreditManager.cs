@@ -8,18 +8,22 @@ public class CreditManager : MonoBehaviour
     public float Speed = 20;
     public float CreditsSize = 250.0f;
 
-    private float pos;
+    private Vector2 initialPos;
+    private RectTransform rectTransform;
 
     private void Start()
     {
+        rectTransform = transform as RectTransform;
+        initialPos = rectTransform.anchoredPosition;
     }
 
     private void Update()
     {
-        pos += Speed * Time.deltaTime;
-        transform.Translate(new Vector3(0, Speed * Time.deltaTime));
+        Vector2 pos = rectTransform.anchoredPosition;
+        pos.y += Speed * Time.deltaTime;
+        rectTransform.anchoredPosition = pos;
 
-        if (pos > CreditsSize)
+        if (pos.y - initialPos.y > CreditsSize)
         {
             SceneManager.LoadScene("Title");
         }

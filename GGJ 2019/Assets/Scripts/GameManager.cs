@@ -43,6 +43,9 @@ public class GameManager : MonoBehaviour
     private CinemachineVirtualCamera vCamIntro;
 
     [SerializeField]
+    private CinemachineVirtualCamera vCamResult;
+
+    [SerializeField]
     private int goodReactionMistakeThreshold = 3;
 
     [SerializeField]
@@ -106,6 +109,7 @@ public class GameManager : MonoBehaviour
 
     void StartDay()
     {
+        vCamResult.enabled = false;
         vCamIntro.enabled = true;
         playerInput.DisableMainVcams();
 
@@ -212,6 +216,8 @@ public class GameManager : MonoBehaviour
         timer.OnTimerCompleted = null;
 
         playerInput.enabled = false;
+        playerInput.DisableMainVcams();
+        vCamResult.enabled = true;
 
         foreach (Rigidbody rigidbody in house.gameObject.GetComponentsInChildren<Rigidbody>())
         {
