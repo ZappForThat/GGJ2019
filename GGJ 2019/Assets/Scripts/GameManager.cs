@@ -127,6 +127,8 @@ public class GameManager : MonoBehaviour
         days[dayIndex].dayIntro.Play();
         currentCinematic = days[dayIndex].dayIntro;
         RandomizeCabinets();
+
+        AudioManager.Instance?.BirdChirpPlay();
     }
     
     private static System.Random rng = new System.Random();
@@ -166,8 +168,6 @@ public class GameManager : MonoBehaviour
         days[dayIndex].dayIntro.stopped -= OnDayIntroComplete;
         currentCinematic = null;
         itemFlyIn.DoFlyIn(StartOrder);
-
-        AudioManager.Instance?.BirdChirpPlay();
     }
 
     void StartOrder()

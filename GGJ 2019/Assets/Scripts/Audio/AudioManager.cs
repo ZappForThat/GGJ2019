@@ -6,9 +6,12 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance = null;
     public float timeDelay = 0;
+    public float birdChirpMinTime = 4f;
+    public float birdChirpMaxTime = 6f;
 
     private bool bird;
     private float birdTimer;
+    private float nextBirdTime;
 
     private void Awake()
     {
@@ -21,6 +24,9 @@ public class AudioManager : MonoBehaviour
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(this);
+
+        nextBirdTime = Random.Range(birdChirpMinTime, birdChirpMaxTime);
+        birdTimer = nextBirdTime;
     }
     
 
@@ -29,15 +35,16 @@ public class AudioManager : MonoBehaviour
         if (bird)
         {
             birdTimer += Time.deltaTime;
-            if (birdTimer >= 5)
+            if (birdTimer >= nextBirdTime)
             {
                 AkSoundEngine.PostEvent("PlayChirp", gameObject);
-                birdTimer -= 5;
+                birdTimer -= nextBirdTime;
+                nextBirdTime = Random.Range(birdChirpMinTime, birdChirpMaxTime);
             }
         }
         else
         {
-            birdTimer = 5;
+            birdTimer = 0f;
         }
     }
 
