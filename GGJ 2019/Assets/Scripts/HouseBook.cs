@@ -11,11 +11,16 @@ public class HouseBook : MonoBehaviour
     public Image InstructionsPage1;
     public Image InstructionsPage2;
 
-    public InstructionLine ExampleLogImage;
-    public InstructionLine ExampleSawImage;
-    public InstructionLine ExampleNailImage;
-    public InstructionLine ExamplePlankImage;
-    public InstructionLine ExampleHammerImage;
+    public InstructionLine instructionPrefab;
+
+    private Dictionary<Item, string> itemToInstructionTextMap = new Dictionary<Item, string>
+    {
+        {Item.Log, "Add a Log!" },
+        {Item.Plank, "Plank of Wood!" },
+        {Item.Nail, "Nails!" },
+        {Item.Hammer, "Hammer Time!" },
+        {Item.Saw, "Use a Saw!" },
+    };
 
     private void Awake()
     {
@@ -49,37 +54,17 @@ public class HouseBook : MonoBehaviour
         {
             int half = items.Count / 2;
             Image page = useSecondPage && i > half ? InstructionsPage2 : InstructionsPage1;
-            InstructionLine line = CreateText(item, page);
+            InstructionLine line = CreateText(i, item, page);
             i++;
         }
     }
 
-    private InstructionLine CreateText(Item item, Image page)
+    private InstructionLine CreateText(int step, Item item, Image page)
     {
-        InstructionLine img;
-        switch (item)
-        {
-            case Item.Log:
-                img = Instantiate(ExampleLogImage, page.transform);
-                break;
-            case Item.Plank:
-                img = Instantiate(ExamplePlankImage, page.transform);
-                break;
-            case Item.Nail:
-                img = Instantiate(ExampleNailImage, page.transform);
-                break;
-            case Item.Hammer:
-                img = Instantiate(ExampleHammerImage, page.transform);
-                break;
-            case Item.Saw:
-                img = Instantiate(ExampleSawImage, page.transform);
-                break;
-            default:
-                Debug.Assert(false);
-                img = Instantiate(ExampleLogImage);
-                break;
-        }
-        img.gameObject.SetActive(true);
-        return img;
+        InstructionLine instructionLine = Instantiate<InstructionLine>(instructionPrefab, page.transform);
+        instructionLine.image.sprite = ItemImageMapper.Instance.Map(item);
+        instructionLine.text.text =  "<b>" + step + ". </b>" + itemToInstructionTextMap[item];
+        instructionLine.gameObject.SetActive(true);
+        return instructionLine;
     }
 }

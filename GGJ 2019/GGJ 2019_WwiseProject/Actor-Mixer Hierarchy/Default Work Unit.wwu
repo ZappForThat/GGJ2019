@@ -163,6 +163,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Chirp" ID="{0ACF21C2-5B49-44E4-9017-3499A624D169}" ShortID="668023956">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -953,7 +960,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="SawPickup" ID="{6DBBB25C-419B-452C-A9D4-6F72CE908A4B}" ShortID="233878901">
+						<Sound Name="SawPickup" ID="{00E55F7A-7BBA-47DE-B531-3F4A1BEA47DD}" ShortID="958963295">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -963,13 +970,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="SawPickup" ID="{D84A9E48-83CA-4EA8-A7D8-A62B41488A4D}" ShortID="579184859">
+								<AudioFileSource Name="SawPickup" ID="{286BB94D-DDDC-496A-B36A-C8A754309A78}" ShortID="743385092">
 									<Language>SFX</Language>
 									<AudioFile>SawPickup.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="SawPickup" ID="{D84A9E48-83CA-4EA8-A7D8-A62B41488A4D}" Platform="Linked"/>
+								<ActiveSource Name="SawPickup" ID="{286BB94D-DDDC-496A-B36A-C8A754309A78}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -991,6 +998,35 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="HammerMetal" ID="{5EEB4B99-FA5C-4D7F-9F04-6579D7CF91BC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BirdChirpSingle1" ID="{0D2A4670-1211-4117-8BB6-B00B2E6529C4}" ShortID="256844279">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BirdChirpSingle1" ID="{D6DA4BC2-C1F3-499C-96EC-4C48F43B9F75}" ShortID="784261578">
+							<Language>SFX</Language>
+							<AudioFile>BirdChirpSingle1.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="517387849"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BirdChirpSingle1" ID="{D6DA4BC2-C1F3-499C-96EC-4C48F43B9F75}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

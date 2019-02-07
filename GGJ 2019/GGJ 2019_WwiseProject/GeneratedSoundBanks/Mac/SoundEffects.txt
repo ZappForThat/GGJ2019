@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	288067945	PlayFish			\SoundEffects\PlayFish	
 	388314215	PlayHammerImpact			\Default Work Unit\PlayHammerImpact	
+	452758224	PlayChirpCinematicLoud			\Default Work Unit\PlayChirpCinematicLoud	
 	542074746	PlayWrong			\SoundEffects\PlayWrong	
 	814658076	PlayOpenDrawer			\SoundEffects\PlayOpenDrawer	
 	973826615	PlayOpenCab			\SoundEffects\PlayOpenCab	
@@ -33,12 +34,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	526603668	FishThree	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\FishThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish\FishThree		535744
 	545288139	FishFour	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\FishFour_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish\FishFour		535744
 	575498191	BirdChirpMulti2	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\BirdChirpMulti2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpMulti2		468968
-	579184859	SawPickup	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\SawPickup_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Saw\SawPickup		57424
 	698812041	Impacts Soft - Short, Crack	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\Impacts Soft - Short, Crack_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\Impacts Soft - Short, Crack		87380
 	717034161	TimeUp	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\198841__bone666138__analog-alarm-clock_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\TimeUp		1115396
 	725321451	BirdChirpMulti3	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\BirdChirpMulti3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpMulti3		468968
 	728270188	EggsTwo	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\EggsTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Egg\EggsTwo		462784
 	733500198	WoodOne	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\WoodOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Plank\WoodOne		257188
+	743385092	SawPickup	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\SawPickup_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Saw\SawPickup		35060
 	759098272	WrongThree	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\WrongThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wrong\WrongThree		639424
 	779294866	EggsThree	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\EggsThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Egg\EggsThree		478144
 	799578354	EggOne	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\EggOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Egg\EggOne		468544

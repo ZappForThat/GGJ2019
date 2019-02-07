@@ -157,6 +157,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayChirpCinematicLoud" ID="{ED72B2AB-CD6C-4F7B-B21A-98F9C1935EB4}">
+					<ChildrenList>
+						<Action Name="" ID="{1EA64061-0FBE-4D06-A23B-07C87E379048}" ShortID="251890925">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdChirpSingle1" ID="{0D2A4670-1211-4117-8BB6-B00B2E6529C4}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -23,9 +23,35 @@ public class ItemFlyIn : MonoBehaviour
     [SerializeField]
     private float flyInTime = 0.5f;
 
+    private Coroutine coroutine = null;
+    private List<SingleFlyIn> flyIns = new List<SingleFlyIn>();
+    private System.Action onComplete;
+
     public void DoFlyIn(System.Action onComplete)
     {
-        StartCoroutine(FlyInCoroutine(FindObjectsOfType<Cabinet>(), onComplete));
+        if (coroutine != null)
+        {
+            Debug.LogWarning("Replacing currently fly-in", this);
+        }
+
+        coroutine = StartCoroutine(FlyInCoroutine(FindObjectsOfType<Cabinet>(), onComplete));
+    }
+
+    public void CancelFlyIn()
+    {
+        if (!IsInProgress())
+        {
+            Debug.LogError("Tried to cancel not-in-progress flyin", this);
+            return;
+        }
+
+        StopCoroutine(coroutine);
+        FlyInComplete();
+    }
+
+    public bool IsInProgress()
+    {
+        return coroutine != null;
     }
 
     public class SingleFlyIn
@@ -72,7 +98,9 @@ public class ItemFlyIn : MonoBehaviour
 
     IEnumerator FlyInCoroutine(IList<Cabinet> cabinets, System.Action onComplete)
     {
-        List<SingleFlyIn> flyIns = new List<SingleFlyIn>();
+        flyIns.Clear();
+        this.onComplete = onComplete;
+
         Vector2 spawnPosition = (canvas.transform as RectTransform).rect.center;
         foreach (Cabinet cabinet in cabinets)
         {
@@ -124,11 +152,19 @@ public class ItemFlyIn : MonoBehaviour
             yield return null;
         }
 
+        FlyInComplete();
+    }
+
+    private void FlyInComplete()
+    {
         foreach (SingleFlyIn flyIn in flyIns)
         {
             Destroy(flyIn.item.gameObject);
         }
 
-        onComplete();
+        onComplete?.Invoke();
+
+        coroutine = null;
+        onComplete = null;
     }
 }

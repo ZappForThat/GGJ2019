@@ -99,11 +99,18 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (currentCinematic != null && currentCinematic.state == PlayState.Playing && Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            currentCinematic.time = currentCinematic.duration;
-            currentCinematic.Evaluate();
-            currentCinematic.Stop();
+            if (currentCinematic != null && currentCinematic.state == PlayState.Playing)
+            {
+                currentCinematic.time = currentCinematic.duration;
+                currentCinematic.Evaluate();
+                currentCinematic.Stop();
+            }
+            else if (itemFlyIn != null && itemFlyIn.IsInProgress())
+            {
+                itemFlyIn.CancelFlyIn();
+            }
         }
     }
 

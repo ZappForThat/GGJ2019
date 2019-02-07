@@ -31,6 +31,7 @@
 						<ObjectRef Name="PlayWood" ID="{E2DC0496-6E70-4D90-990A-1024A57B9EE4}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlayTimeUp" ID="{CCBD5B04-5109-4E98-AFB7-96A726F856DD}" WorkUnitID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlayOpenCab" ID="{AA0CA59A-24A5-4EF8-8D01-6FDA41909DFC}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayChirpCinematicLoud" ID="{ED72B2AB-CD6C-4F7B-B21A-98F9C1935EB4}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlayMetal" ID="{221FAFDD-5E68-4F8C-B145-98B09D6EF524}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlayStone" ID="{D9D787EA-4673-4F8E-A38D-D1F808DE788B}" WorkUnitID="{4CFF02A5-FAFC-4493-A41D-85D066857895}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

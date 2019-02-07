@@ -6,12 +6,12 @@
 				<File Name="Building_Music" Hash="585998303" Timestamp="1548554866"/>
 				<File Name="Init" Hash="3524904922" Timestamp="1548989226"/>
 				<File Name="Music" Hash="1490734915" Timestamp="1548989226"/>
-				<File Name="SoundEffects" Hash="2775766128" Timestamp="1548990489"/>
+				<File Name="SoundEffects" Hash="530045066" Timestamp="1549512599"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="315181059" Timestamp="1548990489"/>
+				<File Name="" Hash="4131784993" Timestamp="1549512636"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -20,13 +20,13 @@
 			<Language ID="393239870">
 				<File Name="Building_Music" Hash="585998303" Timestamp="1548554879"/>
 				<File Name="Init" Hash="614754548" Timestamp="1548989226"/>
-				<File Name="Music" Hash="1490734915" Timestamp="1548989226"/>
-				<File Name="SoundEffects" Hash="2775766128" Timestamp="1548990489"/>
+				<File Name="Music" Hash="1490734915" Timestamp="1548999173"/>
+				<File Name="SoundEffects" Hash="530045066" Timestamp="1549512599"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1103934317" Timestamp="1548990489"/>
+				<File Name="" Hash="3731757995" Timestamp="1549512636"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
