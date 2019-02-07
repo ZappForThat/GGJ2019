@@ -23,10 +23,12 @@
 			<IncludedEvents>
 				<Event Id="3992911277" Name="PlayChirp" ObjectPath="\Events\SoundEffects\PlayChirp" DurationType="OneShot" DurationMin="0.670136" DurationMax="2.658186"/>
 				<Event Id="452758224" Name="PlayChirpCinematicLoud" ObjectPath="\Events\SoundEffects\PlayChirpCinematicLoud" DurationType="OneShot" DurationMin="0.804172" DurationMax="0.804172"/>
+				<Event Id="651045347" Name="PlayCorrect" ObjectPath="\Events\Default Work Unit\PlayCorrect" DurationType="OneShot" DurationMin="1.124263" DurationMax="1.124263"/>
 				<Event Id="3174754573" Name="PlayEggs" ObjectPath="\Events\SoundEffects\PlayEggs" DurationType="OneShot" DurationMin="1.781154" DurationMax="2.597937"/>
 				<Event Id="288067945" Name="PlayFish" ObjectPath="\Events\SoundEffects\PlayFish" DurationType="OneShot" DurationMin="2.780000" DurationMax="2.790000"/>
 				<Event Id="2524675461" Name="PlayHammer" ObjectPath="\Events\SoundEffects\PlayHammer" DurationType="OneShot" DurationMin="0.340701" DurationMax="0.607060"/>
 				<Event Id="388314215" Name="PlayHammerImpact" ObjectPath="\Events\Default Work Unit\PlayHammerImpact" DurationType="OneShot" DurationMin="0.352925" DurationMax="0.352925"/>
+				<Event Id="2505368860" Name="PlayIncorrect" ObjectPath="\Events\Default Work Unit\PlayIncorrect" DurationType="OneShot" DurationMin="1.124989" DurationMax="1.124989"/>
 				<Event Id="2405925139" Name="PlayLog" ObjectPath="\Events\Default Work Unit\PlayLog" DurationType="OneShot" DurationMin="0.184078" DurationMax="0.327989"/>
 				<Event Id="996452028" Name="PlayMetal" ObjectPath="\Events\SoundEffects\PlayMetal" DurationType="OneShot" DurationMin="0.630000" DurationMax="0.898792"/>
 				<Event Id="973826615" Name="PlayOpenCab" ObjectPath="\Events\SoundEffects\PlayOpenCab" DurationType="OneShot" DurationMin="0.622558" DurationMax="0.831016"/>
@@ -36,13 +38,8 @@
 				<Event Id="2807550886" Name="PlayStone" ObjectPath="\Events\SoundEffects\PlayStone" DurationType="OneShot" DurationMin="0.644515" DurationMax="2.811676"/>
 				<Event Id="3753112747" Name="PlayTimeUp" ObjectPath="\Events\Default Work Unit\PlayTimeUp" DurationType="OneShot" DurationMin="6.322744" DurationMax="6.322744"/>
 				<Event Id="2111847568" Name="PlayWood" ObjectPath="\Events\SoundEffects\PlayWood" DurationType="OneShot" DurationMin="1.339188" DurationMax="1.639187"/>
-				<Event Id="542074746" Name="PlayWrong" ObjectPath="\Events\SoundEffects\PlayWrong" DurationType="OneShot" DurationMin="3.200000" DurationMax="3.360000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="7445706" Language="SFX">
-					<ShortName>WrongTwo.wav</ShortName>
-					<Path>SFX\WrongTwo_56D34C19.wem</Path>
-				</File>
 				<File Id="100689413" Language="SFX">
 					<ShortName>StoneTwo.wav</ShortName>
 					<Path>SFX\StoneTwo_56D34C19.wem</Path>
@@ -79,6 +76,10 @@
 					<ShortName>StoneOne.wav</ShortName>
 					<Path>SFX\StoneOne_56D34C19.wem</Path>
 				</File>
+				<File Id="380528285" Language="SFX">
+					<ShortName>351564__bertrof__game-sound-correct-with-delay.wav</ShortName>
+					<Path>SFX\351564__bertrof__game-sound-correct-with-delay_56D34C19.wem</Path>
+				</File>
 				<File Id="447246893" Language="SFX">
 					<ShortName>Saw.wav</ShortName>
 					<Path>SFX\Saw_56D34C19.wem</Path>
@@ -107,6 +108,10 @@
 					<ShortName>BirdChirpMulti2.wav</ShortName>
 					<Path>SFX\BirdChirpMulti2_56D34C19.wem</Path>
 				</File>
+				<File Id="683019260" Language="SFX">
+					<ShortName>351563__bertrof__game-sound-incorrect-with-delay.wav</ShortName>
+					<Path>SFX\351563__bertrof__game-sound-incorrect-with-delay_56D34C19.wem</Path>
+				</File>
 				<File Id="698812041" Language="SFX">
 					<ShortName>Impacts Soft - Short, Crack.wav</ShortName>
 					<Path>SFX\Impacts Soft - Short, Crack_56D34C19.wem</Path>
@@ -131,10 +136,6 @@
 					<ShortName>SawPickup.wav</ShortName>
 					<Path>SFX\SawPickup_56D34C19.wem</Path>
 				</File>
-				<File Id="759098272" Language="SFX">
-					<ShortName>WrongThree.wav</ShortName>
-					<Path>SFX\WrongThree_56D34C19.wem</Path>
-				</File>
 				<File Id="779294866" Language="SFX">
 					<ShortName>EggsThree.wav</ShortName>
 					<Path>SFX\EggsThree_56D34C19.wem</Path>
@@ -146,10 +147,6 @@
 				<File Id="865643787" Language="SFX">
 					<ShortName>BirdChirpMulti1.wav</ShortName>
 					<Path>SFX\BirdChirpMulti1_56D34C19.wem</Path>
-				</File>
-				<File Id="867422819" Language="SFX">
-					<ShortName>WrongOne.wav</ShortName>
-					<Path>SFX\WrongOne_56D34C19.wem</Path>
 				</File>
 				<File Id="912550186" Language="SFX">
 					<ShortName>BirdChirpSingle2.wav</ShortName>

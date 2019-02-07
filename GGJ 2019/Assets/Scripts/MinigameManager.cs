@@ -65,7 +65,17 @@ public class MinigameManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            slider.DoWinOrLose(slider.IsInSweetSpot());
+            bool won = slider.IsInSweetSpot();
+            slider.DoWinOrLose(won);
+
+            if (won)
+            {
+                AudioManager.Instance?.CorrectPlay();
+            }
+            else
+            {
+                AudioManager.Instance?.IncorrectPlay();
+            }
 
             Util.ExecuteAfter(0.5f, this, () =>
             {

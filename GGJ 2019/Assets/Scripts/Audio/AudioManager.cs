@@ -104,9 +104,13 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("PlayMetal", gameObject);
     }
-    public void WrongPlay()
+    public void CorrectPlay()
     {
-        AkSoundEngine.PostEvent("PlayWrong", gameObject);
+        AkSoundEngine.PostEvent("PlayCorrect", gameObject);
+    }
+    public void IncorrectPlay()
+    {
+        AkSoundEngine.PostEvent("PlayIncorrect", gameObject);
     }
 
     public void MenuMusicPlay() // done

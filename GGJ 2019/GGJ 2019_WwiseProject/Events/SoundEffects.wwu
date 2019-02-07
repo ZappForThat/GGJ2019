@@ -87,20 +87,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="PlayWrong" ID="{9C7B3E1B-3042-46C7-8538-1478A96676CE}">
-					<ChildrenList>
-						<Action Name="" ID="{639BCB1C-AE88-4A08-9B40-B7E2DC467FDE}" ShortID="358983558">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Wrong" ID="{E7144F86-EB71-4507-9EC2-EAFE33B25D3D}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="PlayChirp" ID="{EA343175-BE97-4B46-B374-04119C07641F}">
 					<ChildrenList>
 						<Action Name="" ID="{87310E45-EF59-4023-98A4-A995043DC448}" ShortID="769614840">

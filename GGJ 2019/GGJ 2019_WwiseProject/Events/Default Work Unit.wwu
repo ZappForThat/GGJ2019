@@ -171,6 +171,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayIncorrect" ID="{8C219B50-CBC7-4520-B58D-E51C1F6C18BB}">
+					<ChildrenList>
+						<Action Name="" ID="{F89C0312-E14F-4AEF-B028-0E6539F63BE8}" ShortID="821933548">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="351563__bertrof__game-sound-incorrect-with-delay" ID="{D5943283-80C9-480D-B491-33C3782345A0}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayCorrect" ID="{60C76356-A726-4A60-892D-73BD6568A8F6}">
+					<ChildrenList>
+						<Action Name="" ID="{F5387069-3C95-40F4-9B65-9DE397D4D397}" ShortID="644357516">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="351564__bertrof__game-sound-correct-with-delay" ID="{5833A1AB-0EAE-44F5-80BF-22A941841BB3}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

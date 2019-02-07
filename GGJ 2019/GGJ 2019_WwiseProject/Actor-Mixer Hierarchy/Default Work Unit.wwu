@@ -801,75 +801,6 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="Wrong" ID="{E7144F86-EB71-4507-9EC2-EAFE33B25D3D}" ShortID="164737647">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="WrongOne" ID="{CF2888F8-7314-49D2-9E91-4F2416B82BE5}" ShortID="150437892">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="WrongOne" ID="{C67D8430-5826-4BBD-B358-610490B60631}" ShortID="867422819">
-									<Language>SFX</Language>
-									<AudioFile>WrongOne.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="WrongOne" ID="{C67D8430-5826-4BBD-B358-610490B60631}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="WrongThree" ID="{BDEC2449-F75E-4E8A-BCA7-1B126AB21662}" ShortID="781148489">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="WrongThree" ID="{9C0AC3B5-0AF1-483D-BA77-20851B5BD6E4}" ShortID="759098272">
-									<Language>SFX</Language>
-									<AudioFile>WrongThree.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="WrongThree" ID="{9C0AC3B5-0AF1-483D-BA77-20851B5BD6E4}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="WrongTwo" ID="{064B8DC2-BF17-4D4E-8941-7084E578E7A9}" ShortID="193227744">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="WrongTwo" ID="{ADE9307F-2967-409D-A73D-37AD379B70AB}" ShortID="7445706">
-									<Language>SFX</Language>
-									<AudioFile>WrongTwo.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="WrongTwo" ID="{ADE9307F-2967-409D-A73D-37AD379B70AB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</RandomSequenceContainer>
 				<Sound Name="TimeUp" ID="{FB5BE8C1-BBE0-4E69-B55F-08C9DC1C8221}" ShortID="1029618943">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1027,6 +958,44 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="BirdChirpSingle1" ID="{D6DA4BC2-C1F3-499C-96EC-4C48F43B9F75}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="351564__bertrof__game-sound-correct-with-delay" ID="{5833A1AB-0EAE-44F5-80BF-22A941841BB3}" ShortID="867480814">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="351564__bertrof__game-sound-correct-with-delay" ID="{8AD0483C-268D-4AE9-B206-F02164ACC51D}" ShortID="380528285">
+							<Language>SFX</Language>
+							<AudioFile>351564__bertrof__game-sound-correct-with-delay.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="351564__bertrof__game-sound-correct-with-delay" ID="{8AD0483C-268D-4AE9-B206-F02164ACC51D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="351563__bertrof__game-sound-incorrect-with-delay" ID="{D5943283-80C9-480D-B491-33C3782345A0}" ShortID="1041424534">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9D0435DB-D117-4E0C-B80C-9CD5BFEA6C12}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="351563__bertrof__game-sound-incorrect-with-delay" ID="{DCA7C285-6F89-4604-BB48-9DAFBD8E1026}" ShortID="683019260">
+							<Language>SFX</Language>
+							<AudioFile>351563__bertrof__game-sound-incorrect-with-delay.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="351563__bertrof__game-sound-incorrect-with-delay" ID="{DCA7C285-6F89-4604-BB48-9DAFBD8E1026}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
