@@ -569,6 +569,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="DrawerOpen" ID="{FDF5B2D3-27F5-4B43-BCB9-A18E25870DDD}" ShortID="992551449">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -961,6 +968,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="351564__bertrof__game-sound-correct-with-delay" ID="{5833A1AB-0EAE-44F5-80BF-22A941841BB3}" ShortID="867480814">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>
@@ -980,6 +994,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="351563__bertrof__game-sound-incorrect-with-delay" ID="{D5943283-80C9-480D-B491-33C3782345A0}" ShortID="1041424534">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{94602435-C2C2-4DCC-9883-37E223D44AA5}"/>

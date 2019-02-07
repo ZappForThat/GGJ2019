@@ -31,8 +31,8 @@
 				<Event Id="2505368860" Name="PlayIncorrect" ObjectPath="\Events\Default Work Unit\PlayIncorrect" DurationType="OneShot" DurationMin="1.124989" DurationMax="1.124989"/>
 				<Event Id="2405925139" Name="PlayLog" ObjectPath="\Events\Default Work Unit\PlayLog" DurationType="OneShot" DurationMin="0.184078" DurationMax="0.327989"/>
 				<Event Id="996452028" Name="PlayMetal" ObjectPath="\Events\SoundEffects\PlayMetal" DurationType="OneShot" DurationMin="0.630000" DurationMax="0.898792"/>
-				<Event Id="973826615" Name="PlayOpenCab" ObjectPath="\Events\SoundEffects\PlayOpenCab" DurationType="OneShot" DurationMin="0.622558" DurationMax="0.831016"/>
-				<Event Id="814658076" Name="PlayOpenDrawer" ObjectPath="\Events\SoundEffects\PlayOpenDrawer" DurationType="OneShot" DurationMin="0.622558" DurationMax="0.831016"/>
+				<Event Id="973826615" Name="PlayOpenCab" ObjectPath="\Events\SoundEffects\PlayOpenCab" DurationType="OneShot" DurationMin="0.400816" DurationMax="0.535025"/>
+				<Event Id="814658076" Name="PlayOpenDrawer" ObjectPath="\Events\SoundEffects\PlayOpenDrawer" DurationType="OneShot" DurationMin="0.400816" DurationMax="0.535025"/>
 				<Event Id="2511269494" Name="PlaySaw" ObjectPath="\Events\Default Work Unit\PlaySaw" DurationType="OneShot" DurationMin="0.187255" DurationMax="0.210187"/>
 				<Event Id="2846747398" Name="PlaySawCut" ObjectPath="\Events\SoundEffects\PlaySawCut" DurationType="OneShot" DurationMin="1.639592" DurationMax="1.639592"/>
 				<Event Id="2807550886" Name="PlayStone" ObjectPath="\Events\SoundEffects\PlayStone" DurationType="OneShot" DurationMin="0.644515" DurationMax="2.811676"/>

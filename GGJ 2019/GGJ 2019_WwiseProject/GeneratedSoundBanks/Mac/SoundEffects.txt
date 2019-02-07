@@ -19,7 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	100689413	StoneTwo	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\StoneTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneTwo		220556
-	214082883	DrawerOpen	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\DrawerOpen_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawer\DrawerOpen		126944
+	214082883	DrawerOpen	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\DrawerOpen_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawer\DrawerOpen		81752
 	224330914	MetalThree	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\MetalThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalThree		172632
 	283704488	HammerWood	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\HammerWood_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Log\HammerWood		43408
 	309938901	MetalTwo	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Mac\SFX\MetalTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalTwo		121024

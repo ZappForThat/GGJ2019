@@ -63,7 +63,7 @@ public class HouseBook : MonoBehaviour
     {
         InstructionLine instructionLine = Instantiate<InstructionLine>(instructionPrefab, page.transform);
         instructionLine.image.sprite = ItemImageMapper.Instance.Map(item);
-        instructionLine.text.text =  "<b>" + step + ". </b>" + itemToInstructionTextMap[item];
+        instructionLine.text.text =  "<b>" + (step+1) + ". </b>" + itemToInstructionTextMap[item];
         instructionLine.gameObject.SetActive(true);
         return instructionLine;
     }
