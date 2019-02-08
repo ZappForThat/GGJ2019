@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DeskWood
+  m_Name: Wood
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _LIGHTMAPUVS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -83,9 +83,11 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _IgnoreShadow: 0
-    - _LightmapTexScale: 0.5
-    - _LightmapUVs: 0
+    - _GradientBalance: 0
+    - _GradientFalloff: 0
+    - _IgnoreShadow: 0.24
+    - _LightmapTexScale: 1.5
+    - _LightmapUVs: 1
     - _Metallic: 0
     - _Mode: 0
     - _NewShading: 0
@@ -99,7 +101,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _BottomColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0}
-    - _Color: {r: 0.98261696, g: 0.990566, b: 0.4999555, a: 1}
+    - _BottomColor: {r: 0.66082233, g: 0.8490566, b: 0.82428896, a: 0}
+    - _Color: {r: 0.93333334, g: 0.54852265, b: 0.4196078, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TopColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 0}
+    - _TopColor: {r: 0.9333334, g: 0.5882353, b: 0.7686275, a: 0}

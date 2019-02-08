@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wood_Teal
+  m_Name: Frame
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _LIGHTMAPUVS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -86,8 +86,8 @@ Material:
     - _GradientBalance: 0
     - _GradientFalloff: 0
     - _IgnoreShadow: 0
-    - _LightmapTexScale: 0.5
-    - _LightmapUVs: 0
+    - _LightmapTexScale: 1.25
+    - _LightmapUVs: 1
     - _Metallic: 0
     - _Mode: 0
     - _NewShading: 0
@@ -101,7 +101,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _BottomColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
-    - _Color: {r: 0.93333334, g: 0.54852265, b: 0.4196078, a: 1}
+    - _BottomColor: {r: 0.75, g: 1, b: 0.97015864, a: 1}
+    - _Color: {r: 0.98261696, g: 0.990566, b: 0.4999555, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TopColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 0}
+    - _TopColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 1}

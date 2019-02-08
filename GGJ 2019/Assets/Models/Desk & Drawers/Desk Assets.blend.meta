@@ -36,6 +36,7 @@ ModelImporter:
     100060: Wall_B
     100062: LightCone
     100064: PictureFrame
+    100066: Light_Planes
     400000: //RootNode
     400002: CabinetBase
     400004: Countertop
@@ -69,6 +70,7 @@ ModelImporter:
     400060: Wall_B
     400062: LightCone
     400064: PictureFrame
+    400066: Light_Planes
     2100000: unnamed
     2100002: WoodTeal
     2100004: WoodPurple
@@ -109,6 +111,7 @@ ModelImporter:
     2300058: Wall_B
     2300060: LightCone
     2300062: PictureFrame
+    2300064: Light_Planes
     3300000: CabinetBase
     3300002: Countertop
     3300004: Drawer
@@ -141,6 +144,7 @@ ModelImporter:
     3300058: Wall_B
     3300060: LightCone
     3300062: PictureFrame
+    3300064: Light_Planes
     4300000: Drawer
     4300002: CabinetBase
     4300004: Countertop
@@ -173,6 +177,7 @@ ModelImporter:
     4300058: Ceiling
     4300060: LightCone
     4300062: PictureFrame
+    4300064: Light_Planes
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
