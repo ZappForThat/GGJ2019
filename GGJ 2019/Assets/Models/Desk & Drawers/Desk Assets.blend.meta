@@ -34,6 +34,8 @@ ModelImporter:
     100056: Coffee_Cup
     100058: Ceiling
     100060: Wall_B
+    100062: LightCone
+    100064: PictureFrame
     400000: //RootNode
     400002: CabinetBase
     400004: Countertop
@@ -65,6 +67,8 @@ ModelImporter:
     400056: Coffee_Cup
     400058: Ceiling
     400060: Wall_B
+    400062: LightCone
+    400064: PictureFrame
     2100000: unnamed
     2100002: WoodTeal
     2100004: WoodPurple
@@ -103,6 +107,8 @@ ModelImporter:
     2300054: Coffee_Cup
     2300056: Ceiling
     2300058: Wall_B
+    2300060: LightCone
+    2300062: PictureFrame
     3300000: CabinetBase
     3300002: Countertop
     3300004: Drawer
@@ -133,6 +139,8 @@ ModelImporter:
     3300054: Coffee_Cup
     3300056: Ceiling
     3300058: Wall_B
+    3300060: LightCone
+    3300062: PictureFrame
     4300000: Drawer
     4300002: CabinetBase
     4300004: Countertop
@@ -163,6 +171,8 @@ ModelImporter:
     4300054: Coffee_Cup
     4300056: Wall_B
     4300058: Ceiling
+    4300060: LightCone
+    4300062: PictureFrame
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
