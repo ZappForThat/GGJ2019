@@ -226,6 +226,8 @@ public class GameManager : MonoBehaviour
         playerInput.DisableMainVcams();
         vCamResult.enabled = true;
 
+        houseBuildManager.Cancel();
+
         foreach (Rigidbody rigidbody in house.gameObject.GetComponentsInChildren<Rigidbody>())
         {
             rigidbody.isKinematic = true;

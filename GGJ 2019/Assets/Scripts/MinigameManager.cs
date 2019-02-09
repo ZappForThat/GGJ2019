@@ -7,6 +7,7 @@ public class MinigameManager : MonoBehaviour
     private MinigameSlider slider;
 
     private bool started = false;
+    private bool acceptInput = false;
     private float rangeSize = 0;
     private int iterations = 0;
     private int currentIteration = 0;
@@ -39,26 +40,39 @@ public class MinigameManager : MonoBehaviour
         Cursor.visible = false;
     }
 
+    public void Cancel()
+    {
+        if (started)
+        {
+            EndMinigame();
+        }
+    }
+
     private void EndMinigame()
     {
+        Debug.Assert(started);
+
         started = false;
+        acceptInput = false;
         slider.SetShown(false);
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
         minigameEndCallback?.Invoke();
+        minigameEndCallback = null;
     }
 
     private void NewGame()
     {
+        acceptInput = true;
         slider.Restart();
         slider.ConfigureSweetSpot(Random.Range(0.4f, 1.0f - rangeSize), rangeSize);
     }
 
     private void Update()
     {
-        if (!started)
+        if (!started || !acceptInput)
         {
             return;
         }
@@ -77,6 +91,7 @@ public class MinigameManager : MonoBehaviour
                 AudioManager.Instance?.IncorrectPlay();
             }
 
+            acceptInput = false;
             Util.ExecuteAfter(0.5f, this, () =>
             {
                 minigameResultCallback?.Invoke(currentIteration, slider.IsInSweetSpot());

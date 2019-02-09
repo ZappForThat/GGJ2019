@@ -7,9 +7,6 @@ public class HouseBuildManager : MonoBehaviour
     private HouseList houseList = null;
 
     [SerializeField]
-    private PlayerInput playerInput = null;
-
-    [SerializeField]
     private MinigameManager minigameManager = null;
 
     [SerializeField]
@@ -34,6 +31,7 @@ public class HouseBuildManager : MonoBehaviour
     private List<GameObject> applyOnNextUpdate = new List<GameObject>();
 
     public System.Action<House> OnHouseCompleted;
+    public System.Action OnItemComplete;
 
     private void Awake()
     {
@@ -59,7 +57,7 @@ public class HouseBuildManager : MonoBehaviour
         applyOnNextUpdate.Clear();
     }
 
-    public void ApplyItem(Item item)
+    public bool ApplyItem(Item item, System.Action onItemComplete)
     {
         AudioManager.Instance?.ItemSoundPlay(item);
         if (currentHouse.IsCorrectItem(item))
@@ -67,20 +65,26 @@ public class HouseBuildManager : MonoBehaviour
             if (item == Item.Hammer)
             {
                 StartHammer();
+                this.OnItemComplete = onItemComplete;
+                return true;
             }
             else if (item == Item.Saw)
             {
                 StartSaw();
+                this.OnItemComplete = onItemComplete;
+                return true;
             }
             else
             {
                 AdvanceHouse();
+                return false;
             }
         }
         else
         {
             ThrowItem(item);
             currentHouse.WrongItem();
+            return false;
         }
     }
 
@@ -128,12 +132,16 @@ public class HouseBuildManager : MonoBehaviour
 
     private void StartHammer()
     {
-        playerInput.enabled = false;
         minigameManager.minigameResultCallback = OnHammerResult;
         minigameManager.minigameEndCallback = StopHammer;
         minigameManager.StartMinigame(hammerRange, currentHouse.GetNailsNumber());
 
         currentHouse.StartNail(0);
+    }
+
+    public void Cancel()
+    {
+        minigameManager.Cancel();
     }
 
     private void OnHammerResult(int iteration, bool result)
@@ -148,13 +156,13 @@ public class HouseBuildManager : MonoBehaviour
 
     private void StopHammer()
     {
-        playerInput.enabled = true;
+        OnItemComplete?.Invoke();
+        OnItemComplete = null;
         AdvanceHouse();
     }
 
     private void StartSaw()
     {
-        playerInput.enabled = false;
         minigameManager.minigameResultCallback = OnSawResult;
         minigameManager.minigameEndCallback = StopSaw;
         minigameManager.StartMinigame(sawRange, 1);
@@ -171,7 +179,8 @@ public class HouseBuildManager : MonoBehaviour
 
     private void StopSaw()
     {
-        playerInput.enabled = true;
+        OnItemComplete?.Invoke();
+        OnItemComplete = null;
         AdvanceHouse();
     }
 }

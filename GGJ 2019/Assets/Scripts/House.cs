@@ -77,7 +77,11 @@ public class House : MonoBehaviour
 
     public bool IsCorrectItem(Item item)
     {
-        Debug.Assert(currentStage >= 0 && currentStage < stages.Count, currentStage + " " + stages.Count);
+        if (currentStage < 0 || currentStage >= stages.Count)
+        {
+            return false;
+        }
+
         return stages[currentStage].requiredItem == item;
     }
 

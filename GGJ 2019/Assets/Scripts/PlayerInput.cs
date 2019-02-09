@@ -14,7 +14,10 @@ public class PlayerInput : MonoBehaviour
     private HouseBuildManager houseBuildManager;
     
     [SerializeField]
-    private float actionCooldown = 0.35f;
+    private float applyTime = 0.35f;
+    
+    [SerializeField]
+    private float actionCooldown = 0.2f;
 
     private Cabinet hoveredCabinet;
     private int currentVcam = 0;
@@ -64,9 +67,12 @@ public class PlayerInput : MonoBehaviour
             hoveredCabinet.DoOpen();
             lastActionTime = Time.time;
             var savedCabinet = hoveredCabinet;
-            Util.ExecuteAfter(actionCooldown, this, () =>
+            Util.ExecuteAfter(applyTime, this, () =>
             {
-                houseBuildManager.ApplyItem(savedCabinet.GetItem());
+                if (houseBuildManager.ApplyItem(savedCabinet.GetItem(), Reenable))
+                {
+                    this.enabled = false;
+                }
             });
         }
 
@@ -87,6 +93,11 @@ public class PlayerInput : MonoBehaviour
         {
             houseBuildManager.CheatHouseComplete(false);
         }
+    }
+
+    void Reenable()
+    {
+        this.enabled = true;
     }
 
     void AdvanceVcam(int direction)
