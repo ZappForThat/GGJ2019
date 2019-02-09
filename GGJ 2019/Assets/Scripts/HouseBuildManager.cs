@@ -99,6 +99,11 @@ public class HouseBuildManager : MonoBehaviour
         GameObject throwOrigin = throwOrigins[(int)Random.Range(0, throwOrigins.Count)];
         GameObject itemPrefab = ItemMapper.Instance.Map(item);
         GameObject newItem = Instantiate(itemPrefab, throwOrigin.transform.position - Vector3.forward * 1.5f, Random.rotationUniform, currentHouse.transform);
+
+        // Can't assign global scale, so we have to kind of calculate it
+        newItem.transform.localScale = Vector3.one;
+        newItem.transform.localScale = new Vector3(1f / newItem.transform.lossyScale.x, 1f / newItem.transform.lossyScale.y, 1f / newItem.transform.lossyScale.z);
+
         applyOnNextUpdate.Add(newItem);
     }
 
