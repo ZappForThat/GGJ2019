@@ -8,8 +8,8 @@ public class HouseBook : MonoBehaviour
     public Image image;
     public TextMeshProUGUI text;
     public VerticalLayoutGroup layout { get; private set; }
-    public Image InstructionsPage1;
-    public Image InstructionsPage2;
+    public RectTransform InstructionsPage1;
+    public RectTransform InstructionsPage2;
 
     public InstructionLine instructionPrefab;
 
@@ -53,15 +53,15 @@ public class HouseBook : MonoBehaviour
         foreach (Item item in items)
         {
             int half = items.Count / 2;
-            Image page = useSecondPage && i > half ? InstructionsPage2 : InstructionsPage1;
+            RectTransform page = useSecondPage && i > half ? InstructionsPage2 : InstructionsPage1;
             InstructionLine line = CreateText(i, item, page);
             i++;
         }
     }
 
-    private InstructionLine CreateText(int step, Item item, Image page)
+    private InstructionLine CreateText(int step, Item item, RectTransform page)
     {
-        InstructionLine instructionLine = Instantiate<InstructionLine>(instructionPrefab, page.transform);
+        InstructionLine instructionLine = Instantiate<InstructionLine>(instructionPrefab, page);
         instructionLine.image.sprite = ItemImageMapper.Instance.Map(item);
         instructionLine.text.text =  "<b>" + (step+1) + ". </b>" + itemToInstructionTextMap[item];
         instructionLine.gameObject.SetActive(true);
