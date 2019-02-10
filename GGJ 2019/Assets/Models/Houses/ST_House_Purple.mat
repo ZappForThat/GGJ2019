@@ -9,11 +9,11 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ST_House_Purple
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_ShaderKeywords: _OUTLINE_ON
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2002
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -82,6 +82,7 @@ Material:
     - _Depth: 0.59
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Float12: 0.15
     - _Float3: 0.25
     - _FrameSpeed: 7
     - _FresnelAmount: 0
@@ -93,13 +94,15 @@ Material:
     - _GlossyReflections: 1
     - _GradientBalance: 0
     - _GradientFalloff: 0
-    - _IgnoreShadow: 0
+    - _IgnoreShadow: 1
     - _LightmapTexScale: 0.5
     - _LightmapUVs: 0
     - _Metallic: 0
     - _Mode: 0
     - _NoiseAmount: 0.1
     - _OcclusionStrength: 1
+    - _Outline: 1
+    - _OutlineScale: 0.01
     - _Parallax: 0.02
     - _SmoothScrllSpeed: -0.02
     - _SmoothnessTextureChannel: 0

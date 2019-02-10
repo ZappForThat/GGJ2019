@@ -7,13 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: House_Blue
+  m_Name: ST_House_Brown
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_ShaderKeywords: _OUTLINE_ON
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2002
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -82,6 +82,7 @@ Material:
     - _Depth: 0.59
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Float12: 0.15
     - _Float3: 0.25
     - _FresnelAmount: 0
     - _FresnelBalance: -1
@@ -90,13 +91,17 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _IgnoreShadow: 0.282
+    - _GradientBalance: 0
+    - _GradientFalloff: 0
+    - _IgnoreShadow: 1
     - _LightmapTexScale: 0.5
     - _LightmapUVs: 0
     - _Metallic: 0
     - _Mode: 0
     - _NoiseAmount: 0.1
     - _OcclusionStrength: 1
+    - _Outline: 1
+    - _OutlineScale: 0.01
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -107,8 +112,8 @@ Material:
     - __dirty: 0
     m_Colors:
     - _AOColor: {r: 0.235944, g: 0.1490196, b: 0.5568628, a: 0}
-    - _BottomColor: {r: 0.39321482, g: 0.36470592, b: 1, a: 0}
+    - _BottomColor: {r: 0.6509804, g: 0.37195998, b: 0.28627437, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _TestColor: {r: 0.6284959, g: 0.7735849, b: 0.2079922, a: 0}
-    - _TopColor: {r: 0.6, g: 0.960687, b: 1, a: 0}
+    - _TopColor: {r: 0.7254902, g: 0.59384847, b: 0.39215675, a: 0}
