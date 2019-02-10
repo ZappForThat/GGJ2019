@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wall_Blue
+  m_Name: ST_Birdstand
   m_Shader: {fileID: 4800000, guid: bb4e659a826655448aaf32cef25ce015, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -77,28 +77,35 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _FrameSpeed: 7
     - _FresnelAmount: 0.5
     - _FresnelBalance: 0
     - _FresnelFalloff: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _GradientBalance: 0
+    - _GradientFalloff: 0
     - _IgnoreShadow: 0
     - _LightmapTexScale: 0.5
     - _LightmapUVs: 0
     - _Metallic: 0
     - _Mode: 0
+    - _NewShading: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _SmoothScrllSpeed: -0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TexScale: 1
+    - _USpeed: 0.01
     - _UVSec: 0
+    - _VSpeed: 0.01
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _BottomColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 0}
+    - _BottomColor: {r: 0.19607843, g: 0.6901961, b: 0.59607846, a: 0}
     - _Color: {r: 0.93333334, g: 0.54852265, b: 0.4196078, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TopColor: {r: 0.745283, g: 0.745283, b: 0.745283, a: 0}
+    - _TopColor: {r: 0.3476326, g: 0.5533864, b: 0.7924528, a: 0}
