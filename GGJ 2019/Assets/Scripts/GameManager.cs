@@ -10,11 +10,6 @@ public class GameManager : MonoBehaviour
     [System.Serializable]
     public class Order
     {
-        public PlayableDirector birdSequence;
-        public House house;
-        public HouseDisplay houseDisplay;
-        public Bird bird;
-        public float time = 60.0f;
     }
 
     [System.Serializable]
@@ -22,8 +17,11 @@ public class GameManager : MonoBehaviour
     {
         public PlayableDirector dayIntro;
         public PlayableDirector dayOutro;
-        public List<Order> orders;
-        public List<Item> necessaryItems;
+        public PlayableDirector birdSequence;
+        public List<House> possibleHouses;
+        public HouseDisplay houseDisplay;
+        public Bird bird;
+        public float time = 90.0f;
         public bool extraCabinets;
     }
 
@@ -84,9 +82,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject extraCabinets;
 
+    private static List<Item> jokeItems = new List<Item> { Item.Brick, Item.Egg, Item.Fish, Item.FidgetSpinner };
+    private static List<Item> necessaryItems = new List<Item> { Item.Hammer, Item.Log, Item.Nail, Item.Plank, Item.Saw };
     private PlayableDirector currentCinematic;
     private int dayIndex = 0;
-    private int orderIndex = 0;
 
     private void Start()
     {
@@ -144,16 +143,15 @@ public class GameManager : MonoBehaviour
         }  
     }
 
-    private static List<Item> jokeItems = new List<Item> { Item.Brick, Item.Egg, Item.Fish, Item.FidgetSpinner };
     void RandomizeCabinets()
     {
         Cabinet[] cabinets = FindObjectsOfType<Cabinet>();
         Shuffle(cabinets);
         for (int i = 0; i < cabinets.Length; i++)
         {
-            if (i < days[dayIndex].necessaryItems.Count)
+            if (i < necessaryItems.Count)
             {
-                cabinets[i].SetItem(days[dayIndex].necessaryItems[i]);
+                cabinets[i].SetItem(necessaryItems[i]);
             }
             else
             {
@@ -173,10 +171,9 @@ public class GameManager : MonoBehaviour
     void StartOrder()
     {
         Day day = days[dayIndex];
-        Order order = day.orders[orderIndex];
-        order.birdSequence.stopped += OnBirdSequenceComplete;
-        order.birdSequence.Play();
-        currentCinematic = order.birdSequence;
+        day.birdSequence.stopped += OnBirdSequenceComplete;
+        day.birdSequence.Play();
+        currentCinematic = day.birdSequence;
 
         vCamIntro.enabled = false;
     }
@@ -184,11 +181,12 @@ public class GameManager : MonoBehaviour
     void OnBirdSequenceComplete(PlayableDirector director)
     {
         Day day = days[dayIndex];
-        Order order = day.orders[orderIndex];
-        order.birdSequence.stopped -= OnBirdSequenceComplete;
+        day.birdSequence.stopped -= OnBirdSequenceComplete;
+
+        House house = day.possibleHouses[(int)Random.Range(0, day.possibleHouses.Count)];
 
         currentCinematic = null;
-        houseBuildManager.SpawnNewHouse(order.house);
+        houseBuildManager.SpawnNewHouse(house);
         houseBook.Fill(houseBuildManager.currentHouse);
         playerInput.enabled = true;
         playerInput.EnableMainVcams();
@@ -203,12 +201,11 @@ public class GameManager : MonoBehaviour
     void OnGoComplete(PlayableDirector director)
     {
         Day day = days[dayIndex];
-        Order order = day.orders[orderIndex];
         currentCinematic = null;
 
         timer.SetShown(true);
         timer.OnTimerCompleted = () => OnHouseCompleted(houseBuildManager.currentHouse, true);
-        timer.StartTimer(order.time);
+        timer.StartTimer(day.time);
     }
 
     void OnHouseCompleted(House house, bool timeRanOut)
@@ -282,18 +279,10 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
 
-        days[dayIndex].orders[orderIndex].bird.SetReaction(result);
-        days[dayIndex].orders[orderIndex].houseDisplay.Fill(house, days[dayIndex].orders[orderIndex].bird);
+        days[dayIndex].bird.SetReaction(result);
+        days[dayIndex].houseDisplay.Fill(house, days[dayIndex].bird);
 
-        orderIndex++;
-        if (orderIndex >= days[dayIndex].orders.Count)
-        {
-            NextDay();
-        }
-        else
-        {
-            StartOrder();
-        }
+        NextDay();
     }
 
     void NextDay()
@@ -311,7 +300,6 @@ public class GameManager : MonoBehaviour
         currentCinematic = null;
 
         dayIndex++;
-        orderIndex = 0;
         if (dayIndex >= days.Count)
         {
             endCinematic.stopped += OnTotallyEnd;

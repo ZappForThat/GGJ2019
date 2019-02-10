@@ -28,7 +28,7 @@ public class CreditManager : MonoBehaviour
             SceneManager.LoadScene("Title");
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene("Title");
         }
