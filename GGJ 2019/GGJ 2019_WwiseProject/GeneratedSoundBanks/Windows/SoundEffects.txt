@@ -1,0 +1,50 @@
+Event	ID	Name			Wwise Object Path	Notes
+	288067945	PlayFish			\SoundEffects\PlayFish	
+	388314215	PlayHammerImpact			\Default Work Unit\PlayHammerImpact	
+	452758224	PlayChirpCinematicLoud			\SoundEffects\PlayChirpCinematicLoud	
+	651045347	PlayCorrect			\Default Work Unit\PlayCorrect	
+	814658076	PlayOpenDrawer			\SoundEffects\PlayOpenDrawer	
+	973826615	PlayOpenCab			\SoundEffects\PlayOpenCab	
+	996452028	PlayMetal			\SoundEffects\PlayMetal	
+	2111847568	PlayWood			\SoundEffects\PlayWood	
+	2405925139	PlayLog			\Default Work Unit\PlayLog	
+	2505368860	PlayIncorrect			\Default Work Unit\PlayIncorrect	
+	2511269494	PlaySaw			\Default Work Unit\PlaySaw	
+	2524675461	PlayHammer			\SoundEffects\PlayHammer	
+	2807550886	PlayStone			\SoundEffects\PlayStone	
+	2846747398	PlaySawCut			\SoundEffects\PlaySawCut	
+	3174754573	PlayEggs			\SoundEffects\PlayEggs	
+	3753112747	PlayTimeUp			\Default Work Unit\PlayTimeUp	
+	3992911277	PlayChirp			\SoundEffects\PlayChirp	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	100689413	StoneTwo	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneTwo		220556
+	214082883	DrawerOpen	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\DrawerOpen_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Drawer\DrawerOpen		81752
+	224330914	MetalThree	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalThree		172632
+	283704488	HammerWood	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerWood_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Log\HammerWood		43408
+	309938901	MetalTwo	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\MetalTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metal\MetalTwo		121024
+	322802238	PlayHammerImpact	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\HammerMetal_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayHammerImpact		62320
+	326982584	FishOne	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\FishOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish\FishOne		533824
+	358337829	WoodTwo	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Plank\WoodTwo		293824
+	367192478	StoneOne	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\StoneOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stone\StoneOne		303040
+	380528285	351564__bertrof__game-sound-correct-with-delay	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\351564__bertrof__game-sound-correct-with-delay_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\351564__bertrof__game-sound-correct-with-delay		198384
+	447246893	SawCut	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Saw_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SawCut		289288
+	513458267	BirdChirpSingle3	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpSingle3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpSingle3		118276
+	516179750	FishTwo	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\FishTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish\FishTwo		533824
+	517387849	BirdChirpSingle1	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpSingle1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpSingle1		141920
+	526603668	FishThree	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\FishThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish\FishThree		535744
+	545288139	FishFour	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\FishFour_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fish\FishFour		535744
+	575498191	BirdChirpMulti2	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpMulti2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpMulti2		468968
+	683019260	351563__bertrof__game-sound-incorrect-with-delay	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\351563__bertrof__game-sound-incorrect-with-delay_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\351563__bertrof__game-sound-incorrect-with-delay		198512
+	698812041	Impacts Soft - Short, Crack	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Impacts Soft - Short, Crack_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hammer\Impacts Soft - Short, Crack		87380
+	717034161	TimeUp	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\198841__bone666138__analog-alarm-clock_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\TimeUp		1115396
+	725321451	BirdChirpMulti3	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpMulti3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpMulti3		468968
+	728270188	EggsTwo	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\EggsTwo_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Egg\EggsTwo		462784
+	733500198	WoodOne	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Plank\WoodOne		257188
+	743385092	SawPickup	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\SawPickup_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Saw\SawPickup		35060
+	779294866	EggsThree	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\EggsThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Egg\EggsThree		478144
+	799578354	EggOne	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\EggOne_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Egg\EggOne		468544
+	865643787	BirdChirpMulti1	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpMulti1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpMulti1		405924
+	912550186	BirdChirpSingle2	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdChirpSingle2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chirp\BirdChirpSingle2		122216
+	1046249915	WoodThree	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\WoodThree_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Plank\WoodThree		314788
+

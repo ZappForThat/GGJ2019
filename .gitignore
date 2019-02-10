@@ -89,3 +89,5 @@ sysinfo.txt
 *.unitypackage
 /GGJ 2019/SwitchIL2CPPCache/
 /GGJ 2019/ISBuilds/
+
+*.prof

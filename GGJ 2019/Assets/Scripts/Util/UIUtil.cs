@@ -26,4 +26,19 @@ public class UIUtil
         }
         return options;
     }
+
+    public static Vector3 WorldToCanvas(Canvas canvas, Vector3 worldPosition)
+    {
+        Vector2 screenPosition = Camera.main.WorldToScreenPoint(worldPosition);
+        return ScreenToCanvas(canvas, screenPosition);
+    }
+
+    public static Vector3 ScreenToCanvas(Canvas canvas, Vector3 screenPosition)
+    {
+        RectTransform canvasRectTransform = canvas.transform as RectTransform;
+        Vector2 normalizedScreenPosition = screenPosition / new Vector2(Screen.width, Screen.height);
+        Vector2 proportionalPosition = new Vector2(normalizedScreenPosition.x * canvasRectTransform.sizeDelta.x * canvas.scaleFactor,
+            normalizedScreenPosition.y * canvasRectTransform.sizeDelta.y * canvas.scaleFactor);
+        return proportionalPosition;
+    }
 }

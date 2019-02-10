@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{3E8AC2FE-A9AB-44B6-8A81-B4F251F0EE85}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="BuildingMusic" ID="{558C398D-9EC9-4240-820D-C5CF8C8212F4}">
+					<ChildrenList>
+						<Action Name="" ID="{234FC66E-9CDF-4A04-9241-314D727A0E2C}" ShortID="625586945">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdHouse" ID="{65C1C924-7B3F-4B11-98B0-493CC8F94110}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusic" ID="{7454E9DF-EB18-4D07-BC02-11F2993C37B1}">
+					<ChildrenList>
+						<Action Name="" ID="{3BFB1B23-4133-45CC-9BB8-0EE87F17AFFE}" ShortID="310037248">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title Theme" ID="{A2BEB6F7-6C9D-4D91-A75F-9770F7F6483F}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShopMusic" ID="{2F093363-1838-41D8-A9E4-DFB1651CA2ED}">
+					<ChildrenList>
+						<Action Name="" ID="{15E022DA-E4E3-4043-B061-9F42F93AC5B6}" ShortID="943639358">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdShop" ID="{55DAED0E-A328-4DF9-B047-C9F711884697}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusicStop" ID="{D0F800EA-FD0D-4613-9421-51C9FF644B5C}">
+					<ChildrenList>
+						<Action Name="" ID="{0BB2A4EC-3694-444D-92AD-8DAEC67565D4}" ShortID="623762329">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Title Theme" ID="{A2BEB6F7-6C9D-4D91-A75F-9770F7F6483F}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShopMusicStop" ID="{C9394E60-82B6-4825-BE66-AA5946067570}">
+					<ChildrenList>
+						<Action Name="" ID="{EC76ABB1-32E9-48BD-A793-9894ABC589BD}" ShortID="854045582">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdShop" ID="{55DAED0E-A328-4DF9-B047-C9F711884697}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BuildingMusicStop" ID="{DA5700C2-1E81-47A6-9914-7B46414B64FD}">
+					<ChildrenList>
+						<Action Name="" ID="{E4BE266C-AA8E-4A12-9941-45251BFB54B9}" ShortID="312502411">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BirdHouse" ID="{65C1C924-7B3F-4B11-98B0-493CC8F94110}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VictoryMusic" ID="{7ABB412B-8E60-4CD7-9FF6-E94C17D0DB7D}">
+					<ChildrenList>
+						<Action Name="" ID="{78EDCB52-E5B2-4AF5-B4F2-A29A00FE491E}" ShortID="254739529">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VictoryGood" ID="{805265FA-D4D4-4708-914B-82B31B9B007F}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VictoryMusicBad" ID="{5EA7D385-3088-4F22-8E07-EECC364152EA}">
+					<ChildrenList>
+						<Action Name="" ID="{C3CCE278-7B13-4BF8-B76F-2443C6251BB6}" ShortID="893656049">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VictoryBad" ID="{064E26A8-ECD9-4D57-B26F-A26EE3C0D303}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayTimeUp" ID="{CCBD5B04-5109-4E98-AFB7-96A726F856DD}">
+					<ChildrenList>
+						<Action Name="" ID="{8BD89AAB-28CC-45A2-8917-74CCD96EE3C3}" ShortID="1029987490">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TimeUp" ID="{FB5BE8C1-BBE0-4E69-B55F-08C9DC1C8221}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayLog" ID="{0C08C1A2-47A9-4AA5-AD15-93C5C39F3E70}">
+					<ChildrenList>
+						<Action Name="" ID="{5D221E81-5D01-483A-AF7A-34B2E0C7971A}" ShortID="541934564">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Log" ID="{EEE9A781-3DFB-48B8-8A40-01BD5E053867}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlaySaw" ID="{7EC49074-B646-4660-BFE9-D6DF6E342B95}">
+					<ChildrenList>
+						<Action Name="" ID="{64356E57-40F6-4BE7-9B68-799C5D2AF201}" ShortID="1001960976">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Saw" ID="{5CD641FA-F4AF-4AA9-84DA-84D0F72E4FFA}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayHammerImpact" ID="{F2AA9DC6-8E00-4854-BD74-775953114309}">
+					<ChildrenList>
+						<Action Name="" ID="{9166BF56-6390-4A25-9ABC-CD0CF1E2F435}" ShortID="132286119">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayHammerImpact" ID="{3075F1FA-8C4B-4674-8564-71138057A349}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayIncorrect" ID="{8C219B50-CBC7-4520-B58D-E51C1F6C18BB}">
+					<ChildrenList>
+						<Action Name="" ID="{F89C0312-E14F-4AEF-B028-0E6539F63BE8}" ShortID="821933548">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="351563__bertrof__game-sound-incorrect-with-delay" ID="{D5943283-80C9-480D-B491-33C3782345A0}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayCorrect" ID="{60C76356-A726-4A60-892D-73BD6568A8F6}">
+					<ChildrenList>
+						<Action Name="" ID="{F5387069-3C95-40F4-9B65-9DE397D4D397}" ShortID="644357516">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="351564__bertrof__game-sound-correct-with-delay" ID="{5833A1AB-0EAE-44F5-80BF-22A941841BB3}" WorkUnitID="{708C31ED-4F7C-40D9-B67F-FD89ADEC3DA3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

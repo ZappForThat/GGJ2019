@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3898083304" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SoundEffects</ObjectPath>
+			<ShortName>SoundEffects</ShortName>
+			<Path>SoundEffects.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3992911277" Name="PlayChirp" ObjectPath="\Events\SoundEffects\PlayChirp" DurationType="OneShot" DurationMin="0.670136" DurationMax="2.658186"/>
+				<Event Id="452758224" Name="PlayChirpCinematicLoud" ObjectPath="\Events\SoundEffects\PlayChirpCinematicLoud" DurationType="OneShot" DurationMin="0.804172" DurationMax="0.804172"/>
+				<Event Id="651045347" Name="PlayCorrect" ObjectPath="\Events\Default Work Unit\PlayCorrect" DurationType="OneShot" DurationMin="1.124263" DurationMax="1.124263"/>
+				<Event Id="3174754573" Name="PlayEggs" ObjectPath="\Events\SoundEffects\PlayEggs" DurationType="OneShot" DurationMin="1.781154" DurationMax="2.597937"/>
+				<Event Id="288067945" Name="PlayFish" ObjectPath="\Events\SoundEffects\PlayFish" DurationType="OneShot" DurationMin="2.780000" DurationMax="2.790000"/>
+				<Event Id="2524675461" Name="PlayHammer" ObjectPath="\Events\SoundEffects\PlayHammer" DurationType="OneShot" DurationMin="0.340701" DurationMax="0.607060"/>
+				<Event Id="388314215" Name="PlayHammerImpact" ObjectPath="\Events\Default Work Unit\PlayHammerImpact" DurationType="OneShot" DurationMin="0.352925" DurationMax="0.352925"/>
+				<Event Id="2505368860" Name="PlayIncorrect" ObjectPath="\Events\Default Work Unit\PlayIncorrect" DurationType="OneShot" DurationMin="1.124989" DurationMax="1.124989"/>
+				<Event Id="2405925139" Name="PlayLog" ObjectPath="\Events\Default Work Unit\PlayLog" DurationType="OneShot" DurationMin="0.184078" DurationMax="0.327989"/>
+				<Event Id="996452028" Name="PlayMetal" ObjectPath="\Events\SoundEffects\PlayMetal" DurationType="OneShot" DurationMin="0.630000" DurationMax="0.898792"/>
+				<Event Id="973826615" Name="PlayOpenCab" ObjectPath="\Events\SoundEffects\PlayOpenCab" DurationType="OneShot" DurationMin="0.400816" DurationMax="0.535025"/>
+				<Event Id="814658076" Name="PlayOpenDrawer" ObjectPath="\Events\SoundEffects\PlayOpenDrawer" DurationType="OneShot" DurationMin="0.400816" DurationMax="0.535025"/>
+				<Event Id="2511269494" Name="PlaySaw" ObjectPath="\Events\Default Work Unit\PlaySaw" DurationType="OneShot" DurationMin="0.187255" DurationMax="0.210187"/>
+				<Event Id="2846747398" Name="PlaySawCut" ObjectPath="\Events\SoundEffects\PlaySawCut" DurationType="OneShot" DurationMin="1.639592" DurationMax="1.639592"/>
+				<Event Id="2807550886" Name="PlayStone" ObjectPath="\Events\SoundEffects\PlayStone" DurationType="OneShot" DurationMin="0.644515" DurationMax="2.811676"/>
+				<Event Id="3753112747" Name="PlayTimeUp" ObjectPath="\Events\Default Work Unit\PlayTimeUp" DurationType="OneShot" DurationMin="6.322744" DurationMax="6.322744"/>
+				<Event Id="2111847568" Name="PlayWood" ObjectPath="\Events\SoundEffects\PlayWood" DurationType="OneShot" DurationMin="1.339188" DurationMax="1.639187"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="100689413" Language="SFX">
+					<ShortName>StoneTwo.wav</ShortName>
+					<Path>SFX\StoneTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="214082883" Language="SFX">
+					<ShortName>DrawerOpen.wav</ShortName>
+					<Path>SFX\DrawerOpen_56D34C19.wem</Path>
+				</File>
+				<File Id="224330914" Language="SFX">
+					<ShortName>MetalThree.wav</ShortName>
+					<Path>SFX\MetalThree_56D34C19.wem</Path>
+				</File>
+				<File Id="283704488" Language="SFX">
+					<ShortName>HammerWood.wav</ShortName>
+					<Path>SFX\HammerWood_56D34C19.wem</Path>
+				</File>
+				<File Id="309938901" Language="SFX">
+					<ShortName>MetalTwo.wav</ShortName>
+					<Path>SFX\MetalTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="322802238" Language="SFX">
+					<ShortName>HammerMetal.wav</ShortName>
+					<Path>SFX\HammerMetal_56D34C19.wem</Path>
+				</File>
+				<File Id="326982584" Language="SFX">
+					<ShortName>FishOne.wav</ShortName>
+					<Path>SFX\FishOne_56D34C19.wem</Path>
+				</File>
+				<File Id="358337829" Language="SFX">
+					<ShortName>WoodTwo.wav</ShortName>
+					<Path>SFX\WoodTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="367192478" Language="SFX">
+					<ShortName>StoneOne.wav</ShortName>
+					<Path>SFX\StoneOne_56D34C19.wem</Path>
+				</File>
+				<File Id="380528285" Language="SFX">
+					<ShortName>351564__bertrof__game-sound-correct-with-delay.wav</ShortName>
+					<Path>SFX\351564__bertrof__game-sound-correct-with-delay_56D34C19.wem</Path>
+				</File>
+				<File Id="447246893" Language="SFX">
+					<ShortName>Saw.wav</ShortName>
+					<Path>SFX\Saw_56D34C19.wem</Path>
+				</File>
+				<File Id="513458267" Language="SFX">
+					<ShortName>BirdChirpSingle3.wav</ShortName>
+					<Path>SFX\BirdChirpSingle3_56D34C19.wem</Path>
+				</File>
+				<File Id="516179750" Language="SFX">
+					<ShortName>FishTwo.wav</ShortName>
+					<Path>SFX\FishTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="517387849" Language="SFX">
+					<ShortName>BirdChirpSingle1.wav</ShortName>
+					<Path>SFX\BirdChirpSingle1_56D34C19.wem</Path>
+				</File>
+				<File Id="526603668" Language="SFX">
+					<ShortName>FishThree.wav</ShortName>
+					<Path>SFX\FishThree_56D34C19.wem</Path>
+				</File>
+				<File Id="545288139" Language="SFX">
+					<ShortName>FishFour.wav</ShortName>
+					<Path>SFX\FishFour_56D34C19.wem</Path>
+				</File>
+				<File Id="575498191" Language="SFX">
+					<ShortName>BirdChirpMulti2.wav</ShortName>
+					<Path>SFX\BirdChirpMulti2_56D34C19.wem</Path>
+				</File>
+				<File Id="683019260" Language="SFX">
+					<ShortName>351563__bertrof__game-sound-incorrect-with-delay.wav</ShortName>
+					<Path>SFX\351563__bertrof__game-sound-incorrect-with-delay_56D34C19.wem</Path>
+				</File>
+				<File Id="698812041" Language="SFX">
+					<ShortName>Impacts Soft - Short, Crack.wav</ShortName>
+					<Path>SFX\Impacts Soft - Short, Crack_56D34C19.wem</Path>
+				</File>
+				<File Id="717034161" Language="SFX">
+					<ShortName>198841__bone666138__analog-alarm-clock.wav</ShortName>
+					<Path>SFX\198841__bone666138__analog-alarm-clock_56D34C19.wem</Path>
+				</File>
+				<File Id="725321451" Language="SFX">
+					<ShortName>BirdChirpMulti3.wav</ShortName>
+					<Path>SFX\BirdChirpMulti3_56D34C19.wem</Path>
+				</File>
+				<File Id="728270188" Language="SFX">
+					<ShortName>EggsTwo.wav</ShortName>
+					<Path>SFX\EggsTwo_56D34C19.wem</Path>
+				</File>
+				<File Id="733500198" Language="SFX">
+					<ShortName>WoodOne.wav</ShortName>
+					<Path>SFX\WoodOne_56D34C19.wem</Path>
+				</File>
+				<File Id="743385092" Language="SFX">
+					<ShortName>SawPickup.wav</ShortName>
+					<Path>SFX\SawPickup_56D34C19.wem</Path>
+				</File>
+				<File Id="779294866" Language="SFX">
+					<ShortName>EggsThree.wav</ShortName>
+					<Path>SFX\EggsThree_56D34C19.wem</Path>
+				</File>
+				<File Id="799578354" Language="SFX">
+					<ShortName>EggOne.wav</ShortName>
+					<Path>SFX\EggOne_56D34C19.wem</Path>
+				</File>
+				<File Id="865643787" Language="SFX">
+					<ShortName>BirdChirpMulti1.wav</ShortName>
+					<Path>SFX\BirdChirpMulti1_56D34C19.wem</Path>
+				</File>
+				<File Id="912550186" Language="SFX">
+					<ShortName>BirdChirpSingle2.wav</ShortName>
+					<Path>SFX\BirdChirpSingle2_56D34C19.wem</Path>
+				</File>
+				<File Id="1046249915" Language="SFX">
+					<ShortName>WoodThree.wav</ShortName>
+					<Path>SFX\WoodThree_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2475438578" Name="BuildingMusic" ObjectPath="\Events\Default Work Unit\BuildingMusic" DurationType="Infinite"/>
+				<Event Id="853287946" Name="BuildingMusicStop" ObjectPath="\Events\Default Work Unit\BuildingMusicStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="679636833" Name="MenuMusic" ObjectPath="\Events\Default Work Unit\MenuMusic" DurationType="Infinite"/>
+				<Event Id="2136433081" Name="MenuMusicStop" ObjectPath="\Events\Default Work Unit\MenuMusicStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2398092218" Name="ShopMusic" ObjectPath="\Events\Default Work Unit\ShopMusic" DurationType="Infinite"/>
+				<Event Id="697617506" Name="ShopMusicStop" ObjectPath="\Events\Default Work Unit\ShopMusicStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2539955706" Name="VictoryMusic" ObjectPath="\Events\Default Work Unit\VictoryMusic" DurationType="OneShot" DurationMin="6.540000" DurationMax="6.540000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="28902583" Language="SFX">
+					<ShortName>Title Theme.wav</ShortName>
+					<Path>SFX\Title Theme_8956FC97.wem</Path>
+				</File>
+				<File Id="380229314" Language="SFX">
+					<ShortName>BirdHouse.wav</ShortName>
+					<Path>SFX\BirdHouse_8956FC97.wem</Path>
+				</File>
+				<File Id="411701450" Language="SFX">
+					<ShortName>BirdShop.wav</ShortName>
+					<Path>SFX\BirdShop_8956FC97.wem</Path>
+				</File>
+				<File Id="692245920" Language="SFX">
+					<ShortName>VictoryGood.wav</ShortName>
+					<Path>SFX\VictoryGood_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

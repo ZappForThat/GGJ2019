@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	679636833	MenuMusic			\Default Work Unit\MenuMusic	
+	697617506	ShopMusicStop			\Default Work Unit\ShopMusicStop	
+	853287946	BuildingMusicStop			\Default Work Unit\BuildingMusicStop	
+	2136433081	MenuMusicStop			\Default Work Unit\MenuMusicStop	
+	2398092218	ShopMusic			\Default Work Unit\ShopMusic	
+	2475438578	BuildingMusic			\Default Work Unit\BuildingMusic	
+	2539955706	VictoryMusic			\Default Work Unit\VictoryMusic	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	362996106	BuildingMusicIncrease			\Default Work Unit\BuildingMusicIncrease	
+
+Effect plug-ins	ID	Name	Type				Notes
+	362996106	BuildingMusicIncrease	Wwise Time Stretch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	28902583	Title Theme	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\Title Theme_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Title Theme		9701116
+	380229314	BirdHouse	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdHouse_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdHouse		3732424
+	411701450	BirdShop	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\BirdShop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\BirdShop		7660500
+	692245920	VictoryGood	D:\Unity Projects\GGJ2019\GGJ 2019\GGJ 2019_WwiseProject\.cache\Windows\SFX\VictoryGood_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\VictoryGood		1255744
+

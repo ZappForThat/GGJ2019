@@ -1,9 +1,16 @@
-﻿
+﻿using System.Collections.Generic;
+
 public enum Item
 {
     Log,
     Plank,
     Nail,
     Hammer,
-    Saw
+    Saw,
+
+    // Joke
+    Brick,
+    Egg,
+    FidgetSpinner,
+    Fish
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{47DF7FAE-BDF9-417E-A929-C2DA8B01FC80}" SchemaVersion="89">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{47DF7FAE-BDF9-417E-A929-C2DA8B01FC80}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="BuildingMusicIncrease" ID="{9E299BFB-658A-42F7-A654-D9B867C2855E}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
