@@ -98,10 +98,10 @@ public class House : MonoBehaviour
         this.nail = nailLocations[index];
     }
 
-    public void FinishNail(bool good)
+    public void FinishNail(bool good, System.Action OnComplete)
     {
         Debug.Assert(nail != null);
-        nail.Finish(good);
+        nail.Finish(good, OnComplete);
     }
 
     public void StartSaw()
@@ -109,11 +109,11 @@ public class House : MonoBehaviour
         stages[currentStage].GetTheLog().GetComponent<Nail>().SetShown(true);
     }
 
-    public void DoSaw(bool good)
+    public void DoSaw(bool good, System.Action OnComplete)
     {
         //stages[currentStage].GetTheLog().gameObject.SetActive(false);
         // HELL YEAH IT'S JANK
-        stages[currentStage].GetTheLog().GetComponent<Nail>().Finish(good);
+        stages[currentStage].GetTheLog().GetComponent<Nail>().Finish(good, OnComplete);
     }
 
     public int GetNailsNumber()

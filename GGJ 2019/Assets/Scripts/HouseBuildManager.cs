@@ -133,7 +133,7 @@ public class HouseBuildManager : MonoBehaviour
     private void StartHammer()
     {
         minigameManager.minigameResultCallback = OnHammerResult;
-        minigameManager.minigameEndCallback = StopHammer;
+        //minigameManager.minigameEndCallback = StopHammer;
         minigameManager.StartMinigame(hammerRange, currentHouse.GetNailsNumber());
 
         currentHouse.StartNail(0);
@@ -146,12 +146,18 @@ public class HouseBuildManager : MonoBehaviour
 
     private void OnHammerResult(int iteration, bool result)
     {
-        currentHouse.FinishNail(result);
-        if (iteration + 1 < currentHouse.GetNailsNumber())
-        {
-            currentHouse.StartNail(iteration + 1);
-        }
         AudioManager.Instance?.HammerImpactPlay();
+        currentHouse.FinishNail(result, () =>
+        {
+            if (iteration + 1 < currentHouse.GetNailsNumber())
+            {
+                currentHouse.StartNail(iteration + 1);
+            }
+            else
+            {
+                StopHammer();
+            }
+        });
     }
 
     private void StopHammer()
@@ -164,7 +170,7 @@ public class HouseBuildManager : MonoBehaviour
     private void StartSaw()
     {
         minigameManager.minigameResultCallback = OnSawResult;
-        minigameManager.minigameEndCallback = StopSaw;
+        //minigameManager.minigameEndCallback = StopSaw;
         minigameManager.StartMinigame(sawRange, 1);
 
         currentHouse.StartSaw();
@@ -172,9 +178,12 @@ public class HouseBuildManager : MonoBehaviour
 
     private void OnSawResult(int iteration, bool result)
     {
-        Debug.Assert(iteration == 0);
-        currentHouse.DoSaw(result);
         AudioManager.Instance?.SawCutPlay();
+        Debug.Assert(iteration == 0);
+        currentHouse.DoSaw(result, () =>
+        {
+            StopSaw();
+        });
     }
 
     private void StopSaw()
