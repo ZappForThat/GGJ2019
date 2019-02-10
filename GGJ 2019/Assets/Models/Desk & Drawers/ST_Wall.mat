@@ -105,7 +105,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _BottomColor: {r: 0.5254902, g: 0.90196085, b: 0.86666673, a: 0}
+    - _BottomColor: {r: 0.46433917, g: 0.797, b: 0.76581305, a: 0}
     - _Color: {r: 0.93333334, g: 0.54852265, b: 0.4196078, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TopColor: {r: 0.7607844, g: 0.9607844, b: 0.909804, a: 0}
+    - _TopColor: {r: 0.5614123, g: 0.709, b: 0.6713796, a: 0}

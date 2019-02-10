@@ -18,13 +18,13 @@ public class Nail : MonoBehaviour
         hammer.gameObject.SetActive(shown);
     }
 
-    public void Finish(bool good)
+    public void Finish(bool good, System.Action OnComplete)
     {
         animator.SetBool("DoHammer", true);
-        StartCoroutine(DoThing(good));
+        StartCoroutine(DoThing(good, OnComplete));
     }
 
-    private IEnumerator DoThing(bool good)
+    private IEnumerator DoThing(bool good, System.Action OnComplete)
     {
         float greh = GetAnimationLength("HammerInNail") + GetAnimationLength("SawLog");
         yield return new WaitForSeconds(greh);
@@ -36,6 +36,8 @@ public class Nail : MonoBehaviour
             badNail.SetActive(true);
             badNail.transform.rotation = badNail.transform.rotation * Quaternion.AngleAxis(Random.Range(0f, 360f), Vector3.forward);
         }
+
+        OnComplete?.Invoke();
     }
 
     float GetAnimationLength(string name)
